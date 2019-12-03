@@ -1,0 +1,52 @@
+package com.designpattern.concurrent.concurrency.cookbook.chapter4;
+
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Design Patterns
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ *
+ */
+public class Task implements Runnable {
+
+	/**
+	 * The start date of the task
+	 */
+	private Date initDate;
+	/**
+	 * The name of the task
+	 */
+	private String name;
+	
+	/**
+	 * Constructor of the class. Initializes the name of the task
+	 * @param name name asigned to the task
+	 */
+	public Task(String name){
+		initDate=new Date();
+		this.name=name;
+	}
+	
+	/**
+	 * This method implements the execution of the task. Waits a random period of time and finish
+	 */
+	@Override
+	public void run() {
+		System.out.printf("%s: Task %s: Created on: %s\n",Thread.currentThread().getName(),name,initDate);
+		System.out.printf("%s: Task %s: Started on: %s\n",Thread.currentThread().getName(),name,new Date());
+		
+		try {
+			Long duration=(long)(Math.random()*10);
+			System.out.printf("%s: Task %s: Doing a task during %d seconds\n",Thread.currentThread().getName(),name,duration);
+			TimeUnit.SECONDS.sleep(duration);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.printf("%s: Task %s: Finished on: %s\n",Thread.currentThread().getName(),name,new Date());
+	}
+
+}
