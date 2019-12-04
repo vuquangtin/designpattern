@@ -5,7 +5,7 @@ Factory Pattern được dùng trong trường hợp ta có một nhóm object, 
 
 Tóm lại, nó là một Factory - Nhà máy - và nhiệm vụ của nó là sản xuất object.
 
-Bài toán
+## Bài toán
 Trong những lần trước, ta đã hiểu nhầm về Pattern này. Chính xác thì chưa hiểu đủ.
 
 Tên của nó ko phải là Factory Pattern mà là Factory Method Pattern. Method ở đây để ghi chú rằng nó là 1 phương thức để cung cấp 1 Object, chứ đôi khi không cần phải xây dựng 1 Object riêng để handle điều đó. Việc tạo ra 1 đối tượng Factory đảm nhận việc đó cũng tốt, nhưng nên lưu ý, nó là Factory Method, nên chính hàm static của 1 Class nào đó cũng được hiểu là 1 thể hiện của Pattern này.
@@ -18,7 +18,7 @@ Cửa hàng ngày càng đông, sức anh ko làm được. Thế là một hôm
 
 Và ông chủ hứa sẽ tuyển cho anh một trợ lý.
 
-Giải pháp
+## Giải pháp
 Trợ lý của anh chả biết gì về ẩm thực. Tất nhiên, tiền thuê đầu bếp lúc nào cũng rẻ hơn tiền thuê đứa rửa bát mà.
 
 Và nhiệm vụ của nó là sẵn sàng cung cấp cho anh các loại thực phẩm mà anh cần. Anh chỉ việc yêu cầu và nó sẽ mang tới cho anh chỉ sau vài giây.
@@ -31,7 +31,7 @@ Trong lập trình cũng vậy, có đôi khi ta có quá nhiều object, và ta
 
 Nếu như cửa hàng mở rộng thêm, và ông chủ tuyển thêm một anh đầu bếp khác nữa, thì anh ta cũng chỉ cần quan tâm tới việc nấu nướng của mình, còn việc cung ứng nguyên liệu, vẫn là do anh phụ bếp này quản lý. Và khi anh ấy yêu cầu Trứng gà, thì chắc chắn anh ta ko mất thời gian để đi tìm nó giữa la liệt đống trứng ngỗng.
 
-Introduction
+## Introduction
 A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.
 The Factory Method Pattern is also known as Virtual Constructor.
 Nhiệm vụ của Factory Method đó là khởi tạo các đối tượng, nó có chút tương đồng với Template Pattern, thực hiện 1 thuật toán.
@@ -46,7 +46,7 @@ Factory Method tương tự như Abstract Factory nhưng nó không chú trọng
 
 Thường Factory Method được quy định bởi framework, và được implement bởi người dùng.
 
-Implements
+## Implements
 Một định nghĩa phổ biến của Factory Method đó là một static method của 1 lcass trả về 1 đối tượng thuộc loại đó. Nhưnmg nó không giống như 1 Constructor. Đối tượng trả về có thể là một thể hiện của 1 lớp con.
 
 Không giống như constructor, một đối tượng hiện có có thể được sử dụng lại, thay vì một đối tượng mới được tạo. Và một đặc điểm nữa, các Factory Method thường sẽ có những tên riêng biệt, thay vì 1 cái tên chung nhưu Constructor.
@@ -68,8 +68,9 @@ Nói thêm về việc che dấu constructor của Class.
 Cách che dấu constructor của Class chỉ có thể thực hiện bằng cách khai báo private cho Constructor. Lúc này sẽ ko có bất cứ 1 Class nào có thể khởi tạo Class này bằng từ khóa new được cả.
 Vậy làm sao để get được Object đó. Trong Object ta khai báo 1 method static, mà method này sẽ gọi tới cái private constructor kia. Khi này ta đã vô tình khiến cho việc create Object chỉ được thực hiện thông qua cái method static của ta.
 Tiếp theo nữa ta tạo 1 Factory với cái tham số cần thiết, rồi dùng cái static method đó để khởi tạo Object dựa trên tham số đầu vào.
-Advantages & Disadvantages && Usage
-Advantages
+
+## Advantages & Disadvantages && Usage
+### Advantages
 Cho phép sub-class quyết định kiểu của Object cần được tạo
 
 Tách constructor ra khỏi code, cho phép chỉ tương tác thông qua các Interface/ Abstract. Điều này cho phép reused lại code ở bất cứ đâu với những class implements/extends từ các Object đó.
@@ -78,17 +79,17 @@ Tách constructor ra khỏi code, cho phép chỉ tương tác thông qua các I
 
 Mục đích của Factory là che dấu việc khởi tạo của các đối tượng và chỉ cung cấp 1 cách thức duy nhất thông qua Factory. Tuy nhiên nếu ta ko che dấu đi các constructor, hoặc bằng 1 cách nào đó mà có thể create Instance mà không thông qua Factory thì nguyên tắc này sẽ bị phá vỡ.
 
-Disadvantages
+### Disadvantages
 Việc khởi tạo các Object thông qua điều kiện của Tham số truyền vào trong factory nhiều khi không đủ. Với các object có việc khởi tạo phức tạp, ta cần thông qua Builder Pattern để đạt được điều này.
 
-Usage
+### Usage
 Khi Class không biết những sub-class cần được khởi tạo
 
 Khi ta muốn sub-class tự xác định/ chỉ định các đối tượng sẽ được tạo
 
 Khi class parent quyết định nhường việc khởi tạo Object cho các Sub-Class của nó
 
-Important Things
+## Important Things
 Abstract Factory thường được triển khai với các Factory Method. nhưng chúng cũng có thể được thực hiện nhờ các Prototype
 
 Factory Method thường được sử dụng trong Template Pattern.

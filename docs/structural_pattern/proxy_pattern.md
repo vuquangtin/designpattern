@@ -29,14 +29,14 @@ Mục đích của Proxy cũng như tên gọi của nó, bảo vệ các đối
 
 Ta sẽ không quá quan tâm vào định nghĩa, mà cùng đi vào chi tiết các thể hiện của nó để hiểu chính xác hơn những nhiệm vụ mà Proxy sẽ đảm nhiệm.
 
-Virtual Proxy
+### Virtual Proxy
 Virtual Proxy được dùng trong môi trường mà có quá nhiều object truy cập đến hệ thống. Thay vì mỗi object mình cho nó một cái Session thì giờ đây, ta sử dụng các Proxy để làm điều đó. Mỗi Proxy đại diện cho một nhóm group để giải quyết công việc.
 
 Bản chất của cái này là xây dựng một Proxy Pool. Mỗi request tới nó sẽ được sắp xếp để đưa vào các proxy cho phù hợp. Vì vậy, ta có thể tiết kiệm tài nguyên và chi phí.
 
 Ví dụ như làm một trang tin tức phục vụ 100.000 lượt truy cập chẳng hạn.
 
-Protected Proxy
+### Protected Proxy
 Protected cần kiểm tra quyền hạn của Client trước khi thực hiện công việc. Giả sử như Client là admin khi đó họ có quyền thấy những chức năng khác của hệ thống. Nhưng nếu nó chỉ là một user bt thì nó sẽ chỉ thấy được những thứ đơn giản.
 
 Protected Proxy được sử dụng khi ta muốn hạn chế quyền truy cập, hay là muốn xảy ra những sự cố không đáng có vì vượt quyền hạn.
@@ -47,7 +47,7 @@ Nếu không có ATM, bạn sẽ phải chạy tới và làm việc trực ti�
 
 Nếu như ko có cả 2 cô trên, bạn tự vào nhà bank, tự mở tủ, tự lấy tiền, tự cập nhật tài khoản, và nghe thế thôi đã rất nguy hiểm rồi phải ko.
 
-Remote Proxy
+### Remote Proxy
 Remote Proxy có nhiệm vụ nhận request và chuyển đổi nó tới những Proxy khác, sau đó nhận kết quả và phản hồi lại cho Client.
 
 Remote Proxy được sử dụng khi ta có 2 hệ thống communicate với nhau, và một trong 2 thằng đó hạn chế/ giới hạn các đối tác của nó.
@@ -58,7 +58,7 @@ Ví dụ của nó như là một trang web bán vé máy bay. Proxy nhận requ
 
 Sau đó Airline này xử lý request, trả về phản hồi cho Proxy này. Proxy này lại gửi trả lại cho khách hàng.
 
-Smart Proxy
+### Smart Proxy
 Mục đích của Smart Proxy đó là cung cấp các lớp bảo mật bổ sung bằng các can thiệp vào các hành động cụ thế khỉ đối tượng được truy cập.
 
 Các hình thức sử dụng điển hình:
@@ -66,13 +66,14 @@ Các hình thức sử dụng điển hình:
 Đếm số lượng tham chiếu đến đối tượng thực thể đó, để quyết định giải phóng tự động khi không còn tham chiếu. Cách thức này còn được gọi là Smart Pointer / Smart Reference Proxy
 Loading 1 đối tượng lên memory khi nó được tham chiếu lần đầu. Điều này sẽ giúp tiết kiệm chi phí vì sử dụng nó như một cache vậy. Cái này chính là Cache Proxy ở dưới.
 Kiểm tra xem đối tượng có bị lock trước khi truy cập để đảm bảo rằng không có đối tượng nào có thể tham chiếu đến nó. Cái này hữu ích trong môi trường Multiple thread, ta muốn đảm bảo rằng 1 action xảy ra sẽ không bị can thiệp bởi 1 action khác.
-Monitor Proxy
+
+### Monitor Proxy
 Thiết lập các bảo mật trên đối tượng cần bảo vệ. ngăn không cho client truy cập tới một số trường quan trọng của đối tượng. Ngoài ra, nó còn có thể theo dõi, giám sát, ghi log việc truy cập, sử dụng đối tượng.
 
-Firewall Proxy
+### Firewall Proxy
 Bảo vệ đối tượng khỏi các truy cập không tính nhiệm. Thông thường, firewall sẽ đi kèm với remote proxy, làm thành 1 bức tường để đảm bảo xác thực rằng truy cập là được phép.
 
-Cache Proxy
+### Cache Proxy
 Cache Proxy dùng để cung cấp không gian lưu trữ tạm thời cho các kế quả trả về của 1 đối tượng nào đó. Kết quả này sẽ được tái sử dụng cho các Client chia sẻ cùng 1 yêu cầu gửi đến. Về mặt bản chất thì cái này hơi hơi giống với flyweight.
 
 Nó khác với Virtual Proxy ở điểm, virtual Proxy tạo ra 1 đối tượng trung gian để truy cập, còn nó là sử dụng để cache. Hai mục đích hoàn toàn khác nhau nhé.
@@ -81,7 +82,7 @@ Implements
 Việc implement nó có lẽ ko có gì quá phức tạp nên ta không đi vào chi tiết, thay vào đó, ta sẽ phân tích vào 3 mục đích chính mà nó được sử dụng như sau:
 
 ## Advantages & Disadvantages
-Advantages
+### Advantages
 Tùy thuộc vào từng loại proxy mà ta có những ưu điểm mà nó mang lại. Ví dụ
 
 Visual Proxy cung cấp cách thức để truy cập vào các đối tượng public của hệ thống thông qua một proxy pool nhằm tiết kiệm tài nguyên
@@ -92,7 +93,7 @@ Remote Proxy cung cấp cách thức giao tiếp với các hệ thống khác �
 
 Smart Proxy cung cấp thêm các lớp bảo mật bổ sung bằng cách can thiệp vào các hành dộng cụ thể khi đối tượng được truy cập.
 
-Disadvantages
+### Disadvantages
 __________
 
 ## Usage

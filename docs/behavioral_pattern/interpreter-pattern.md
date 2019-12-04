@@ -35,7 +35,7 @@ Khi vấn đề giải quyết lặp lại tương đối nhiều lần và ta c
 ## Implements
 
 Để sử dụng Interpreter ta cần implement các thành phần sau:
-![alt text](design-patterns-interpreter-example.png "Interpreter Pattern")
+![Interpreter Pattern](design-patterns-interpreter-example.png "Interpreter Pattern")
 
 + Context : là phần chứa thông tin biểu diễn mẫu chúng ta cần xây dựng.
 + Expression : là một interface hoặc abstract class, định nghĩa phương thức interpreter chung cho tất cả các node trong cấu trúc cây phân tích ngữ pháp. Expression được biểu diễn như một cấu trúc cây phân cấp, mỗi implement của Expression có thể gọi một node.
@@ -51,7 +51,7 @@ Condition trong Factory là điều kiện để phân biệt object, còn Condi
 
 Giả sử trong bài toán phiên dịch, nếu như sử dụng Factory thì ta phải new rất nhiều nhiều nhiều Object, tùy thuộc vào tham số truyền vào. Tuy nhiên đối với Interpreter thì ta chỉ việc set cho cái Context ban đầu là được.
 ## Sơ đồ:
-![alt text](design-patterns-interpreter-example.png "Interpreter Pattern")
+![Interpreter Pattern](design-patterns-interpreter-example.png "Interpreter Pattern")
 
 - AbstractExpression: Xác định “tác vụ” mà ta có thể thực hiện được trên tất cả các nút trong cây cú pháp.
 - TerminalExpression: Cài đặt tác vụ “thông dịch” cho những kí pháp nguyên tố của ngôn ngữ đặt tả.

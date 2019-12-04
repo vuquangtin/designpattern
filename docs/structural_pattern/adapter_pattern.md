@@ -34,6 +34,7 @@ Có hai loại Adapter phổ biến, Object Adapter và Class Adapter. Ví dụ 
 Đối với trường hợp này, khi 1 class cha không tương thích với Interface A, ta sẽ tạo 1 thằng con Extend từ cái parent đó, thay đổi các Behavior để tương thích với cái Class đó.
 * Object Adapter: sử dụng Java Composition
 Đối với trường hợp này, ta tạo 1 Composition riêng implement cái interface trên. Sau đó, ta "nhúng" nó vào các Class mà ta muốn và sử dụng nó để gọi cái interface tương ứng. Cách này hiệu quả hơn, vì khi đó ta sẽ có 1 reusable class và có thể biến bất cứ Class nào cũng có thể tương thích với interface mà ta muốn.
+
 ## Implements
 
 Để implement Pattern này, ta tuân thủ các bước sau:

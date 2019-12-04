@@ -3,7 +3,7 @@ Cung cấp 1 interface để tạo 1 families của các đối tượng có li�
 
 Một hệ thống phân cấp gói gọn, dựa trên many platform và construction của 1 bộ sản phẩm ("product").
 
-Bài toán
+## Bài toán
 Cũng vẫn là cái cửa hàng ở góc phố kia. Sau một thời gian kinh doanh, nó đã trở nên sầm uất và phát triển hơn bao giờ hết.
 
 Ông chủ cửa hàng khá là hài lòng, nhưng vẫn mong muốn nó sẽ phát triển hơn nữa. Ông quyết định mở rộng thực đơn của mình để có thể đáp ứng cho nhu cầu ẩm thực của khác hàng. Để tạo đa dạng món ăn, ông quyết định sẽ xây dựng thực đơn theo ngày và thực đơn đặc biệt.
@@ -14,7 +14,7 @@ Nhưng mà vấn đề ở đây, khách hàng vào nhộn nhịp, việc cung �
 
 Và tất nhiên, điều này khiến ông chủ ko hài lòng rồi.
 
-Giải pháp
+## Giải pháp
 Danh sách món ăn có rồi, tại sao ta không phân loại chúng ra, khi nào cần thì ta sẽ cung ứng toàn bộ. Thay vì việc phải lấy từng quả trứng, miếng thịt bò, ít rau củ như trước kia, thì giờ anh phụ bếp chỉ cần để chúng vào 1 cái khay, và khi nào cần thì mang lên ngay cho anh bếp trưởng.
 
 Thế là, từ sáng sớm, anh phụ bếp hí húi xem cái danh sách, phân loại thành các nguyên liệu cho từng món ăn, rồi lúc khách hàng gọi, thì anh mang ngay vào cho mấy anh đầu bếp.
@@ -27,7 +27,7 @@ Sau này nếu như cửa hàng mở rộng, ông chủ tuyển thêm 1 đội n
 
 Nếu như Factory quản lý việc tạo ra một bộ phận/ thuộc tính của đối tượng, thì abstract factory có vẻ nghiêng về việc nó dùng để tạo ra các đối tượng riêng biệt hơn. Trong ví dụ này, rõ ràng thực đơn món chính sẽ khác với thực đơn tráng miệng, mặc dù nó cũng được cấu tạo từ nước, đường, trứng, thịt này nọ.
 
-Introduction
+## Introduction
 Abstract Factory Pattern says that just define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes.
 An Abstract Factory Pattern is also known as Kit.
 Theo như khái niệm trên, ta cần hiểu rằng, Abstract Factory có nhiệm vụ cung cấp 1 cách thức trừu tượng để cóp thể tạo ra 1 Families các đối tượng có liên quan/ phụ thuộc lẫn nhau 1 cách gián tiếp, mà không chỉ định trực tiếp các lớp cụ thể của nó.
@@ -54,7 +54,7 @@ Thay vì như vậy, ta xây dựng 1 nhà máy sản xuất xe Sirius chẳng h
 
 Và từ đây công việc của bạn sẽ đơn giản hơn rất nhiều, vì ta chỉ cần gọi nhà máy sản xuất xe Sirius, và nó sẽ mang lại cho ta các linh kiện theo yêu cầu. Đó là mục đích chính của Abstract Factory
 
-Implements
+## Implements
 Dưới đây là các checklist cần phân tích trước khi bắt đầu implement
 
 Xác định xem "platform independence" và các service khởi tạo có phải là nguồn gốc của những vấn đề hiện tại ko
@@ -69,18 +69,18 @@ ConcreteFactory : Thực thi Abstract Factory để cho ra một đối tượng
 Factories
 Ta cần lưu ý rằng, Abstract Factory cung cấp 1 interface để có thể tạo ra 1 family product, do đó, khi cần tạo 1 đống các object khác, ta cần tạo 1 Concrete Factory khác.
 
-Advantages & Disadvantages
-Advantages
+## Advantages & Disadvantages
+### Advantages
 Abstract Factory cô lập client từ những concrete (implementation) classes
 
 Làm giảm bớt sự trao đổi của các familiar Objects (từ các Factory của nó) *
 
 Thúc đẩy sự nhất quán giữa các đối tượng.
 
-Disadvantages
+### Disadvantages
 Nhược điểm của Abtract Factory đó là phải xác định được các nhóm Object. Xác định sai thì đi tong luôn.
 
-Usage
+## Usage
 Khi muốn tách việc khởi tạo Object ra khỏi hệ thống **
 
 Khi các đối tượng liên quan cần được sử dụng cùng với nhau
@@ -94,7 +94,7 @@ Object A1 này được sử dụng dể tạo nên object và Object B1 dùng �
 
 ** Tách việc khởi tạo ra khỏi hệ thống, tức là thay vì việc sử dụng toán tử new, ta sử dụng các Abstract Factory và các interface của nó để lấy ra Object cần tạo.
 
-Important things
+## Important things
 Đôi khi ta sẽ gặp được sự cạnh tranh trong các Pattern thuộc nhóm Creational này. Ví dụ giữa Prototype và Abstract Factory đều có ích trong việc giải quyết vấn đề. Nhưng đôi lúc, nó là các phần bổ sung cho nhau. Abstract Factory có thể store 1 set các Prototype để sao chép và trả lại các product, Builder có thể sử dụng các Pattern khác để triển khai việc build từng phần của nó. Abstract Factory, Builder và Prototype cùng có thể sử dụng Singleton trong quá trình thực hiện.
 
 Abstract Factory, Builder, và Prototype xác định 1 đối tượng Factory object, chịu tránh nhiệm biết và tạo 1 class product objects, và biến nó thành 1 tham số của hệ thống. Abstract Factory có các Factory object sản xuất các đối tượng của 1 só lớp.

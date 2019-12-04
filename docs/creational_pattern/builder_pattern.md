@@ -3,7 +3,7 @@ Tách việc xây dựng 1 đối tượng phức tạp ra khỏi biểu diễn 
 
 Phân tích một biểu diễn phức tạp, tạo 1 trong số các mục tiêu
 
-Bài toán
+## Bài toán
 Cửa hàng đã nhộn nhịp hơn xưa. Bây giờ cửa hàng ko tập trung vào tầng lớp bình dân nữa, mà giờ đây cửa hàng lại tập trung vào tâng lớp trung lưu và quý xờ tộc, những người có tiền.
 
 Tất nhiên có tiền thì sẽ có quyền, và yêu cầu của họ sẽ phức tạp hơn, anh đầu bếp cũng mệt mỏi hơn khi chế biến, và anh phục vụ cũng phải học cách để chiều lòng khách hàng.
@@ -22,7 +22,7 @@ Lấy chị bánh mì sandwich thay vì bánh mì ổ nhé.
 
 Nhớ là ít rau nhiều thịt nhé.
 
-Giải pháp
+## Giải pháp
 Tất nhiên thứ mà chị yêu cầu trên kia, chả nằm trong cái thực đơn của nhà hàng rồi. Anh phục vụ sau khi nghe xong, cất vội thực đơn, và bắt đầu lấy giấy ra ghi chép:
 
 Bò xào khoai tây
@@ -38,7 +38,7 @@ Trong trường hợp này, cái khai nguyên liệu - sản phẩm của anh ph
 
 Miếng giấy ấy là một ví dụ của Builder Pattern.
 
-Introduction
+## Introduction
 Builder Pattern says that "construct a complex object from simple objects using step-by-step approach"
 
 Trong thực tế, đôi khi ta cần phải xây dựng các element từ 1 tập hợp phức tạp. Đặc tả của tập hợp (aggregate) này có thể tồn tai trên 1 secondary storage và 1 trong số các representation của nó cần được xây dựng trong 1 primary storage.
@@ -55,7 +55,7 @@ Trong mô hình này, ta sẽ có 1 director và 1 builder. Director gọi các 
 
 Tóm lại, Builder tách biệt việc xây dựng 1 đối tượng phức tạo khỏi biểu diễn của nó, đẻ cùng 1 quy trình xây dựng có thể tạo ra các biểu diễn khác nhau.
 
-Implements
+## Implements
 Để xây dựng 1 Builder, ta cần tuân thủ các bước sau :
 
 Bước 1. Quyết định xem 1 common input và many posible representation (or outputs) có phải là vấn đề ko. Nếu thực sự là vấn đề thì ta nên áp dụng. Đừng nên lạm dụng quá.
@@ -86,7 +86,7 @@ Bước 4, ta xây dựng 3 lớp dẫn xuất cho 3 cái builder kia, tên là 
 
 giờ, nếu ta cần 1 CircleReportBuilder, ta khởi tạo/gọi 1 CircleReportBuilder, tiến hành readData, parseData, processData, setMin, setMax này nọ, và cuối cùng, gọi hàm get là được.
 
-Advantages & Disadvantages
+## Advantages & Disadvantages
 Advantages
 Giúp ta phân chia rõ ràng giữa constructor và representation của Object
 
@@ -97,12 +97,12 @@ Hỗ trợ thay đổi các representation bên trong của các đối tượng
 Disadvantages
 Có chăng cũng chỉ là thêm vài dòng code mà thôi.
 
-Usage
+## Usage
 Builder thường được dùng khi mà việc khởi tạo các Object phức tạp.
 
 Khi ta muốn bổ sung thêm các builder method mà không cần quan tâm tới các object hiện tại - tăng khả năng mở rộng
 
-Important things
+## Important things
 Các Creational là bổ sung. Builder có thể sử dụng các Pattern khác trong quá trình sử dụng. Abstract Factory, Builder và Prototype thường sử dụng Singleton trong quá trình triển khai
 
 Builder chủ yếu tập trung vào việc xây dựng 1 đối tượng phức tạp theo từng bước. Abstract Factory cung cấp 1 family các products ( đơn giản hoặc phức tạp) trong khi đó Builder trả lại product ở bưới cuối cùng, khác với Abstract Factory, product sẽ được trả lại lập tức.

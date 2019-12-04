@@ -66,9 +66,9 @@ public class Main {
 		Visitor englishVisitor = new Visitor("english");
 
 		// 绑定
-		chinese.setMediator(mediator);
-		english.setMediator(mediator);
-		german.setMediator(mediator);
+		//chinese.setMediator(mediator);
+		//english.setMediator(mediator);
+		//german.setMediator(mediator);
 		germanVisitor.setMediator(mediator);
 		chineseVisitor.setMediator(mediator);
 		englishVisitor.setMediator(mediator);
