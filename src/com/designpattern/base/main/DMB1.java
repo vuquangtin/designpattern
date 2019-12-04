@@ -8,23 +8,13 @@ package com.designpattern.base.main;
  *
  */
 // DMB1.javaclass
-class SuperClass {
-	void method() {
-		System.out.println("Superclass method");
-	}
-}
 
-class SubClass extends SuperClass {
-	void method() {
-		System.out.println("Subclass method");
-	}
-}
 
-class DMB1 {
+public class DMB1 {
 	public static void main(String[] args) {
-		Superclass sc = new Superclass();
+		SuperClass sc = new SuperClass();
 		sc.method();
-		sc = new Subclass();
+		sc = new SubClass();
 		sc.method();
 	}
 }

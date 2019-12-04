@@ -91,7 +91,7 @@ class Cat extends Animal {
 
 }
 
-class Superclass {
+/*class Superclass {
 	public void method() {
 		System.out.println("Superclass method");
 	}
@@ -102,12 +102,12 @@ class Subclass extends Superclass {
 		System.out.println("Subclass method");
 	}
 }
-
+*/
 class SMB {
 	public static void main(String[] args) {
-		Superclass sc = new Superclass();
+		SuperClass sc = new SuperClass();
 		sc.method();
-		sc = new Subclass();
+		sc = new SubClass();
 		sc.method();
 	}
 }
