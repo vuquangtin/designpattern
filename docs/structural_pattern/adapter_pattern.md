@@ -1,24 +1,27 @@
-#Adapter Design Pattern - Structural Pattern
+# Adapter Design Pattern - Structural Pattern
 Chuyển đổi giao diện của 1 lớp thành 1 giao diện khác mà client mong đợi. Adapter cho phép các class có thể làm việc cùng nhau bỏ qua vấn đề giao diện không tương thích.
 
 * Bao bọc 1 lớp hiện có với 1 giao diện mới.
 * Công cụ giúp cho 1 thành phần cũ có thể tương thích với 1 hệ thống mới
 
-##Bài toán
+## Bài toán
+
 Một ngày đẹp trời, ông chủ quyết định sẽ nâng cấp toàn bộ máy móc cho các anh đầu bếp. Ổng mua đâu được bên Nhật về một mớ hàng xịn, kêu thợ vận chuyển tới lắp đặt này nọ.
 
 Mọi việc sẽ ko có vấn đề gì nếu như : Nó chạy bằng điện 110v trong khi hệ thống điện của VN lại là 220v
 
 Và giờ làm sao để có thể sử dụng được những thiết bị này : Hay thôi trả nó lại và mất thêm một khoản phí kha khá.
 
-##Giải pháp
+## Giải pháp
+
 Lên google search một hồi, Ổng quyết định ra tiệm điện gần nhà, mua một cái ổn áp, đầu vào 220v, đầu ra có thể là 110v hoặc 220v. Vậy là hệ thống thiết bị mới này sẽ được nối riêng ra, thông qua một cục chuyển áp.
 
 Cục chuyển áp kia là một ví dụ của Adapter.
 
 Mục đích của nó là làm cho các thiết bị/ interface không tương thích, có thể hoạt động/ giao tiếp với nhau.
 
-##Introduction
+## Introduction
+
 An Adapter Pattern says that just "converts the interface of a class into another interface that a client wants".
 Reused là một trong những mục tiêu mà OOP nói riêng và các phương thức khác nói chung cố gắng tiếp cận đến. Điều gì sẽ xảy ra khi ta có 1 component với những chức năng tuyệt vời và muốn sử dụng lại nó nhưng hệ thống hiện tại lại ko cho phép ta làm điều đó.
 
@@ -34,7 +37,8 @@ Class Adapter: sử dụng kế thừa và extend một interface nào đó
 Đối với trường hợp này, khi 1 class cha không tương thích với Interface A, ta sẽ tạo 1 thằng con Extend từ cái parent đó, thay đổi các Behavior để tương thích với cái Class đó.
 Object Adapter: sử dụng Java Composition
 Đối với trường hợp này, ta tạo 1 Composition riêng implement cái interface trên. Sau đó, ta "nhúng" nó vào các Class mà ta muốn và sử dụng nó để gọi cái interface tương ứng. Cách này hiệu quả hơn, vì khi đó ta sẽ có 1 reusable class và có thể biến bất cứ Class nào cũng có thể tương thích với interface mà ta muốn.
-##Implements
+## Implements
+
 Để implement Pattern này, ta tuân thủ các bước sau:
 
 Xác định các đối tượng : Component muốn được cung cấp (Client) và thành phần cần thay đổi (Adaptee)
@@ -63,28 +67,29 @@ JS khó viết oop hơn là TS nên cần cẩn thận khi xài nó, ko thì s�
 
 Lưu ý, audio không có fullScreen nhưng ta vẫn cần phải implement method này cho nó, nhưng tốt nhất là cho return false.
 
-##Advantages & Disadvantages and Usage
-###Advantages
+## Advantages & Disadvantages and Usage
+
+### Advantages
 Reused lại hệ thống cũ mà không cần implement lại quá nhiều
 
-###Disadvantages
+### Disadvantages
 Có thể có những adapter không thể tương thích được. Trong trường hợp này cần thay đổi cách giải quyết.
 
-###Usage
+### Usage
 Muốn sử dụng lại 1 component trong 1 hệ thống đã có.
 
 Mở rộng class hiện tại nhưng không muốn làm thay đổi nó.
 
-###Important things
-Adapter làm cho mói thứ hoạt động sau khi nó được thiết kế. Trong khi đó, Bridge làm cho mọi thứ hoạc động trước khi nó tồn tại. Lưu ý, Bridge tách tính trừu tượng ra khỏi implement của nó, vì vậy, trước khi Object được thiết kế xong thì cái interface kia đã hoạt động rồi.
+### Important things
+* Adapter làm cho mói thứ hoạt động sau khi nó được thiết kế. Trong khi đó, Bridge làm cho mọi thứ hoạc động trước khi nó tồn tại. Lưu ý, Bridge tách tính trừu tượng ra khỏi implement của nó, vì vậy, trước khi Object được thiết kế xong thì cái interface kia đã hoạt động rồi.
 
-Bridge được thiết kế up-front để cho sự trừu tượng (abstraction) và sự triển khai implement có thể thay đổi một cách độc lập. Trong khi đó, Adapter được trang bị thêm để giúp cho các class không liên quan có thể làm việc cùng với nhau.
+* Bridge được thiết kế up-front để cho sự trừu tượng (abstraction) và sự triển khai implement có thể thay đổi một cách độc lập. Trong khi đó, Adapter được trang bị thêm để giúp cho các class không liên quan có thể làm việc cùng với nhau.
 
-Adapter cung cấp 1 interface khác hoàn toàn với Subject của nó. Proxy cung cấp 1 giao diện tương tự. Decorate cung cấp 1 giao diện nâng cao.
+* Adapter cung cấp 1 interface khác hoàn toàn với Subject của nó. Proxy cung cấp 1 giao diện tương tự. Decorate cung cấp 1 giao diện nâng cao.
 
-Adapter thay đổi giao diện của 1 đối tượng hiện có. Decorate tằng thêm 1 đối tượng khác mà không làm thay đổi interface của nó. Do đó, Decorator minh bạch hơn cho Application hơn là Adapter. Kế quả, Decorate thường được hỗ trợ cho các thành phần đệ quy, đây là điều không thể với Adapter.
+* Adapter thay đổi giao diện của 1 đối tượng hiện có. Decorate tằng thêm 1 đối tượng khác mà không làm thay đổi interface của nó. Do đó, Decorator minh bạch hơn cho Application hơn là Adapter. Kế quả, Decorate thường được hỗ trợ cho các thành phần đệ quy, đây là điều không thể với Adapter.
 
-Facade định nghĩa 1 giao diện mới, trong khi Adapter sử dụng lại 1 giao diện cũ. Lưu ý, Adapter giúp cho 2 giao diện có thể làm việc với nhau, thay vì xác định 1 giao diện hoàn toàn mới.
+* Facade định nghĩa 1 giao diện mới, trong khi Adapter sử dụng lại 1 giao diện cũ. Lưu ý, Adapter giúp cho 2 giao diện có thể làm việc với nhau, thay vì xác định 1 giao diện hoàn toàn mới.
 
 IS-A and HAS-A in OOP.
 IS-A là mối quan hệ cha - con, trong đó thằng mới được extends từ thằng ban đầu.
