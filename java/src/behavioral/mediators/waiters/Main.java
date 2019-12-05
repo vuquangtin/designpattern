@@ -1,9 +1,12 @@
-package dp.behavioralpatterns.mediators;
+package waiters;
 
 import java.util.ArrayList;
 
 /**
- * Design Patterns
+ * <h2>Design Patterns</h2> <h3>Mediator</h3> <i>Định nghĩa 1 đối tượng đóng gói
+ * cách 1 tập hợp các đối tượng tương tác. Mediator thúc đẩy sự khớp nối lỏng
+ * lẻo bằng cách ngăn không cho các đối tượng đề cập đến nhau 1 cách rõ ràng và
+ * nó cho phép bạn thay đổi sự tương tác của chúng 1 cách độc lập.</i>
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
@@ -66,9 +69,9 @@ public class Main {
 		Visitor englishVisitor = new Visitor("english");
 
 		// 绑定
-		//chinese.setMediator(mediator);
-		//english.setMediator(mediator);
-		//german.setMediator(mediator);
+		// chinese.setMediator(mediator);
+		// english.setMediator(mediator);
+		// german.setMediator(mediator);
 		germanVisitor.setMediator(mediator);
 		chineseVisitor.setMediator(mediator);
 		englishVisitor.setMediator(mediator);

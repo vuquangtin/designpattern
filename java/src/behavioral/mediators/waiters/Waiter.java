@@ -1,4 +1,4 @@
-package dp.behavioralpatterns.mediators;
+package waiters;
 
 /**
  * Design Patterns
@@ -9,7 +9,8 @@ package dp.behavioralpatterns.mediators;
  */
 public abstract class Waiter {
 	public String country;
-	//private Mediator mediator;
+
+	// private Mediator mediator;
 
 	Waiter(String country) {
 		this.country = country;
@@ -17,9 +18,9 @@ public abstract class Waiter {
 
 	public abstract void say();
 
-//	public void setMediator(Mediator mediator) {
-//		this.mediator = mediator;
-//	}
+	// public void setMediator(Mediator mediator) {
+	// this.mediator = mediator;
+	// }
 }
 
 class ChineseWaiter extends Waiter {
