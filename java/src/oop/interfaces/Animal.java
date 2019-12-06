@@ -1,0 +1,16 @@
+package interfaces;
+
+/**
+ * Design Patterns
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ *
+ */
+interface Animal {
+	public void eat();
+
+	public void makeSound();
+}
