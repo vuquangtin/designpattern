@@ -12,7 +12,6 @@ Design Patterns Implemented (vi)
 * [UML](https://github.com/vuquangtin/designpattern/blob/master/java/resources/com/resources/images/adapter/Adapter1.png) –
 [Class Adapter](https://github.com/vuquangtin/designpattern/tree/master/java/src/designpatterns/structural/adapters/adapters/gof/hasa)
 — _Chuyển interface của một lớp thành interface khác mà các client mong muốn. Adapter để cho các lớp làm việc với nhau dù có thể các interface không tương thích._
-<img src="java/resources/com/resources/images/adapter/Adapter1.png" height="300" height="auto" />
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-object-adapter.png) –
 [Object Adapter](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/structural/object_adapter)
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-facade.png) –
