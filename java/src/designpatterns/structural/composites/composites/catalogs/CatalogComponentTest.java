@@ -2,39 +2,52 @@ package composites.catalogs;
 
 import org.junit.Test;
 
+/**
+ * <h1>Composite</h1> Các đối tượng cấu thành các cấu trúc cây để mô tả bán toàn
+ * bộ hệ thống phần cấp. Composite để cho các client tác động các đối tượng
+ * riêng biệt và các thành phần của đối tượng một cách thống nhất.
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ *
+ */
 public class CatalogComponentTest {
 
-    @Test
-    public void testPrint() throws Exception {
+	@Test
+	public void testPrint() throws Exception {
 
+		/* Create primary products for main catalog */
+		CatalogComponent mJeanProduct = new Product("M: Jeans 32", 65.00);
+		CatalogComponent mTShirtProduct = new Product("M: T Shirt 38", 45.00);
 
-        /*Create primary products for main catalog*/
-        CatalogComponent mJeanProduct=new Product("M: Jeans 32", 65.00);
-        CatalogComponent mTShirtProduct=new Product("M: T Shirt 38", 45.00);
+		/* Create a composite product catalog and add female products to it */
+		CatalogComponent newCatalog = new ProductCatalog("Female Products");
+		CatalogComponent fJeans = new Product("F: Jeans 32", 65.00);
+		CatalogComponent fTShirts = new Product("F: T Shirt 38", 45.00);
+		newCatalog.add(fJeans);
+		newCatalog.add(fTShirts);
 
-        /*Create a composite product catalog and add female products to it*/
-        CatalogComponent newCatalog = new ProductCatalog("Female Products");
-        CatalogComponent fJeans=new Product("F: Jeans 32", 65.00);
-        CatalogComponent fTShirts=new Product("F: T Shirt 38", 45.00);
-        newCatalog.add(fJeans);
-        newCatalog.add(fTShirts);
+		/* Create a composite product catalog and add kid products to it */
+		CatalogComponent kidCatalog = new ProductCatalog("Kids Products");
+		CatalogComponent kidShorts = new Product("Return Gift", 23.00);
+		CatalogComponent kidPlayGears = new Product("Summer Play Gear", 65.00);
+		kidCatalog.add(kidShorts);
+		kidCatalog.add(kidPlayGears);
 
-       /*Create a composite product catalog and add kid products to it*/
-        CatalogComponent kidCatalog = new ProductCatalog("Kids Products");
-        CatalogComponent kidShorts=new Product("Return Gift", 23.00);
-        CatalogComponent kidPlayGears = new Product("Summer Play Gear", 65.00);
-        kidCatalog.add(kidShorts);
-        kidCatalog.add(kidPlayGears);
+		/*
+		 * Create primary catalog and add primary products and new catalogs to
+		 * it
+		 */
+		CatalogComponent mainCatalog = new ProductCatalog("Primary Catalog");
+		mainCatalog.add(mJeanProduct);
+		mainCatalog.add(mTShirtProduct);
+		mainCatalog.add(newCatalog);
+		mainCatalog.add(kidCatalog);
 
-        /*Create primary catalog and add primary products and new catalogs to it*/
-        CatalogComponent mainCatalog=new ProductCatalog("Primary Catalog");
-        mainCatalog.add(mJeanProduct);
-        mainCatalog.add(mTShirtProduct);
-        mainCatalog.add(newCatalog);
-        mainCatalog.add(kidCatalog);
+		/* Print out product/catalog information */
+		mainCatalog.print();
 
-        /*Print out product/catalog information*/
-        mainCatalog.print();
-
-    }
+	}
 }

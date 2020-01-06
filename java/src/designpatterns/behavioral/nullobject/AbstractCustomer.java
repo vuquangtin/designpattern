@@ -1,4 +1,5 @@
-package templatemethods.tests;
+package com.designpatterns.behavioral.nullobject;
+
 /**
  * Design Patterns
  * 
@@ -8,6 +9,10 @@ package templatemethods.tests;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class Test {
+public abstract class AbstractCustomer {
+	protected String name;
 
+	public abstract boolean isNil();
+
+	public abstract String getName();
 }

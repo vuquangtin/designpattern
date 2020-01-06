@@ -1,4 +1,5 @@
-package states.tests;
+package com.designpatterns.behavioral.nullobject.shares;
+
 /**
  * Design Patterns
  * 
@@ -8,6 +9,16 @@ package states.tests;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class Test {
+public interface Shape {
+
+	double area();
+
+	double perimeter();
+
+	void draw();
+
+	// nice to have method to indicate null object
+
+	boolean isNull();
 
 }

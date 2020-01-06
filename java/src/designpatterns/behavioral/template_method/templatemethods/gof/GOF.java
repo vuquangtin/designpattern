@@ -1,7 +1,10 @@
 package templatemethods.gof;
 
 /**
- * Design Patterns
+ * <h1>Template Method</h1> Định nghĩa 1 bộ khung của 1 thuật toán trong 1 chức
+ * năng (thao tác) chuyển giao việc thực hiện nó cho lớp con. mẫu Template Method cho phép
+ * lớp con định nghĩa lại cách thực hiện của 1 thuật toán mà không phải thay đổi
+ * cấu trúc thuật toán.
  * 
  * @see http
  *      ://www.itsenka.com/contents/development/designpattern/template_method
