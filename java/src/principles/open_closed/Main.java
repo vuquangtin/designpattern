@@ -2,8 +2,7 @@ package open_closed;
 
 import java.util.ArrayList;
 
-import strategies.cars.Car;
-import strategies.cars.Vehicle;
+
 
 /**
  * Design Patterns

@@ -8,3 +8,6 @@ Tạo ra 1 Class/1 method dựa trên Class đã có
 
 ##Structural Patterns
 Giao tiếp giữa các đối tượng
+
+
+https://github.com/dlee0113

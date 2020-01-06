@@ -5,25 +5,24 @@ package strategies.cars;
  * lại, và làm chúng hoán đổi lẫn nhau. Strategy cho phép thuật toán biến đổi
  * độc lập khi người dùng sử dụng chúng.
  * 
- * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
  * @see <a href="https://github.com/vuquangtin/designpattern">https://github.com
  *      /vuquangtin/designpattern</a>
  *
  */
-public abstract class Vehicle {
-	private GoAlgorithm goAlgorithm;
+public class StartTheRace {
+	public static void main(String[] args) {
+		StreetRacer streetracer = new StreetRacer();
+		RollRoyce rollRoyce = new RollRoyce();
+		Helicopter helicopter = new Helicopter();
+		Jet jet = new Jet();
+		streetracer.go();
+		rollRoyce.go();
+		helicopter.go();
+		jet.go();
 
-	public Vehicle() {
-
-	}
-
-	public void setGoAlgorithm(GoAlgorithm algorithm) {
-		goAlgorithm = algorithm;
-	}
-
-	public void go() {
-		goAlgorithm.go();
+		jet.setGoAlgorithm(new GoByFlying());
+		jet.go();
 	}
 }

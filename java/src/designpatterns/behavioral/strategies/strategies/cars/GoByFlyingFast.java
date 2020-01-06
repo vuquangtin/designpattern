@@ -1,7 +1,7 @@
 package strategies.cars;
 
 /**
- *  <h1>Strategy </h1> Định nghĩa 1 tập hợp (họ) các thuật toán, đóng gói từng thuật toán lại,
+ * <h1>Strategy </h1> Định nghĩa tập hợp các thuật toán, đóng gói từng thuật toán lại,
  * và làm chúng hoán đổi lẫn nhau. Strategy cho phép thuật toán biến đổi độc lập
  * khi người dùng sử dụng chúng.
  * 
@@ -11,8 +11,8 @@ package strategies.cars;
  *      /vuquangtin/designpattern</a>
  *
  */
-public class StreetRacer extends Vehicle {
-	public StreetRacer() {
-		setGoAlgorithm(new GoByDrivingAlgorithm());
+public class GoByFlyingFast implements GoAlgorithm {
+	public void go() {
+		System.out.println("Now, I'm flying fast.");
 	}
 }
