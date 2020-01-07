@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Design Patterns
+ * <h1>Flyweight</h1> Sử dụng việc chia sẻ để hỗ trợ số lượng lớn các đối tượng
+ * fine-graied cỡ nhỏ 1 cách hiệu quả
  * 
  * @see http://www.itsenka.com/contents/development/designpattern/flyweight.html
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333

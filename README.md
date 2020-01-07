@@ -28,7 +28,7 @@ Design Patterns Implemented (vi)
 — _Cung cấp một đối tượng thay thế hoặc giữ chỗ placeholder cho một đối tượng khác để truy xuất đến nó._
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-flyweight.png) –
 [Flyweight](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/structural/flyweight)
-— _Sử dụng việc chia sẻ để hỗ trợ số lượng lớn các dt fine-graied cỡ nhỏ 1 cách hiệu quả_
+— _Sử dụng việc chia sẻ để hỗ trợ số lượng lớn các đối tượng fine-graied cỡ nhỏ 1 cách hiệu quả_
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-bridge.png) –
 [Bridge](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/structural/bridge)
 — _Tách một abstraction khỏi implementation của nó để cả hai có thể thay đổi độc lập nhau._

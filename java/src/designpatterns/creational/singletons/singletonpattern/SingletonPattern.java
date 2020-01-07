@@ -1,4 +1,4 @@
-package in.javacodegeeks;
+package singletonpattern;
 
 /**
  * <h1>Singleton</h1> Đảm bảo rằng một class (lớp) chỉ có duy nhất một instance
@@ -10,19 +10,15 @@ package in.javacodegeeks;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class Messenger {
+public class SingletonPattern {
 
-	private static Messenger messenger = new Messenger();
+	public static void main(String[] args) {
 
-	private Messenger() {
+		Database database = Database.getInstance("Products");
+
+		System.out.println("This is the " + database.getName() + " database.");
+
+		database = Database.getInstance("Employees");
+		System.out.println("This is the " + database.getName() + " database.");
 	}
-
-	public static Messenger getInstance() {
-		return messenger;
-	}
-
-	public void send(String message) {
-
-	}
-
 }
