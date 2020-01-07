@@ -7,12 +7,15 @@ import java.util.Map;
 import java.util.Queue;
 
 /**
- * Design Patterns
+ * <h1>Mediator</h1> Định nghĩa 1 đối tượng đóng gói cách 1 tập hợp các đối
+ * tượng tương tác. Mediator thúc đẩy sự khớp nối lỏng lẻo bằng cách ngăn không
+ * cho các đối tượng đề cập đến nhau 1 cách rõ ràng và nó cho phép bạn thay đổi
+ * sự tương tác của chúng 1 cách độc lập.
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
- * @see <a
- *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ * @see <a href="https://github.com/vuquangtin/designpattern">https://github.com
+ *      /vuquangtin/designpattern</a>
  *
  */
 
@@ -22,15 +25,13 @@ public class MediatorImpl implements Mediator {
 
 	@Override
 	public void registerSeller(Seller seller) {
-		Queue<Seller> sellers = sellerMap.computeIfAbsent(seller.getPrice(),
-				k -> new LinkedList<>());
+		Queue<Seller> sellers = sellerMap.computeIfAbsent(seller.getPrice(), k -> new LinkedList<>());
 		sellers.add(seller);
 	}
 
 	@Override
 	public void registerBuyer(Buyer buyer) {
-		Queue<Buyer> buyers = buyerMap.computeIfAbsent(buyer.getPrice(),
-				k -> new LinkedList<>());
+		Queue<Buyer> buyers = buyerMap.computeIfAbsent(buyer.getPrice(), k -> new LinkedList<>());
 		buyers.add(buyer);
 	}
 
@@ -40,8 +41,7 @@ public class MediatorImpl implements Mediator {
 
 		Queue<Buyer> buyers = buyerMap.get(seller.getPrice());
 		if (buyers == null || buyers.size() == 0) {
-			System.out.println("trade failed, no buyers for price "
-					+ seller.getPrice());
+			System.out.println("trade failed, no buyers for price " + seller.getPrice());
 		} else {
 			buyers.poll();
 			System.out.println("trade success, price " + seller.getPrice());
@@ -70,8 +70,7 @@ public class MediatorImpl implements Mediator {
 
 		Queue<Seller> sellers = sellerMap.get(buyer.getPrice());
 		if (sellers == null || sellers.size() == 0) {
-			System.out.println("trade failed, no sellers for price "
-					+ buyer.getPrice());
+			System.out.println("trade failed, no sellers for price " + buyer.getPrice());
 		} else {
 			sellers.poll();
 			System.out.println("trade success, price " + buyer.getPrice());

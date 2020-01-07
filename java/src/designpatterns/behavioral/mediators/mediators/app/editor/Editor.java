@@ -31,12 +31,15 @@ import mediators.app.editor.components.TextBox;
 import mediators.app.editor.components.Title;
 
 /**
- * Design Patterns
+ * <h1>Mediator</h1> Định nghĩa 1 đối tượng đóng gói cách 1 tập hợp các đối
+ * tượng tương tác. Mediator thúc đẩy sự khớp nối lỏng lẻo bằng cách ngăn không
+ * cho các đối tượng đề cập đến nhau 1 cách rõ ràng và nó cho phép bạn thay đổi
+ * sự tương tác của chúng 1 cách độc lập.
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
- * @see <a
- *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ * @see <a href="https://github.com/vuquangtin/designpattern">https://github.com
+ *      /vuquangtin/designpattern</a>
  *
  */
 // Concrete mediator: Editor implements Mediator interface to extract all
@@ -64,8 +67,7 @@ public class Editor implements Mediator {
 
 	private JLabel titleLabel = new JLabel("Title:");
 	private JLabel textLabel = new JLabel("Text:");
-	private JLabel label = new JLabel(
-			"Add or select existing note to proceed...");
+	private JLabel label = new JLabel("Add or select existing note to proceed...");
 
 	@Override
 	public void registerComponent(NoteComponent component) {
@@ -117,8 +119,7 @@ public class Editor implements Mediator {
 
 	@Override
 	public void deleteNote() {
-		File file = new File(noteDirectory
-				+ ((Note) list.getSelectedValue()).getName());
+		File file = new File(noteDirectory + ((Note) list.getSelectedValue()).getName());
 		try {
 			if (!file.toString().equals(".\\notes"))
 				Files.deleteIfExists(file.toPath());
@@ -222,8 +223,7 @@ public class Editor implements Mediator {
 	@Override
 	public void createGUI() {
 
-		Note ascii = new Note("classified",
-				new Banner().generateBanner("play hard"));
+		Note ascii = new Note("classified", new Banner().generateBanner("play hard"));
 		writeFile(ascii.getName(), ascii.getText());
 
 		loadNotes(list);

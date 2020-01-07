@@ -1,14 +1,5 @@
 package mediators.test;
 
-/**
- * Design Patterns
- * 
- * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
- * @version 1.0.0
- * @see <a
- *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
- *
- */
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,10 +21,21 @@ import java.util.List;
  * * use when object communication is complicated but well defined. Ex: JMS -
  * Java Message Service - Subscribe and Push model
  *
- * */
+ */
 
 public class MediatorTest {
-
+	/**
+	 * <h1>Mediator</h1> Định nghĩa 1 đối tượng đóng gói cách 1 tập hợp các đối
+	 * tượng tương tác. Mediator thúc đẩy sự khớp nối lỏng lẻo bằng cách ngăn
+	 * không cho các đối tượng đề cập đến nhau 1 cách rõ ràng và nó cho phép bạn
+	 * thay đổi sự tương tác của chúng 1 cách độc lập.
+	 * 
+	 * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+	 * @version 1.0.0
+	 * @see <a href="https://github.com/vuquangtin/designpattern">https://github
+	 *      .com /vuquangtin/designpattern</a>
+	 *
+	 */
 	public static void main(String[] args) {
 
 		Mediator m = new MediatorImpl();
@@ -78,8 +80,7 @@ class MediatorImpl implements Mediator {
 
 	@Override
 	public void send(String message, AirVehicle sender) {
-		colleagueList.stream().filter(c -> c != sender)
-				.forEach(v -> v.receive(message, sender));
+		colleagueList.stream().filter(c -> c != sender).forEach(v -> v.receive(message, sender));
 	}
 
 	public void addColleague(AirVehicle airVehicle) {
@@ -95,8 +96,7 @@ abstract class AbstractAirVehicle implements AirVehicle {
 
 	@Override
 	public void receive(String message, AirVehicle sender) {
-		System.out.println(this.toString() + " Received : " + message
-				+ " - from : " + sender.toString());
+		System.out.println(this.toString() + " Received : " + message + " - from : " + sender.toString());
 	}
 
 	public Mediator getMediator() {
