@@ -80,7 +80,7 @@ Design Patterns Implemented (vi)
 — _Cung cấp một cách để truy xuất các thành phần của một đối tượng hợp nhất một cách tuần tự mà không cho thấy sự biểu diễn representation bên dưới của nó_
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-visitor.png) –
 [Visitor](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/behavioral/visitor)
-— _Biểu diễn 1 hoạt động (thao tác, thuật toán) được thực hiện trên các phần tử của 1 cấu trúc đối tượng. Visitor cho phép bạn định nghĩa 1 phép toán mới mà không thay đổi các lớp của các phần tử mà nó thao tác._
+— _Diễn tả 1 hoạt động (thao tác, thuật toán) được thực hiện trên các phần tử của 1 cấu trúc đối tượng. Visitor cho phép bạn định nghĩa 1 phép toán mới mà không thay đổi các lớp của các phần tử mà nó thao tác._
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-chain-of-responsability.png) –
 [Chain of Responsability](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/behavioral/chain_of_responsibility)
 — _Tránh sự liên kết trực tiếp giữa đối tượng gửi yêu cầu và đối tượng nhận yêu cầu, khi yêu cầu có thể dc sử lý bởi hơn 1 đối tượng. móc nối các đối tượng nhận yêu cầu thành 1 chuỗi và gửi yêu cầu theo chuỗi đó cho đến khi có đối tượng xử lý nó._

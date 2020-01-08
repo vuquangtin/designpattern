@@ -26,6 +26,7 @@ class That implements Element {
 		return "That";
 	}
 }
+
 class Right implements Element {
 	public void accept(ReflectiveVisitor v) {
 		v.visit(this);
@@ -35,6 +36,7 @@ class Right implements Element {
 		return "right";
 	}
 }
+
 class TheOther implements Element {
 	public void accept(ReflectiveVisitor v) {
 		v.visit(this);
@@ -62,7 +64,8 @@ abstract class ReflectiveVisitor {
 		Method methodName = null;
 		while (methodName == null && clazz != Object.class) {
 			String clazzName = clazz.getName();
-			clazzName = "visit" + clazzName.substring(clazzName.lastIndexOf('.') + 1);
+			clazzName = "visit"
+					+ clazzName.substring(clazzName.lastIndexOf('.') + 1);
 			try {
 				methodName = getClass().getMethod(clazzName, clazz);
 			} catch (NoSuchMethodException ex) {
@@ -74,7 +77,9 @@ abstract class ReflectiveVisitor {
 			Class<?>[] interfaces = source.getInterfaces();
 			for (Class<?> intface : interfaces) {
 				String interfaceName = intface.getName();
-				interfaceName = "visit" + interfaceName.substring(interfaceName.lastIndexOf('.') + 1);
+				interfaceName = "visit"
+						+ interfaceName.substring(interfaceName
+								.lastIndexOf('.') + 1);
 				try {
 					methodName = getClass().getMethod(interfaceName, intface);
 				} catch (NoSuchMethodException ex) {
@@ -123,6 +128,7 @@ class DownVisitor extends ReflectiveVisitor {
 		System.out.println("DownVisitor: do Down on " + element.that());
 	}
 }
+
 class RightVisitor extends ReflectiveVisitor {
 	public void visit(Object o) {
 		try {
@@ -135,18 +141,26 @@ class RightVisitor extends ReflectiveVisitor {
 	public void visitRight(Right element) {
 		System.out.println("RightVisitor: do Right on " + element.right());
 	}
+
 	public void visitThat(That element) {
 		System.out.println("RightVisitor: do Down on " + element.that());
 	}
 }
-/***
- * @see https://sourcemaking.com/design_patterns/visitor/java/2
- * @author admin
+
+/**
+ * <h1>Visitor</h1>Diễn tả 1 hoạt động (thao tác, thuật toán) được thực hiện
+ * trên các phần tử của 1 cấu trúc đối tượng. Visitor cho phép bạn định nghĩa 1
+ * phép toán mới mà không thay đổi các lớp của các phần tử mà nó thao tác
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
 public class VisitorDemo {
 	public static void main(String[] args) {
-		Element[] list = { new This(), new That(), new TheOther(),new Right() };
+		Element[] list = { new This(), new That(), new TheOther(), new Right() };
 		UpVisitor up = new UpVisitor();
 		DownVisitor down = new DownVisitor();
 		RightVisitor right = new RightVisitor();
