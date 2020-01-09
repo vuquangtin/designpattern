@@ -82,7 +82,7 @@ public class FileVisitorApp extends JFrame implements ItemListener {
 		}
 		Path fileTree = Paths.get(".");
 		VisitDirectory walk = new VisitDirectory(pattern);
-		EnumSet opts = EnumSet.of(FileVisitOption.FOLLOW_LINKS);
+		EnumSet<FileVisitOption> opts = EnumSet.of(FileVisitOption.FOLLOW_LINKS);
 		try {
 			Files.walkFileTree(fileTree, opts, Integer.MAX_VALUE, walk);
 		} catch (IOException exp) {
