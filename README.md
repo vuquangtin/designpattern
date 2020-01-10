@@ -48,7 +48,7 @@ Design Patterns Implemented (vi)
 — _Đảm bảo rằng một class (lớp) chỉ có duy nhất một instance (thể hiện), và cung cấp một điểm chung, toàn cục để truy cập vào lớp đó._
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-builder.png) –
 [Builder](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/creational/builder)
-— _Tách biệt việc xây dựng của một đối tượng phức tạp khỏi phần biểu diễn của nó sao cho cùng 1 tiến trình xây dựng có thể tạo ra các biểu diễn khác nhau._
+— _Tách rời việc xây dựng (khởi tạo) của một đối tượng phức tạp khỏi phần biểu diễn của nó sao cho cùng 1 tiến trình xây dựng (khởi tạo) có thể tạo ra các biểu diễn khác nhau.._
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-builder.png) –
 [Simple Factory](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/creational/builder)
 — _Tạo ra các đối tượng mà không để lộ việc tạo ra đối tượng đó như thế nào khi sử dụng._
