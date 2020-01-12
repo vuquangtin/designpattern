@@ -7,12 +7,15 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 /**
+ * <h1>Prototype</h1> Xác định các kiểu của các object (đối tượng) muốn tạo ra
+ * bằng cách sử dụng một prototype (khuôn mẫu,nguyên mẫu), và tạo ra những
+ * object (đối tượng) mới bằng cách sao chép prototype này.
  * 
- *@ClassName ProtoType.java
- *@Description  浅复制：将一个对象复制后，基本数据类型的变量都会重新创建，而引用类型，指向的还是原对象所指向的。
- *              深复制：将一个对象复制后，不论是基本数据类型还有引用类型，都是重新创建的。简单来说，就是深复制进行了完全彻底的复制，而浅复制不彻底
- *@author 618
- *@date 2018年12月10日
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a href="https://github.com/vuquangtin/designpattern">https://github.com
+ *      /vuquangtin/designpattern</a>
  *
  */
 public class ProtoType implements Cloneable,Serializable{
