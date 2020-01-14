@@ -3,8 +3,6 @@ package geometry;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import geometry.Point;
-
 public class Line extends Shape {
 
 	/**

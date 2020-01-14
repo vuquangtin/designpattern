@@ -3,9 +3,6 @@ package geometry;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import geometry.Line;
-import geometry.Point;
-
 public class Circle extends SurfaceShape {
 	/**
 	 * 

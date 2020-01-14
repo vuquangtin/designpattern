@@ -8,13 +8,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Logger;
 
 import javax.swing.DefaultListModel;
 
-import org.w3c.dom.css.ElementCSSInlineStyle;
-
+import model.DrawingModel;
 import adapter.HexagonAdapter;
+
 import commands.CmdAddShape;
 import commands.CmdBringToBack;
 import commands.CmdBringToFront;
@@ -22,16 +21,9 @@ import commands.CmdDeleteAll;
 import commands.CmdDeleteShape;
 import commands.CmdToBack;
 import commands.CmdToFront;
-import commands.CmdUpdateCircle;
-import commands.CmdUpdateHexagon;
-import commands.CmdUpdateLine;
-import commands.CmdUpdatePoint;
-import commands.CmdUpdateRectangle;
-import commands.CmdUpdateSquare;
+
 import controller.DrawingController;
 import frame.DrawingFrame;
-import hexagon.Hexagon;
-import model.DrawingModel;
 import geometry.Circle;
 import geometry.Command;
 import geometry.Line;
@@ -39,6 +31,7 @@ import geometry.Point;
 import geometry.Rectangle;
 import geometry.Shape;
 import geometry.Square;
+import hexagon.Hexagon;
 
 public class FileLog implements Strategy {
 

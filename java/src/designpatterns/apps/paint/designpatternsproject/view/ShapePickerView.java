@@ -1,13 +1,13 @@
 package designpatternsproject.view;
 
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.Insets;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
 
 @SuppressWarnings("serial")
 public class ShapePickerView extends JPanel {

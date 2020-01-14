@@ -1,11 +1,12 @@
 package view;
 
+import geometry.Shape;
+
 import java.awt.Graphics;
 import java.util.Iterator;
 
 import javax.swing.JPanel;
 
-import geometry.Shape;
 import model.DrawingModel;
 
 

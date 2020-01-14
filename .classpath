@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="java/src/designpatterns/utilities"/>
+	<classpathentry kind="src" path="java/src/designpatterns/creational/abstract_factories"/>
+	<classpathentry kind="src" path="java/src/designpatterns/apps/IT49-2015-DP"/>
+	<classpathentry kind="src" path="java/src/designpatterns/apps/sudoku-java-swing"/>
+	<classpathentry kind="src" path="java/src/designpatterns/apps/folder"/>
+	<classpathentry kind="src" path="java/src/designpatterns/apps/paint"/>
+	<classpathentry kind="src" path="java/src/designpatterns/creational/builders"/>
+	<classpathentry kind="src" path="java/src/designpatterns/creational/singletons"/>
+	<classpathentry kind="src" path="java/src/designpatterns/creational/prototypes"/>
+	<classpathentry kind="src" path="java/src/designpatterns/creational/factory_methods"/>
+	<classpathentry kind="src" path="java/src/designpatterns/creational/object_pool"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/strategies"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/template_method"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/states"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/mediators"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/observers"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/chain_of_responsibilities"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/interpreters"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/iterators"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/visitors"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/mementos"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/commands"/>
+	<classpathentry kind="src" path="java/src/designpatterns/structural/composites"/>
+	<classpathentry kind="src" path="java/src/designpatterns/structural/bridges"/>
+	<classpathentry kind="src" path="java/src/designpatterns/structural/flyweights"/>
+	<classpathentry kind="src" path="java/src/designpatterns/structural/facades"/>
+	<classpathentry kind="src" path="java/src/designpatterns/structural/decorators"/>
+	<classpathentry kind="src" path="java/src/designpatterns/structural/adapters"/>
+	<classpathentry kind="src" path="java/src/designpatterns/structural/proxies"/>
+	<classpathentry kind="src" path="java/src/designpatterns/others"/>
+	<classpathentry kind="src" path="java/src/games"/>
+	<classpathentry kind="src" path="java/src/oop"/>
+	<classpathentry kind="src" path="java/src/principles"/>
+	<classpathentry kind="src" path="java/resources"/>
+	<classpathentry kind="src" path="java/test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/heksagon.jar"/>
+	<classpathentry kind="lib" path="libs/miglayout15-swing.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

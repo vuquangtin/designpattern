@@ -1,13 +1,13 @@
 package designpatternsproject.view;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JSeparator;
-import java.awt.Color;
 
 @SuppressWarnings("serial")
 public class HeaderWrapperView extends JPanel {

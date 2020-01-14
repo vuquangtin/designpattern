@@ -1,8 +1,8 @@
 package commands;
 
-import model.DrawingModel;
 import geometry.Command;
 import geometry.Shape;
+import model.DrawingModel;
 
 public class CmdToFront implements Command {
 

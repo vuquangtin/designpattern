@@ -2,9 +2,9 @@ package app;
 
 import javax.swing.JFrame;
 
+import model.DrawingModel;
 import controller.DrawingController;
 import frame.DrawingFrame;
-import model.DrawingModel;
 import geometry.UpdateNumberOfSelectedShapes;
 
 public class DrawingApp {

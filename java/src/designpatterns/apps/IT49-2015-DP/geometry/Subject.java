@@ -1,6 +1,5 @@
 package geometry;
 
-import geometry.Observer;
 
 public interface Subject {
 	void addObserver(Observer o);

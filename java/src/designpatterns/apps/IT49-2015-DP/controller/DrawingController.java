@@ -1,5 +1,17 @@
 package controller;
 
+import frame.DrawingFrame;
+import geometry.Circle;
+import geometry.Command;
+import geometry.Line;
+import geometry.Observer;
+import geometry.Point;
+import geometry.Rectangle;
+import geometry.Shape;
+import geometry.Square;
+import geometry.Subject;
+import hexagon.Hexagon;
+
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -12,7 +24,12 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import model.DrawingModel;
+import strategy.Context;
+import strategy.FileLog;
+import strategy.FileSerialization;
 import adapter.HexagonAdapter;
+
 import commands.CmdAddShape;
 import commands.CmdBringToBack;
 import commands.CmdBringToFront;
@@ -26,31 +43,17 @@ import commands.CmdUpdateLine;
 import commands.CmdUpdatePoint;
 import commands.CmdUpdateRectangle;
 import commands.CmdUpdateSquare;
-import dialogs.DlgDrawingHexagon;
+
 import dialogs.DlgDrawingCircle;
+import dialogs.DlgDrawingHexagon;
 import dialogs.DlgDrawingRectangle;
 import dialogs.DlgDrawingSquare;
-import dialogs.DlgModifyingHexagon;
 import dialogs.DlgModifyingCircle;
-import dialogs.DlgModifyingSquare;
-import dialogs.DlgModifyingRectangle;
+import dialogs.DlgModifyingHexagon;
 import dialogs.DlgModifyingLine;
 import dialogs.DlgModifyingPoint;
-import frame.DrawingFrame;
-import geometry.Observer;
-import geometry.Subject;
-import hexagon.Hexagon;
-import model.DrawingModel;
-import geometry.Shape;
-import geometry.Circle;
-import geometry.Rectangle;
-import geometry.Square;
-import geometry.Line;
-import geometry.Point;
-import geometry.Command;
-import strategy.Context;
-import strategy.FileLog;
-import strategy.FileSerialization;
+import dialogs.DlgModifyingRectangle;
+import dialogs.DlgModifyingSquare;
 
 public class DrawingController implements Subject{
 

@@ -1,5 +1,7 @@
 package strategy;
 
+import geometry.Shape;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,7 +10,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 import model.DrawingModel;
-import geometry.Shape;
 
 public class FileSerialization implements Strategy {
 	

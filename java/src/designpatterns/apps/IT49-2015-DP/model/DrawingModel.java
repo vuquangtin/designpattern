@@ -1,8 +1,8 @@
 package model;
 
-import java.util.ArrayList;
-
 import geometry.Shape;
+
+import java.util.ArrayList;
 
 public class DrawingModel{
 
