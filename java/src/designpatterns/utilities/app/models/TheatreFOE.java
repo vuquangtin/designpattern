@@ -2,7 +2,7 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractClass.Theatre;
+import app.abstractclass.Theatre;
 import app.gui.BufferedImageLoader;
 
 public class TheatreFOE extends Theatre {
@@ -11,7 +11,7 @@ public class TheatreFOE extends Theatre {
 	public BufferedImage CaricaImmagine() {
 		// TODO Auto-generated method stub
 		BufferedImageLoader l = new BufferedImageLoader();
-		BufferedImage theatre = l.loadBufferedImage(PATH + "/TheatreFOE.png");
+		BufferedImage theatre = l.loadBufferedImage(PATH + "TheatreFOE.png");
 		return theatre;
 
 	}

@@ -1,6 +1,6 @@
 package factorymethods.app.factory;
 
-import app.abstractClass.Building;
+import app.abstractclass.Building;
 import app.models.ChurchFOE;
 import app.models.HouseFOE;
 import app.models.MonumentFOE;

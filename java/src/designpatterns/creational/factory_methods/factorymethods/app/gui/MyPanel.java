@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 
 import factorymethods.app.factory.VillageFOE;
-import app.abstractClass.Church;
+import app.abstractclass.Church;
 import app.gui.BufferedImageLoader;
 import factorymethods.app.factory.VillageFactory;
 
@@ -33,7 +33,7 @@ public class MyPanel extends JPanel {
 		super.paintComponent(g);
 		BufferedImageLoader l = new BufferedImageLoader();
 		BufferedImage sfondo = l.loadBufferedImage(Church.PATH
-				+ "/Background.png");
+				+ "Background.png");
 		g.drawImage(sfondo, 0, 0, 900, 540, this);
 
 		// Creazione Villaggio

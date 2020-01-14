@@ -2,8 +2,8 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractClass.Resource;
-import app.abstractClass.School;
+import app.abstractclass.Resource;
+import app.abstractclass.School;
 import app.gui.BufferedImageLoader;
 
 public class SchoolFOE extends School {
@@ -13,7 +13,7 @@ public class SchoolFOE extends School {
 		// TODO Auto-generated method stub
 		BufferedImageLoader l = new BufferedImageLoader();
 		BufferedImage school = l.loadBufferedImage(Resource.PATH
-				+ "/SchoolFOE.png");
+				+ "SchoolFOE.png");
 		return school;
 
 	}

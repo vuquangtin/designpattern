@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 
 import abstractfactories.app.factory.VillageFactory;
 import abstractfactories.app.factory.VillageSimpsons;
+import app.abstractclass.Resource;
 import app.gui.BufferedImageLoader;
 
 public class MyPanel extends JPanel {
@@ -34,21 +35,12 @@ public class MyPanel extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		BufferedImageLoader l = new BufferedImageLoader();
-		try {
-			System.out.println(new File(".").getCanonicalPath()+ "/java/src/designpatterns/creational/abstract_factories/abstractfactories/app/resources/Background.png");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
+		System.out.println(Resource.PATH + "Background.png");
+
 		BufferedImage sfondo;
-		try {
-			sfondo = l.loadBufferedImage(new File(".").getCanonicalPath()
-					+ "/java/src/designpatterns/creational/abstract_factories/abstractfactories/app/resources/Background.png");
-			g.drawImage(sfondo, 0, 0, 900, 540, this);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		sfondo = l.loadBufferedImage(Resource.PATH + "Background.png");
+		g.drawImage(sfondo, 0, 0, 900, 540, this);
 
 		// Creazione Villaggio
 
@@ -56,10 +48,8 @@ public class MyPanel extends JPanel {
 		g.drawImage(v.createSchool().CaricaImmagine(), 270, 190, 130, 150, this);
 		g.drawImage(v.createHouse().CaricaImmagine(), 420, 110, 130, 150, this);
 		g.drawImage(v.createChurch().CaricaImmagine(), 580, 190, 130, 150, this);
-		g.drawImage(v.createTheatre().CaricaImmagine(), 410, 260, 130, 150,
-				this);
-		g.drawImage(v.createMonument().CaricaImmagine(), 100, 350, 100, 120,
-				this);
+		g.drawImage(v.createTheatre().CaricaImmagine(), 410, 260, 130, 150, this);
+		g.drawImage(v.createMonument().CaricaImmagine(), 100, 350, 100, 120, this);
 
 	}
 

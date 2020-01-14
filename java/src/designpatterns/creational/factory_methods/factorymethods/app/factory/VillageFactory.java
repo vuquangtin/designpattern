@@ -1,6 +1,6 @@
 package factorymethods.app.factory;
 
-import app.abstractClass.Building;
+import app.abstractclass.Building;
 
 public interface VillageFactory {
 	

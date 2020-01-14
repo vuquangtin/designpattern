@@ -2,8 +2,8 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractClass.House;
-import app.abstractClass.Resource;
+import app.abstractclass.House;
+import app.abstractclass.Resource;
 import app.gui.BufferedImageLoader;
 
 public class HouseFOE extends House {
@@ -13,7 +13,7 @@ public class HouseFOE extends House {
 		// TODO Auto-generated method stub
 		BufferedImageLoader l = new BufferedImageLoader();
 		BufferedImage house = l.loadBufferedImage(Resource.PATH
-				+ "/HouseFOE.png");
+				+ "HouseFOE.png");
 		return house;
 
 	}

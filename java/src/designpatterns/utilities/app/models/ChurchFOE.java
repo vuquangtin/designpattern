@@ -2,7 +2,7 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractClass.Church;
+import app.abstractclass.Church;
 import app.gui.BufferedImageLoader;
 
 public class ChurchFOE extends Church {
@@ -14,7 +14,7 @@ public class ChurchFOE extends Church {
 	public BufferedImage CaricaImmagine() {
 		// TODO Auto-generated method stub
 		BufferedImageLoader l = new BufferedImageLoader();
-		BufferedImage church = l.loadBufferedImage(PATH + "/ChurchFOE.png");
+		BufferedImage church = l.loadBufferedImage(PATH + "ChurchFOE.png");
 		return church;
 
 	}

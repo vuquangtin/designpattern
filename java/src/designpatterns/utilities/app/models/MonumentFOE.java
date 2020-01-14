@@ -2,10 +2,10 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractClass.Building;
-import app.abstractClass.House;
-import app.abstractClass.Monument;
-import app.abstractClass.Resource;
+import app.abstractclass.Building;
+import app.abstractclass.House;
+import app.abstractclass.Monument;
+import app.abstractclass.Resource;
 import app.gui.BufferedImageLoader;
 
 
@@ -16,7 +16,7 @@ public class MonumentFOE extends Monument {
 		// TODO Auto-generated method stub
 				BufferedImageLoader l= new BufferedImageLoader();
 				BufferedImage monument=l.loadBufferedImage(Resource.PATH
-						+ "/MonumentFOE.png");
+						+ "MonumentFOE.png");
 				return monument;
 				
 		

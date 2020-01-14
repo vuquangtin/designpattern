@@ -1,6 +1,6 @@
 package factorymethods.app.factory;
 
-import app.abstractClass.Building;
+import app.abstractclass.Building;
 import app.models.ChurchSimpson;
 import app.models.HouseSimpson;
 import app.models.MonumentSimpson;

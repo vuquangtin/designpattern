@@ -1,10 +1,10 @@
 package abstractfactories.app.factory;
 
-import app.abstractClass.Church;
-import app.abstractClass.House;
-import app.abstractClass.Monument;
-import app.abstractClass.School;
-import app.abstractClass.Theatre;
+import app.abstractclass.Church;
+import app.abstractclass.House;
+import app.abstractclass.Monument;
+import app.abstractclass.School;
+import app.abstractclass.Theatre;
 import app.models.ChurchSimpson;
 import app.models.HouseSimpson;
 import app.models.MonumentSimpson;

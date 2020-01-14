@@ -2,9 +2,9 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractClass.Building;
-import app.abstractClass.Resource;
-import app.abstractClass.Theatre;
+import app.abstractclass.Building;
+import app.abstractclass.Resource;
+import app.abstractclass.Theatre;
 import app.gui.BufferedImageLoader;
 
 public class TheatreSimpson extends Theatre {
@@ -14,7 +14,7 @@ public class TheatreSimpson extends Theatre {
 		// TODO Auto-generated method stub
 		BufferedImageLoader l = new BufferedImageLoader();
 		BufferedImage theatre = l.loadBufferedImage(Resource.PATH
-				+ "/TheatreSimpson.png");
+				+ "TheatreSimpson.png");
 		return theatre;
 
 	}
