@@ -2,22 +2,34 @@ package flyweights.gof;
 
 import java.util.ArrayList;
 
-class CoffeeShop {
+/**
+ * <h1>Flyweight</h1> Sử dụng việc chia sẻ để hỗ trợ số lượng lớn các đối tượng
+ * fine-graied cỡ nhỏ 1 cách hiệu quả
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
 
-  private Menu menu = new Menu();
-  private ArrayList<Order> orders = new ArrayList<Order>();
+ *      /vuquangtin/designpattern</a>
+ *
+ */
+public class CoffeeShop {
 
-  public void getOrder(int tableNumber, String coffeeFlavour) {
-    orders.add(new Order(tableNumber, menu.lookup(coffeeFlavour)));
-  }
+	private Menu menu = new Menu();
+	private ArrayList<Order> orders = new ArrayList<Order>();
 
-  public String toString() {
-    String report = "";
+	public void getOrder(int tableNumber, String coffeeFlavour) {
+		orders.add(new Order(tableNumber, menu.lookup(coffeeFlavour)));
+	}
 
-    for (Order order : orders) {
-      report += order.toString() + "\n";
-    }
+	public String toString() {
+		String report = "";
 
-    return report;
-  }
+		for (Order order : orders) {
+			report += order.toString() + "\n";
+		}
+
+		return report;
+	}
 }

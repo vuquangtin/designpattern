@@ -1,7 +1,11 @@
 package flyweights.gof.shape;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 /**
- * Design Patterns
+ * <h1>Flyweight</h1> Sử dụng việc chia sẻ để hỗ trợ số lượng lớn các đối tượng
+ * fine-graied cỡ nhỏ 1 cách hiệu quả
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
@@ -9,8 +13,6 @@ package flyweights.gof.shape;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-import java.awt.Color;
-import java.awt.Graphics;
 
 public interface Shape {
 

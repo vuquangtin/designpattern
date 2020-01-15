@@ -27,8 +27,18 @@ public class BufferedImageLoader {
 			if (path.startsWith("/")) {
 				System.out.println(path);
 				image2 = ImageIO.read(new File(path));
-			} else
-				image2 = ImageIO.read(getClass().getResource(path));
+			} else {
+				try {
+					String PATH = new File(".").getCanonicalPath()
+							+ "/java/resources/app/" + path;
+					System.out.println(PATH);
+					image2 = ImageIO.read(new File(PATH));
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
