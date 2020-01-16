@@ -1,3 +1,9 @@
 /target/
 /bin/
 /notes/
+*.prefs
+.project
+.classpath
+.project
+.settings/*
+designpattern
