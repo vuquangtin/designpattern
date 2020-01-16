@@ -5,6 +5,17 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * <h1>Observer</h1> Định nghĩa một sự phụ thuộc 1-nhiều giữa các đối tượng để
+ * khi một đối tượng thay đổi trạng thái, tất cả phụ thuộc của nó được thông báo
+ * và cập nhật một cách tự động.
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ *
+ */
 abstract class Subject {
 	private List<Observer> observers = new ArrayList<Observer>(); // 複数のオブザーバの保持が可能
 	private Random random = new Random();
@@ -36,7 +47,9 @@ abstract class Subject {
 }
 
 /**
- * Design Patterns
+ * <h1>Observer</h1> Định nghĩa một sự phụ thuộc 1-nhiều giữa các đối tượng để
+ * khi một đối tượng thay đổi trạng thái, tất cả phụ thuộc của nó được thông báo
+ * và cập nhật một cách tự động.
  * 
  * @see http://www.itsenka.com/contents/development/designpattern/observer.html
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
