@@ -1,22 +1,35 @@
 package mementos.gof;
 
-class Originator {
+/**
+ * <h1>Memento</h1> Không vi phạm tính đóng gói, nó nắm bắt và hiệu chỉnh trạng
+ * thái bên trong của đối tượng để đối tượng có thể được khôi phục về trạng thái
+ * này sau đó.
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
 
-  private String state;
+ *      /vuquangtin/designpattern</a>
+ *
+ */
+public class Originator {
 
-  public void setState(String state) {
-    this.state = state;
-  }
+	private String state;
 
-  public Memento saveToMemento() {
-    return new Memento(state);
-  }
+	public void setState(String state) {
+		this.state = state;
+	}
 
-  public void restoreFromMemento(Memento memento) {
-    state = memento.getSavedState();
-  }
+	public Memento saveToMemento() {
+		return new Memento(state);
+	}
 
-  public String toString() {
-    return state;
-  }
+	public void restoreFromMemento(Memento memento) {
+		state = memento.getSavedState();
+	}
+
+	public String toString() {
+		return state;
+	}
 }

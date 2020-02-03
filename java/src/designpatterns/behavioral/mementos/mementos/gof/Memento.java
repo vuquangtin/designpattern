@@ -1,14 +1,27 @@
 package mementos.gof;
 
-class Memento {
+/**
+ * <h1>Memento</h1> Không vi phạm tính đóng gói, nó nắm bắt và hiệu chỉnh trạng
+ * thái bên trong của đối tượng để đối tượng có thể được khôi phục về trạng thái
+ * này sau đó.
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
 
-  private final String STATE;
+ *      /vuquangtin/designpattern</a>
+ *
+ */
+public class Memento {
 
-  public Memento(String state) {
-    STATE = state;
-  }
+	private final String STATE;
 
-  public String getSavedState() {
-    return STATE;
-  }
+	public Memento(String state) {
+		STATE = state;
+	}
+
+	public String getSavedState() {
+		return STATE;
+	}
 }
