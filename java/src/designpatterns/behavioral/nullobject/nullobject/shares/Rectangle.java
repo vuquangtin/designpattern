@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.nullobject.shares;
+package nullobject.shares;
 
 /**
  * Design Patterns
@@ -9,46 +9,50 @@ package com.designpatterns.behavioral.nullobject.shares;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class Circle implements Shape {
+public class Rectangle implements Shape {
 
 	// sides
 
-	private final double radius;
+	private final double width;
 
-	public Circle() {
+	private final double length;
 
-		this(1.0d);
+	public Rectangle() {
+
+		this(1.0d, 1.0d);
 
 	}
 
-	public Circle(double radius) {
+	public Rectangle(double width, double length) {
 
-		this.radius = radius;
+		this.width = width;
+
+		this.length = length;
 
 	}
 
 	@Override
 	public double area() {
 
-		// Area = π r^2
+		// A = w * l
 
-		return Math.PI * Math.pow(radius, 2);
+		return width * length;
 
 	}
 
 	@Override
 	public double perimeter() {
 
-		// Perimeter = 2πr
+		// P = 2(w + l)
 
-		return 2 * Math.PI * radius;
+		return 2 * (width + length);
 
 	}
 
 	@Override
 	public void draw() {
 
-		System.out.println("Drawing Circle with area: " + area()
+		System.out.println("Drawing Rectangle with area: " + area()
 				+ " and perimeter: " + perimeter());
 
 	}

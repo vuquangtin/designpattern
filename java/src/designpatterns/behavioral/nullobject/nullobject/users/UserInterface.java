@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.nullobject.users;
+package nullobject.users;
 
 /**
  * Design Patterns

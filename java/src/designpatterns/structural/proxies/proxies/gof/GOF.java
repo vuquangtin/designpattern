@@ -1,9 +1,9 @@
 package proxies.gof;
 
 /**
- * Design Patterns
+ * <h1>Proxy</h1> Cung cấp một đối tượng thay thế hoặc giữ chỗ placeholder cho
+ * một đối tượng khác để truy xuất đến nó.
  * 
- * @see http://www.itsenka.com/contents/development/designpattern/proxy.html
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
  * @see <a

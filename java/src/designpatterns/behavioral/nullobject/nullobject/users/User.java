@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.nullobject.users;
+package nullobject.users;
 
 import org.apache.commons.lang.NullArgumentException;
 import org.openqa.selenium.InvalidArgumentException;

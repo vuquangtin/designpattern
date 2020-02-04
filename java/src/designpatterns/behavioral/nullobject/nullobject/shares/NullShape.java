@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.nullobject.shares;
+package nullobject.shares;
 
 /**
  * Design Patterns

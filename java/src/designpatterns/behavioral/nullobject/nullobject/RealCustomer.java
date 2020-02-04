@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.nullobject;
+package nullobject;
 
 /**
  * Design Patterns

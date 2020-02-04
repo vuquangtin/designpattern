@@ -1,17 +1,12 @@
 /**
+ * <h1>Proxy</h1> Cung cấp một đối tượng thay thế hoặc giữ chỗ placeholder cho
+ * một đối tượng khác để truy xuất đến nó.
  * 
- */
-/**
- *@ClassName package-info.java
- *@Description  代理模式
- *应用场景
- *如果已有的方法在使用的时候需要对原有的方法进行改进，此时有两种办法：
-  1、修改原有的方法来适应。这样违反了“对扩展开放，对修改关闭”的原则。
-  2、就是采用一个代理类调用原有的方法，且对产生的结果进行控制。这种方法就是代理模式。
-      使用代理模式，可以将功能划分的更加清晰，有助于后期维护！
- *
- *@author 618
- *@date 2018年12月10日
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
 package proxies.sources;
+

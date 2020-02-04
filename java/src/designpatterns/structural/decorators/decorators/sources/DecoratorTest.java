@@ -3,11 +3,14 @@ package decorators.sources;
 import org.junit.Test;
 
 /**
+ * <h1>Decorator</h1> Gán bổ sung các “trách nhiệm” (responsibility) cho một đối
+ * tượng một cách linh hoạt. Các decorator cung cấp một sự lựa chọn linh động
+ * cho lớp con để mở rộng tính năng
  * 
- *@ClassName DecoratorTest.java
- *@Description  测试主方法
- *@author 618
- *@date 2018年12月10日
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
 public class DecoratorTest {
