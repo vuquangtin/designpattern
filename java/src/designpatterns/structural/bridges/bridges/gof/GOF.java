@@ -1,13 +1,15 @@
 package bridges.gof;
 
 /**
- * Design Patterns
+ * <h1>Bridge</h1> Tách một abstraction khỏi implementation của nó để cả hai có
+ * thể thay đổi độc lập nhau.
  * 
- * @see http://www.itsenka.com/contents/development/designpattern/bridge.html
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
  * @see <a
- *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
+
+ *      /vuquangtin/designpattern</a>
  *
  */
 class Abstraction {
@@ -42,6 +44,18 @@ class ConcreteImplementor extends Implementor {
 	}
 }
 
+/**
+ * <h1>Bridge</h1> Tách một abstraction khỏi implementation của nó để cả hai có
+ * thể thay đổi độc lập nhau.
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
+
+ *      /vuquangtin/designpattern</a>
+ *
+ */
 public class GOF {
 	public static void main(String[] args) {
 		Abstraction abstraction = new Abstraction(new ConcreteImplementor());

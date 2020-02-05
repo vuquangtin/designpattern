@@ -3,8 +3,6 @@ package abstractfactories.app.gui;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 import javax.swing.JPanel;
 
@@ -13,6 +11,20 @@ import abstractfactories.app.factory.VillageSimpsons;
 import app.abstractclass.Resource;
 import app.gui.BufferedImageLoader;
 
+/**
+ * <h1>Abstract Factory</h1> Cung cấp một interface để tạo ra 1 họ các object
+ * (đối tượng) có liên quan hoặc phụ thuộc lẫn nhau mà không chỉ rõ các lớp cụ
+ * thể của chúng (concrete classes)
+ * 
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
+
+ *      /vuquangtin/designpattern</a>
+ *
+ */
 public class MyPanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
@@ -48,8 +60,10 @@ public class MyPanel extends JPanel {
 		g.drawImage(v.createSchool().CaricaImmagine(), 270, 190, 130, 150, this);
 		g.drawImage(v.createHouse().CaricaImmagine(), 420, 110, 130, 150, this);
 		g.drawImage(v.createChurch().CaricaImmagine(), 580, 190, 130, 150, this);
-		g.drawImage(v.createTheatre().CaricaImmagine(), 410, 260, 130, 150, this);
-		g.drawImage(v.createMonument().CaricaImmagine(), 100, 350, 100, 120, this);
+		g.drawImage(v.createTheatre().CaricaImmagine(), 410, 260, 130, 150,
+				this);
+		g.drawImage(v.createMonument().CaricaImmagine(), 100, 350, 100, 120,
+				this);
 
 	}
 

@@ -1,6 +1,19 @@
 package abstractfactories.clients;
 
-//AbstractProduct - Main 
+/**
+ * <h1>Abstract Factory</h1> Cung cấp một interface để tạo ra 1 họ các object
+ * (đối tượng) có liên quan hoặc phụ thuộc lẫn nhau mà không chỉ rõ các lớp cụ
+ * thể của chúng (concrete classes)
+ * 
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
+
+ *      /vuquangtin/designpattern</a>
+ *
+ */
 abstract class IElectronicProduct {
 	// Common property
 	private String name;
@@ -133,9 +146,11 @@ abstract class IMobile extends IElectronicProduct {
 
 // 'AbstractFactory' Interface
 interface IProduct {
-	ILaptop createLaptopProduct(LaptopTypeDetails laptopTypeDetails) throws Exception;
+	ILaptop createLaptopProduct(LaptopTypeDetails laptopTypeDetails)
+			throws Exception;
 
-	IMobile createMobileProduct(MobileTypeDetails mobileTypeDetails) throws Exception;
+	IMobile createMobileProduct(MobileTypeDetails mobileTypeDetails)
+			throws Exception;
 }
 
 // 'Product-1' For Laptop
@@ -568,7 +583,8 @@ class ElectronicProduct implements IProduct {
 
 	// 'Maintain ConcreteFactory-1'
 	@Override
-	public ILaptop createLaptopProduct(LaptopTypeDetails laptopTypeDetails) throws Exception {
+	public ILaptop createLaptopProduct(LaptopTypeDetails laptopTypeDetails)
+			throws Exception {
 		switch (laptopTypeDetails) {
 		case Gaming:
 			return new GamingLaptop();
@@ -581,7 +597,8 @@ class ElectronicProduct implements IProduct {
 
 	// 'Maintain ConcreteFactory-2'
 	@Override
-	public IMobile createMobileProduct(MobileTypeDetails mobileTypeDetails) throws Exception {
+	public IMobile createMobileProduct(MobileTypeDetails mobileTypeDetails)
+			throws Exception {
 		switch (mobileTypeDetails) {
 		case Smart:
 			return new SmartPhone();
@@ -601,7 +618,8 @@ class Product {
 	}
 
 	// maintain laptop products
-	public ILaptop laptopProduct(IProduct Product, LaptopTypeDetails laptopTypeDetails) {
+	public ILaptop laptopProduct(IProduct Product,
+			LaptopTypeDetails laptopTypeDetails) {
 		try {
 			return Product.createLaptopProduct(laptopTypeDetails);
 		} catch (Exception e) {
@@ -612,7 +630,8 @@ class Product {
 	}
 
 	// maintain mobile products
-	public IMobile mobileProduct(IProduct Product, MobileTypeDetails mobileTypeDetails) {
+	public IMobile mobileProduct(IProduct Product,
+			MobileTypeDetails mobileTypeDetails) {
 		try {
 			return Product.createMobileProduct(mobileTypeDetails);
 		} catch (Exception e) {
@@ -636,10 +655,18 @@ enum MobileTypeDetails {
 	Smart, Normal
 }
 
-// main class act as 'Client'
-/***
- * @see https://softwaredevelopmenttricky.blogspot.com/2017/09/abstract-factory-pattern.html
- * @author admin
+/**
+ * <h1>Abstract Factory</h1> Cung cấp một interface để tạo ra 1 họ các object
+ * (đối tượng) có liên quan hoặc phụ thuộc lẫn nhau mà không chỉ rõ các lớp cụ
+ * thể của chúng (concrete classes)
+ * 
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
+
+ *      /vuquangtin/designpattern</a>
  *
  */
 public class Program {
@@ -649,13 +676,14 @@ public class Program {
 
 		// -------------------------Laptop
 		// product----------------------------------------------
-		System.out.println(
-				"------------------------------------------Laptop Products------------------------------------------");
+		System.out
+				.println("------------------------------------------Laptop Products------------------------------------------");
 
 		for (LaptopTypeDetails laptopTypeDetail : LaptopTypeDetails.values()) {
-			ILaptop laptopProduct = product.laptopProduct(electronicProduct, laptopTypeDetail);
-			System.out.println(
-					"------------------------------------------{0} Laptop------------------------------------------"
+			ILaptop laptopProduct = product.laptopProduct(electronicProduct,
+					laptopTypeDetail);
+			System.out
+					.println("------------------------------------------{0} Laptop------------------------------------------"
 							+ laptopProduct.toString());
 			// System.out.println(
 			// "Name: {0}, Memory: {1}, Description: {2}, Available Memory: {3},
@@ -665,7 +693,7 @@ public class Program {
 			// laptopProduct.WarrantyPeriod, laptopProduct.ModelDetails);
 			// System.out.println("Do you want to reset {0} memory?",
 			// laptopProduct.Name);
-			//// Console.Write("Press 1 to reset memory: ");
+			// // Console.Write("Press 1 to reset memory: ");
 			// if (Convert.ToInt32(Console.ReadLine()) == 1) {
 			// Console.Write("Enter Memory Capacity: ");
 			// laptopProduct.SetMemory(Convert.ToInt32(Console.ReadLine()));
@@ -676,14 +704,15 @@ public class Program {
 
 		// -------------------------Mobile
 		// product----------------------------------------------
-		System.out.println(
-				"------------------------------------------Mobile Phone Products------------------------------------------");
-		System.out.println(
-				"------------------------------------------Mobile Phone Products------------------------------------------");
+		System.out
+				.println("------------------------------------------Mobile Phone Products------------------------------------------");
+		System.out
+				.println("------------------------------------------Mobile Phone Products------------------------------------------");
 		for (MobileTypeDetails mobileTypeDetail : MobileTypeDetails.values()) {
-			IMobile mobileProduct = product.mobileProduct(electronicProduct, mobileTypeDetail);
-			System.out.println(
-					"------------------------------------------{0} Phone------------------------------------------"
+			IMobile mobileProduct = product.mobileProduct(electronicProduct,
+					mobileTypeDetail);
+			System.out
+					.println("------------------------------------------{0} Phone------------------------------------------"
 							+ mobileProduct.toString());
 			// System.out.println(
 			// "Name: {0}, Memory: {1}, Description: {2}, Available Memory: {3},

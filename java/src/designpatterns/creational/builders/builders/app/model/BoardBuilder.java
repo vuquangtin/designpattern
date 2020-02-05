@@ -1,12 +1,17 @@
 package builders.app.model;
 
+
 /**
- * Builder class for board object that takes row, column and returns a board
+ * <h1>Builder</h1> Tách rời việc xây dựng (khởi tạo) của một đối tượng phức tạp
+ * khỏi phần biểu diễn của nó sao cho cùng 1 tiến trình xây dựng (khởi tạo) có
+ * thể tạo ra các biểu diễn khác nhau.
  * 
- * @author abhishek bhunia
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-
 public class BoardBuilder {
   private int row;
   private int col;

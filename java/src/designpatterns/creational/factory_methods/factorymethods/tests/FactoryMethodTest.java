@@ -15,6 +15,19 @@ class NetBanking implements PaymentMethod {
         System.out.println("Payment through net banking...");
     }
 }*/
+/**
+ * <h1>Factory Method</h1>Cung cấp 1 giao diện để tạo ra đối tượng nhưng để lớp
+ * con quyết định kiểu đối tượng nào sẽ dc tạo.
+ * 
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com
+
+ *      /vuquangtin/designpattern</a>
+ *
+ */
 interface IPaymentMethodFactory {
 	public PaymentMethod getPaymentMethod();
 }

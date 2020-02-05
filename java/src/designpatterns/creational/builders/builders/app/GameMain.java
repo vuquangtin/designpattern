@@ -4,20 +4,16 @@ import builders.app.controller.ConnectFourController;
 import builders.app.model.ConnectFourModel;
 import builders.app.view.ConnectFourView;
 
+
 /**
+ * <h1>Builder</h1> Tách rời việc xây dựng (khởi tạo) của một đối tượng phức tạp
+ * khỏi phần biểu diễn của nó sao cho cùng 1 tiến trình xây dựng (khởi tạo) có
+ * thể tạo ra các biểu diễn khác nhau.
  * 
- * This class creates a model, view and controller, and launches the game
- * by calling the controller's run method on model and view. 
- * 
- * By default both players are selected as 'human', however one can change 
- * this selection before hitting the start button. After one game finishes
- * the options will be reset to default.
- * 
- * It is also possible to make two bot players against each other. There
- * is a programmed randomized delay in this mode to make the animation
- * slow enough to see transitions.
- * 
- * @author abhishek bhunia
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
 public class GameMain {

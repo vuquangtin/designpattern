@@ -3,7 +3,17 @@ package composites.gof.tasks;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
+/**
+ * <h1>Composite</h1> Các đối tượng cấu thành các cấu trúc cây để mô tả bán toàn
+ * bộ hệ thống phần cấp. Composite để cho các client tác động các đối tượng
+ * riêng biệt và các thành phần của đối tượng một cách thống nhất.
+ * 
+ * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
+ * @version 1.0.0
+ * @see <a
+ *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ *
+ */
 class Leaf extends Component {
 	private String name;
 	private int value;
@@ -87,16 +97,17 @@ class ComponentAddException extends Exception {
 }
 
 /**
- * Design Patterns
+ * <h1>Composite</h1> Các đối tượng cấu thành các cấu trúc cây để mô tả bán toàn
+ * bộ hệ thống phần cấp. Composite để cho các client tác động các đối tượng
+ * riêng biệt và các thành phần của đối tượng một cách thống nhất.
  * 
- * @see http://www.itsenka.com/contents/development/designpattern/composite.html
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
  * @see <a
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class GOF {
+public  class GOF {
 	public static void main(String[] args) {
 		Composite comp1 = new Composite("A");
 		Composite comp11 = new Composite("AB");
