@@ -1,4 +1,6 @@
-package abstractfactories.af_and_singletons;
+
+package abstractfactories.lectures.products.degreedocumentproduct;
+
 /**
  * <h1>Abstract Factory</h1> Cung cấp một interface để tạo ra 1 họ các object
  * (đối tượng) có liên quan hoặc phụ thuộc lẫn nhau mà không chỉ rõ các lớp cụ
@@ -13,10 +15,12 @@ package abstractfactories.af_and_singletons;
  *      /vuquangtin/designpattern</a>
  *
  */
-public class MiniStatement implements StatementType {
-	@Override
-	public String print() {
-		System.out.println("Mini Statement Created");
-		return "miniStmt";
-	}
+public class ProjectReport implements DegreeDocument{
+
+    @Override
+    public String getDegreeDocName() {
+        
+        return "Project Report";
+    }
+    
 }

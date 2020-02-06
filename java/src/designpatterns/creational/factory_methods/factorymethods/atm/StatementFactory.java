@@ -1,9 +1,8 @@
-package abstractfactories.af_and_singletons;
+package factorymethods.atm;
 
 /**
- * <h1>Abstract Factory</h1> Cung cấp một interface để tạo ra 1 họ các object
- * (đối tượng) có liên quan hoặc phụ thuộc lẫn nhau mà không chỉ rõ các lớp cụ
- * thể của chúng (concrete classes)
+ * <h1>Factory Method</h1>Cung cấp 1 giao diện để tạo ra đối tượng nhưng để lớp
+ * con quyết định kiểu đối tượng nào sẽ dc tạo.
  * 
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333

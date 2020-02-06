@@ -1,4 +1,5 @@
-package abstractfactories.af_and_singletons;
+
+package abstractfactories.lectures.products.paperproduct;
 
 /**
  * <h1>Abstract Factory</h1> Cung cấp một interface để tạo ra 1 họ các object
@@ -14,6 +15,12 @@ package abstractfactories.af_and_singletons;
  *      /vuquangtin/designpattern</a>
  *
  */
-public abstract class Factory {
-	protected abstract StatementType createStatements(String selection);
+public class TechnicalReport implements Paper{
+
+    @Override
+    public String getPaperName() {
+        
+        return "Technical Report";
+    }
+    
 }

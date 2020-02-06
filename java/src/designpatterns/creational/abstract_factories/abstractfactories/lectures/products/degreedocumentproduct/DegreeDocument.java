@@ -1,4 +1,4 @@
-package abstractfactories.af_and_singletons;
+package abstractfactories.lectures.products.degreedocumentproduct;
 
 /**
  * <h1>Abstract Factory</h1> Cung cấp một interface để tạo ra 1 họ các object
@@ -14,6 +14,7 @@ package abstractfactories.af_and_singletons;
  *      /vuquangtin/designpattern</a>
  *
  */
-public interface StatementType {
-	String print();
+public interface DegreeDocument {
+
+    public String getDegreeDocName();
 }
