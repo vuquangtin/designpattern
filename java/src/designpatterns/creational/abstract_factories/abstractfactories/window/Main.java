@@ -19,16 +19,16 @@ public class Main {
 		GUIBuilder builder = new GUIBuilder();
 		AbstractWidgetFactory widgetFactory = null;
 		// check what platform we're on
-		EnumOS os=getOs();
+		EnumOS os = getOs();
 		if (os == EnumOS.macos) {
 			widgetFactory = new MacOSXWidgetFactory();
 		} else if (os == EnumOS.windows) {
 			widgetFactory = new MsWindowsWidgetFactory();
-		}else if(os==EnumOS.linux){
+		} else if (os == EnumOS.linux) {
 			widgetFactory = new LinuxWidgetFactory();
 		}
 		builder.buildWindow(widgetFactory);
-		
+
 	}
 
 	public static enum EnumOS {

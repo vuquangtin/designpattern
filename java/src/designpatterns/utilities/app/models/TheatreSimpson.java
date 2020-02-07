@@ -2,7 +2,6 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractclass.Building;
 import app.abstractclass.Resource;
 import app.abstractclass.Theatre;
 import app.gui.BufferedImageLoader;

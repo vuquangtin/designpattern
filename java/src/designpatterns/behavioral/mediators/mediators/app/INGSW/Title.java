@@ -4,8 +4,6 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JTextField;
 
-import javax.swing.JTextField;
-
 /**
  * <h1>Mediator</h1> Định nghĩa 1 đối tượng đóng gói cách 1 tập hợp các đối
  * tượng tương tác. Mediator thúc đẩy sự khớp nối lỏng lẻo bằng cách ngăn không

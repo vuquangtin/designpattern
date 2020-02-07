@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="java/src/designpatterns/utilities"/>
-	<classpathentry kind="src" path="java/src/designpatterns/behavioral/nullobject"/>
-	<classpathentry kind="src" path="java/src/designpatterns/creational/abstract_factories"/>
 	<classpathentry kind="src" path="java/src/designpatterns/apps/IT49-2015-DP"/>
 	<classpathentry kind="src" path="java/src/designpatterns/apps/sudoku-java-swing"/>
 	<classpathentry kind="src" path="java/src/designpatterns/apps/folder"/>
 	<classpathentry kind="src" path="java/src/designpatterns/apps/paint"/>
+	<classpathentry kind="src" path="java/src/designpatterns/creational/abstract_factories"/>
 	<classpathentry kind="src" path="java/src/designpatterns/creational/builders"/>
 	<classpathentry kind="src" path="java/src/designpatterns/creational/singletons"/>
 	<classpathentry kind="src" path="java/src/designpatterns/creational/prototypes"/>
 	<classpathentry kind="src" path="java/src/designpatterns/creational/factory_methods"/>
 	<classpathentry kind="src" path="java/src/designpatterns/creational/object_pool"/>
+	<classpathentry kind="src" path="java/src/designpatterns/behavioral/nullobject"/>
 	<classpathentry kind="src" path="java/src/designpatterns/behavioral/strategies"/>
 	<classpathentry kind="src" path="java/src/designpatterns/behavioral/template_method"/>
 	<classpathentry kind="src" path="java/src/designpatterns/behavioral/states"/>

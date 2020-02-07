@@ -6,9 +6,9 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
-import factorymethods.app.factory.VillageFOE;
 import app.abstractclass.Church;
 import app.gui.BufferedImageLoader;
+import factorymethods.app.factory.VillageFOE;
 import factorymethods.app.factory.VillageFactory;
 /**
  * <h1>Factory Method</h1>Cung cấp 1 giao diện để tạo ra đối tượng nhưng để lớp

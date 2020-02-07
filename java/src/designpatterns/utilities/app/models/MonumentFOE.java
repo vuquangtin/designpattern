@@ -2,8 +2,6 @@ package app.models;
 
 import java.awt.image.BufferedImage;
 
-import app.abstractclass.Building;
-import app.abstractclass.House;
 import app.abstractclass.Monument;
 import app.abstractclass.Resource;
 import app.gui.BufferedImageLoader;
