@@ -1,6 +1,9 @@
 package commands.tests;
+
 /**
- * Design Patterns
+ * <h1>Command</h1> Đóng gói một yêu cầu request như một đối tượng, bằng cách đó
+ * cho phép bạn tham số hóa các client với các request khác nhau, các queue và
+ * log request, và hỗ trợ các hoạt động (operation) có thể “undo”.
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
@@ -10,23 +13,22 @@ package commands.tests;
  */
 public class Stock {
 
-    
+	private String name = "ABC";
 
-	   private String name = "ABC";
+	private int quantity = 10;
 
-	   private int quantity = 10;
+	public void buy() {
 
-
-	   public void buy(){
-
-	      System.out.println("Stock [ Name: "+name+", Quantity: " + quantity +" ] bought");
-
-	   }
-
-	   public void sell(){
-
-	      System.out.println("Stock [ Name: "+name+", Quantity: " + quantity +" ] sold");
-
-	   }
+		System.out.println("Stock [ Name: " + name + ", Quantity: " + quantity
+				+ " ] bought");
 
 	}
+
+	public void sell() {
+
+		System.out.println("Stock [ Name: " + name + ", Quantity: " + quantity
+				+ " ] sold");
+
+	}
+
+}
