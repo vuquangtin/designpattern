@@ -1,5 +1,4 @@
-package decoratorpattern;
-
+package decorators.books;
 /**
  * <h1>Decorator</h1> Gán bổ sung các “trách nhiệm” (responsibility) cho một đối
  * tượng một cách linh hoạt. Các decorator cung cấp một sự lựa chọn linh động
@@ -11,16 +10,17 @@ package decoratorpattern;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class CD extends ComponentDecorator {
-
-	Computer computer;
-
-	public CD(Computer c) {
-		this.computer = c;
-	}
-
-	@Override
-	public String description() {
-		return computer.description() + "and a cd";
-	}
+//Next, lets define the abstract class BookDecorator which will act as the Decorator:
+public abstract class BookDecorator implements Book {
+	 
+    protected Book book;
+ 
+    BookDecorator(Book book) {
+        this.book = book;
+    }
+ 
+    @Override
+    public String describe() {
+        return book.describe();
+    }
 }

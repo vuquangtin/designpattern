@@ -1,5 +1,4 @@
-package decoratorpattern;
-
+package decorators.wiki;
 /**
  * <h1>Decorator</h1> Gán bổ sung các “trách nhiệm” (responsibility) cho một đối
  * tượng một cách linh hoạt. Các decorator cung cấp một sự lựa chọn linh động
@@ -11,16 +10,8 @@ package decoratorpattern;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class CD extends ComponentDecorator {
+public interface Window {
+	void draw(); // Draws the Window
 
-	Computer computer;
-
-	public CD(Computer c) {
-		this.computer = c;
-	}
-
-	@Override
-	public String description() {
-		return computer.description() + "and a cd";
-	}
+	String getDescription(); // Returns a description of the Window
 }

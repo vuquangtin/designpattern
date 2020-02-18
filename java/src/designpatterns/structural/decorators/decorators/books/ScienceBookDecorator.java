@@ -1,4 +1,4 @@
-package decoratorpattern;
+package decorators.books;
 
 /**
  * <h1>Decorator</h1> Gán bổ sung các “trách nhiệm” (responsibility) cho một đối
@@ -11,16 +11,16 @@ package decoratorpattern;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class CD extends ComponentDecorator {
-
-	Computer computer;
-
-	public CD(Computer c) {
-		this.computer = c;
+public class ScienceBookDecorator extends BookDecorator {
+	// You can see that FictionBookDecorator adds the category of book in the
+	// original operation, i.e. describe. Similarly, if we want to specify
+	// Science category we can have the corresponding ScienceBookDecorator:
+	ScienceBookDecorator(Book book) {
+		super(book);
 	}
 
 	@Override
-	public String description() {
-		return computer.description() + "and a cd";
+	public String describe() {
+		return ("Science " + super.describe());
 	}
 }

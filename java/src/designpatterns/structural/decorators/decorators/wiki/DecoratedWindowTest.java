@@ -1,5 +1,4 @@
-package decoratorpattern;
-
+package decorators.wiki;
 /**
  * <h1>Decorator</h1> Gán bổ sung các “trách nhiệm” (responsibility) cho một đối
  * tượng một cách linh hoạt. Các decorator cung cấp một sự lựa chọn linh động
@@ -11,16 +10,13 @@ package decoratorpattern;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class CD extends ComponentDecorator {
+public class DecoratedWindowTest {
+    public static void main(String[] args) {
+        // Create a decorated Window with horizontal and vertical scrollbars
+        Window decoratedWindow = new HorizontalScrollBarDecorator (
+                new VerticalScrollBarDecorator (new SimpleWindow()));
 
-	Computer computer;
-
-	public CD(Computer c) {
-		this.computer = c;
-	}
-
-	@Override
-	public String description() {
-		return computer.description() + "and a cd";
-	}
+        // Print the Window's description
+        System.out.println(decoratedWindow.getDescription());
+    }
 }

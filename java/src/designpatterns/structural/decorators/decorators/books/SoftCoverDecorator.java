@@ -1,4 +1,4 @@
-package decoratorpattern;
+package decorators.books;
 
 /**
  * <h1>Decorator</h1> Gán bổ sung các “trách nhiệm” (responsibility) cho một đối
@@ -11,16 +11,17 @@ package decoratorpattern;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class CD extends ComponentDecorator {
-
-	Computer computer;
-
-	public CD(Computer c) {
-		this.computer = c;
+public class SoftCoverDecorator extends BookDecorator {
+	// ScienceBookDecorator also adds the category of book in the original
+	// operation. There can also be another set of Decorators which indicate
+	// what type of cover the book has. We can have SoftCoverDecorator
+	// describing that the book has a soft cover.
+	SoftCoverDecorator(Book book) {
+		super(book);
 	}
 
 	@Override
-	public String description() {
-		return computer.description() + "and a cd";
+	public String describe() {
+		return (super.describe() + " with Soft Cover");
 	}
 }

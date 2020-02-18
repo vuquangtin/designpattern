@@ -1,4 +1,4 @@
-package decoratorpattern;
+package decorators.wiki;
 
 /**
  * <h1>Decorator</h1> Gán bổ sung các “trách nhiệm” (responsibility) cho một đối
@@ -11,16 +11,15 @@ package decoratorpattern;
  *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
  *
  */
-public class CD extends ComponentDecorator {
-
-	Computer computer;
-
-	public CD(Computer c) {
-		this.computer = c;
+// Implementation of a simple Window without any scrollbars
+public class SimpleWindow implements Window {
+	@Override
+	public void draw() {
+		// Draw window
 	}
 
 	@Override
-	public String description() {
-		return computer.description() + "and a cd";
+	public String getDescription() {
+		return "simple window";
 	}
 }
