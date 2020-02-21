@@ -6,28 +6,28 @@ public class InputTest {
 	public static void main(String[] args) throws IOException {
 		int c;
 		InputStream in = null;
+		String PATH = new File(".").getCanonicalPath() + "/java/resources/com/resources/content/"
+				+ "test.txt";
+		;
 		try {
-			in = 
-				new LowerCaseInputStream(
-					new BufferedInputStream(
-						new FileInputStream("test.txt")));
+			in = new LowerCaseInputStream(new BufferedInputStream(
+					new FileInputStream(PATH)));
 
-			while((c = in.read()) >= 0) {
-				System.out.print((char)c);
+			while ((c = in.read()) >= 0) {
+				System.out.print((char) c);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
-			if (in != null) { in.close(); }
+			if (in != null) {
+				in.close();
+			}
 		}
 		System.out.println();
-		try (InputStream in2 = 
-				new LowerCaseInputStream(
-					new BufferedInputStream(
-						new FileInputStream("test.txt")))) 
-		{
-			while((c = in2.read()) >= 0) {
-				System.out.print((char)c);
+		try (InputStream in2 = new LowerCaseInputStream(
+				new BufferedInputStream(new FileInputStream(PATH)))) {
+			while ((c = in2.read()) >= 0) {
+				System.out.print((char) c);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

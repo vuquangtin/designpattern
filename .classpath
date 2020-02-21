@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="java/src/designpatterns/utilities"/>
+	<classpathentry kind="src" path="java/src/designpatterns/generics"/>
 	<classpathentry kind="src" path="java/src/designpatterns/books/HeadFirstDP"/>
 	<classpathentry kind="src" path="java/src/designpatterns/apps/FruitNinjarApp"/>
 	<classpathentry kind="src" path="java/src/designpatterns/apps/IT49-2015-DP"/>

@@ -8,7 +8,9 @@ import app.models.SchoolFOE;
 import app.models.TheatreFOE;
 /**
  * <h1>Factory Method</h1>Cung cấp 1 giao diện để tạo ra đối tượng nhưng để lớp
- * con quyết định kiểu đối tượng nào sẽ dc tạo.
+ * con quyết định kiểu đối tượng nào sẽ dc tạo.Factory Pattern giao việc khởi
+ * tạo một đối tượng cụ thể cho lớp con.
+ * 
  * 
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
