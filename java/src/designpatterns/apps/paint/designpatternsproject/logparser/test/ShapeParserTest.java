@@ -2,7 +2,6 @@ package designpatternsproject.logparser.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import hexagon.Hexagon;
 
 import java.awt.Color;
 import java.util.HashMap;
@@ -17,6 +16,7 @@ import designpatternsproject.shapes.line.Line;
 import designpatternsproject.shapes.point.Point;
 import designpatternsproject.shapes.rectangle.Rectangle;
 import designpatternsproject.shapes.square.Square;
+import hexagon.Hexagon;
 
 public class ShapeParserTest {
 

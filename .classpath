@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="java/src/designpatterns/utilities"/>
+	<classpathentry kind="src" path="java/src/designpatterns/gof"/>
 	<classpathentry kind="src" path="java/src/designpatterns/generics"/>
 	<classpathentry kind="src" path="java/src/designpatterns/books/HeadFirstDP"/>
 	<classpathentry kind="src" path="java/src/designpatterns/apps/FruitNinjarApp"/>
@@ -37,7 +38,7 @@
 	<classpathentry kind="src" path="java/src/games"/>
 	<classpathentry kind="src" path="java/src/oop"/>
 	<classpathentry kind="src" path="java/src/principles"/>
-	<classpathentry kind="src" path="java/resources"/>
+	<classpathentry excluding="app.interpreter/" kind="src" path="java/resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

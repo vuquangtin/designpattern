@@ -1,6 +1,6 @@
 package headfirst.designpatterns.flyweight;
 
-import java.time.*;
+import java.time.LocalDate;
 
 public class DeciduousTree implements Tree {
 	// complex trunk, branch, leaf graphic data

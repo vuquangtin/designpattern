@@ -1,6 +1,6 @@
 package headfirst.designpatterns.observer.simple;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class SimpleSubject implements Subject {
 	private ArrayList<Observer> observers;

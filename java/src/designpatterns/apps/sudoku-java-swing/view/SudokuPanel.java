@@ -1,8 +1,8 @@
 package view;
 
+import controller.SudokuPanelController;
 import model.Game;
 import viewFactory.Panel;
-import controller.SudokuPanelController;
 
 /**
  * This class draws the sudoku panel and reacts to updates from the model.

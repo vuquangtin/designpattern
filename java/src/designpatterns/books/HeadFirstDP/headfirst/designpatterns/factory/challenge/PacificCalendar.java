@@ -1,6 +1,6 @@
 package headfirst.designpatterns.factory.challenge;
 
-import java.util.*;
+import java.util.List;
 
 public class PacificCalendar extends Calendar {
 	public PacificCalendar(ZoneFactory zoneFactory) {

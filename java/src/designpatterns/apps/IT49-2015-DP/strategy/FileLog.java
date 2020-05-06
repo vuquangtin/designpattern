@@ -11,9 +11,7 @@ import java.util.ArrayList;
 
 import javax.swing.DefaultListModel;
 
-import model.DrawingModel;
 import adapter.HexagonAdapter;
-
 import commands.CmdAddShape;
 import commands.CmdBringToBack;
 import commands.CmdBringToFront;
@@ -21,7 +19,6 @@ import commands.CmdDeleteAll;
 import commands.CmdDeleteShape;
 import commands.CmdToBack;
 import commands.CmdToFront;
-
 import controller.DrawingController;
 import frame.DrawingFrame;
 import geometry.Circle;
@@ -32,6 +29,7 @@ import geometry.Rectangle;
 import geometry.Shape;
 import geometry.Square;
 import hexagon.Hexagon;
+import model.DrawingModel;
 
 public class FileLog implements Strategy {
 

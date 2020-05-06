@@ -1,11 +1,10 @@
 package designpatternsproject.shapes.hexagon;
 
-import hexagon.Hexagon;
-
 import java.awt.Color;
 
 import designpatternsproject.shapes.Command;
 import designpatternsproject.util.Logger;
+import hexagon.Hexagon;
 
 public class UpdateHexagonAdapter implements Command {
 

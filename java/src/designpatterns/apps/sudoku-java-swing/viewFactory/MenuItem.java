@@ -4,7 +4,6 @@
 package viewFactory;
 
 import commands.Command;
-
 import controller.MenuController;
 
 /**

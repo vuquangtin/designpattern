@@ -9,12 +9,12 @@ import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 
-import JavaSwingwithMvpStrategyFacadeSingleton.main.Main;
-
 import com.itextpdf.text.Document;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
+
+import JavaSwingwithMvpStrategyFacadeSingleton.main.Main;
 
 /**
  *

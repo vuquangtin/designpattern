@@ -1,6 +1,6 @@
 package headfirst.designpatterns.builder.pizza;
 
-import java.util.*;
+import java.util.List;
 
 public class Pizza {
 	String name;

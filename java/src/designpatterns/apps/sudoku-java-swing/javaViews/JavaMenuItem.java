@@ -5,11 +5,9 @@ package javaViews;
 
 import javax.swing.JMenuItem;
 
-import viewFactory.MenuItem;
-
 import commands.Command;
-
 import controller.MenuController;
+import viewFactory.MenuItem;
 
 /**
  * @author reljicd

@@ -11,10 +11,10 @@ import java.awt.Point;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-import viewFactory.Label;
-import viewFactory.Panel;
 import controller.NumbersController;
 import controller.SudokuPanelController;
+import viewFactory.Label;
+import viewFactory.Panel;
 
 /**
  * @author reljicd

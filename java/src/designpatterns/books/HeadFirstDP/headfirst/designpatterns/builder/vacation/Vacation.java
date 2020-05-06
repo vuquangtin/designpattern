@@ -1,6 +1,7 @@
 package headfirst.designpatterns.builder.vacation;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Vacation {
 	String name;

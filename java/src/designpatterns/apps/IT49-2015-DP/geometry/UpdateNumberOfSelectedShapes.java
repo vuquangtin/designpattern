@@ -1,8 +1,8 @@
 package geometry;
 
-import model.DrawingModel;
 import controller.DrawingController;
 import frame.DrawingFrame;
+import model.DrawingModel;
 
 public class UpdateNumberOfSelectedShapes implements Observer {
 	DrawingController controller;

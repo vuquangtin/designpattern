@@ -1,7 +1,8 @@
 package headfirst.designpatterns.templatemethod.frame;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
 
 public class MyFrame extends JFrame {
 	private static final long serialVersionUID = 2L;

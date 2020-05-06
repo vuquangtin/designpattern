@@ -1,13 +1,12 @@
 package designpatternsproject.shapes.hexagon;
 
-import hexagon.Hexagon;
-
 import java.awt.Color;
 import java.awt.Graphics;
 
 import designpatternsproject.shapes.Moveable;
 import designpatternsproject.shapes.Shape;
 import designpatternsproject.shapes.SurfaceShape;
+import hexagon.Hexagon;
 
 public class HexagonAdapter extends SurfaceShape implements Moveable {
 

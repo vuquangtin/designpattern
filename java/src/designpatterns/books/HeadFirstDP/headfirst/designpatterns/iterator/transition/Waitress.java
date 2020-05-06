@@ -1,5 +1,6 @@
 package headfirst.designpatterns.iterator.transition;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
   
      
 public class Waitress {

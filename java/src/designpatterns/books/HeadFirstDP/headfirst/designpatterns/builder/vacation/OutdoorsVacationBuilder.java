@@ -1,7 +1,5 @@
 package headfirst.designpatterns.builder.vacation;
 
-import java.time.LocalDate;
-
 public class OutdoorsVacationBuilder extends VacationBuilder {	
 	public OutdoorsVacationBuilder() {
 		this.name = "Outdoorsy Vacation Builder";

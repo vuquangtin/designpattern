@@ -1,6 +1,7 @@
 package headfirst.designpatterns.flyweight;
 
-import java.time.*;
+import java.time.LocalDate;
+import java.time.Month;
 
 public interface Tree {
 	public void display(int x, int y);

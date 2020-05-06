@@ -1,7 +1,7 @@
 package commands;
 
-import geometry.Command;
 import adapter.HexagonAdapter;
+import geometry.Command;
 
 public class CmdUpdateHexagon implements Command {
 

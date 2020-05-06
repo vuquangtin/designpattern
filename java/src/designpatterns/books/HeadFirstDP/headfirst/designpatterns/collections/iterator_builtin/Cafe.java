@@ -1,6 +1,6 @@
 package headfirst.designpatterns.collections.iterator_builtin;
 
-import java.util.*;
+import java.util.Iterator;
 
 public class Cafe {
 

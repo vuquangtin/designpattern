@@ -1,7 +1,7 @@
 package headfirst.designpatterns.proxy.javaproxy;
 
-import java.lang.reflect.*;
-import java.util.*;
+import java.lang.reflect.Proxy;
+import java.util.HashMap;
 
 public class MatchMakingTestDrive {
 	HashMap<String, PersonBean> datingDB = new HashMap<String, PersonBean>();

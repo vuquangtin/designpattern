@@ -1,7 +1,7 @@
 package headfirst.designpatterns.iterator.dinermergeri;
 
-import java.util.Iterator;
 import java.util.ArrayList;
+import java.util.Iterator;
  
 public class Waitress {
 	Menu pancakeHouseMenu;

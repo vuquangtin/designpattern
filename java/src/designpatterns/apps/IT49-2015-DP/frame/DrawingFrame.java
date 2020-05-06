@@ -23,10 +23,10 @@ import javax.swing.JToggleButton;
 import javax.swing.border.EmptyBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import controller.DrawingController;
 import net.miginfocom.swing.MigLayout;
 //import net.miginfocom.swing.MigLayout;
 import view.DrawingView;
-import controller.DrawingController;
 
 public class DrawingFrame extends JFrame {
 

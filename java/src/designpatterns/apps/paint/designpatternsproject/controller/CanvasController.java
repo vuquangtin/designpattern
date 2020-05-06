@@ -1,7 +1,5 @@
 package designpatternsproject.controller;
 
-import hexagon.Hexagon;
-
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.io.Serializable;
@@ -25,6 +23,7 @@ import designpatternsproject.shapes.rectangle.AddRectangle;
 import designpatternsproject.shapes.rectangle.Rectangle;
 import designpatternsproject.shapes.square.AddSquare;
 import designpatternsproject.shapes.square.Square;
+import hexagon.Hexagon;
 
 public class CanvasController implements Serializable {
 	private ButtonModel selectedShapeTypeModel;

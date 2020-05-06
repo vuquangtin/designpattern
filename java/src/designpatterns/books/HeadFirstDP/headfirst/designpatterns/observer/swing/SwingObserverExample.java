@@ -1,7 +1,9 @@
 package headfirst.designpatterns.observer.swing;
 	
-import java.awt.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
 	
 public class SwingObserverExample {
 	JFrame frame;

@@ -1,10 +1,9 @@
 package commands;
 
-import geometry.Command;
-import geometry.Shape;
-
 import java.util.ArrayList;
 
+import geometry.Command;
+import geometry.Shape;
 import model.DrawingModel;
 
 public class CmdDeleteAll implements Command {

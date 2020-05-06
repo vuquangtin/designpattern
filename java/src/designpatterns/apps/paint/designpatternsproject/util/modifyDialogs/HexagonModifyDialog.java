@@ -1,7 +1,5 @@
 package designpatternsproject.util.modifyDialogs;
 
-import hexagon.Hexagon;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -26,6 +24,7 @@ import javax.swing.text.PlainDocument;
 import designpatternsproject.shapes.hexagon.HexagonAdapter;
 import designpatternsproject.util.DialogsHelper;
 import designpatternsproject.util.PositiveIntFilter;
+import hexagon.Hexagon;
 
 public class HexagonModifyDialog extends JDialog {
 	/**

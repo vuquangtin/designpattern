@@ -1,7 +1,9 @@
 package headfirst.designpatterns.proxy.virtualproxy;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Graphics;
+
+import javax.swing.Icon;
+import javax.swing.JComponent;
 
 class ImageComponent extends JComponent {
 	private static final long serialVersionUID = 1L;

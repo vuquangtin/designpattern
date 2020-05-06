@@ -1,13 +1,5 @@
 package com.app.game.fruitninjar.model;
 
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.List;
 /**
  * <h1>Desktop-Fruit-Ninja-App</h1>This is Desktop Fruit Ninjar App using Java programming language. 
  *Used MVC architecture pattern, singleton, strategy and factory design pattern.

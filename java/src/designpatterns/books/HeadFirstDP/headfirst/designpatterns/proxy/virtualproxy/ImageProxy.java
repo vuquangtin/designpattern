@@ -1,8 +1,11 @@
 package headfirst.designpatterns.proxy.virtualproxy;
 
-import java.net.*;
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Component;
+import java.awt.Graphics;
+import java.net.URL;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 class ImageProxy implements Icon {
 	volatile ImageIcon imageIcon;

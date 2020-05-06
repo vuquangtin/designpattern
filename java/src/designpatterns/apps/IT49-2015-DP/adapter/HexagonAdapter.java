@@ -1,11 +1,11 @@
 package adapter;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 import geometry.Point;
 import geometry.SurfaceShape;
 import hexagon.Hexagon;
-
-import java.awt.Color;
-import java.awt.Graphics;
 
 public class HexagonAdapter extends SurfaceShape {
 

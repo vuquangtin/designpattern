@@ -1,7 +1,11 @@
 package headfirst.designpatterns.command.swing;
 	
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 	
 public class SwingCommandExample {
 	JFrame frame;

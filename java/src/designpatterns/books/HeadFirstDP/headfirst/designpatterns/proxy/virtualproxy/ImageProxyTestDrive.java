@@ -1,8 +1,15 @@
 package headfirst.designpatterns.proxy.virtualproxy;
 
-import java.net.*;
-import javax.swing.*;
-import java.util.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Enumeration;
+import java.util.Hashtable;
+
+import javax.swing.Icon;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class ImageProxyTestDrive {
 	ImageComponent imageComponent;

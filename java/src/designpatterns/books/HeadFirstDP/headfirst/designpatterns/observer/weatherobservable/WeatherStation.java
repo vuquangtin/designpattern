@@ -1,7 +1,5 @@
 package headfirst.designpatterns.observer.weatherobservable;
 
-import java.util.Observable;
-
 public class WeatherStation {
 
 	public static void main(String[] args) {

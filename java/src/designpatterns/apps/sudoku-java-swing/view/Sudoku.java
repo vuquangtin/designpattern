@@ -1,5 +1,12 @@
 package view;
 
+import commands.CommandExit;
+import commands.CommandNewGame;
+import commands.CommandSaveGame;
+import commands.CommandUndoGame;
+import controller.MenuController;
+import controller.NumbersController;
+import controller.SudokuPanelController;
 import javaViews.JavaViewsFactory;
 import model.Game;
 import viewFactory.Frame;
@@ -7,15 +14,6 @@ import viewFactory.Menu;
 import viewFactory.MenuBar;
 import viewFactory.MenuItem;
 import viewFactory.ViewsFactory;
-
-import commands.CommandExit;
-import commands.CommandNewGame;
-import commands.CommandSaveGame;
-import commands.CommandUndoGame;
-
-import controller.MenuController;
-import controller.NumbersController;
-import controller.SudokuPanelController;
 
 public class Sudoku {
 

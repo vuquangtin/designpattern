@@ -1,7 +1,5 @@
 package designpatternsproject.logparser;
 
-import hexagon.Hexagon;
-
 import java.io.Serializable;
 import java.util.HashMap;
 
@@ -16,6 +14,7 @@ import designpatternsproject.shapes.line.Line;
 import designpatternsproject.shapes.point.Point;
 import designpatternsproject.shapes.rectangle.Rectangle;
 import designpatternsproject.shapes.square.Square;
+import hexagon.Hexagon;
 
 public class ShapeParser implements Serializable {
 	/**

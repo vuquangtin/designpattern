@@ -1,6 +1,6 @@
 package headfirst.designpatterns.proxy.gumballmonitor;
 
-import java.io.*;
+import java.io.Serializable;
 
 public interface State extends Serializable {
  

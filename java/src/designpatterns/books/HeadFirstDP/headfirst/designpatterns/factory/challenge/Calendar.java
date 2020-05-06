@@ -1,6 +1,6 @@
 package headfirst.designpatterns.factory.challenge;
 
-import java.util.*;
+import java.util.List;
 
 public abstract class Calendar {
 	Zone zone;

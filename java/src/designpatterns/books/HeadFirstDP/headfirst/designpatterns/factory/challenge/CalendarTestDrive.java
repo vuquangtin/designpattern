@@ -1,6 +1,7 @@
 package headfirst.designpatterns.factory.challenge;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class CalendarTestDrive {
  
