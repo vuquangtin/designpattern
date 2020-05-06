@@ -1,0 +1,3 @@
+https://github.com/zhaozhiming/design_pattern
+https://github.com/txazo/java
+https://github.com/dodosss/design_patterns

@@ -1,8 +1,6 @@
 package designpatterns.gof.creational.prototype.demo;
 
-import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.List;
 
 /**
  * <h1>Prototype</h1> Xác định các kiểu của các object (đối tượng) muốn tạo ra
