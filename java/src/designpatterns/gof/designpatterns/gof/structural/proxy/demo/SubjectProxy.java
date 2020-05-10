@@ -1,4 +1,4 @@
-package designpatterns.gof.structural.proxy.pattern;
+package designpatterns.gof.structural.proxy.demo;
 
 /**
  * <h1>Proxy</h1> Cung cấp một đối tượng thay thế hoặc giữ chỗ placeholder cho

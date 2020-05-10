@@ -1,5 +1,7 @@
 package mediators.chat_room;
 
+import java.util.Date;
+
 /**
  * <h1>Mediator</h1> Định nghĩa 1 đối tượng đóng gói cách 1 tập hợp các đối
  * tượng tương tác. Mediator thúc đẩy sự khớp nối lỏng lẻo bằng cách ngăn không
@@ -12,12 +14,23 @@ package mediators.chat_room;
  *      /vuquangtin/designpattern</a>
  *
  */
-public class MediatorPatternDemo {
-	public static void main(String[] args) {
-		User robert = new User("Robert");
-		User john = new User("John");
+public class UserImpl extends User {
+	/**
+	 * ConcreteColleague
+	 */
+	public UserImpl(ChatMediator mediator, String name) {
+		super(mediator, name);
+	}
 
-		robert.sendMessage("Hi! John!");
-		john.sendMessage("Hello! Robert!");
+	@Override
+	public void send(String msg) {
+		System.out.println("---");
+		System.out.println(this.name + " is sending the message: " + msg);
+		mediator.sendMessage(msg, this);
+	}
+
+	@Override
+	public void receive(String msg) {
+		System.out.println(this.name + " received the message: " + msg);
 	}
 }

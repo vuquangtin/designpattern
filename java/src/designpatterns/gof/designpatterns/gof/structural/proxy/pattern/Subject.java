@@ -6,10 +6,12 @@ package designpatterns.gof.structural.proxy.pattern;
  * 
  * @author EMAIL:vuquangtin@gmail.com , tel:0377443333
  * @version 1.0.0
- * @see <a
- *      href="https://github.com/vuquangtin/designpattern">https://github.com/vuquangtin/designpattern</a>
+ * @see <a href="https://github.com/vuquangtin/designpattern">https://github.com
+ *      /vuquangtin/designpattern</a>
  *
  */
-public abstract class Subject {
-    public abstract void dosomething();
+public interface Subject {
+	void request();
+
+	void operation();
 }

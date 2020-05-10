@@ -1,4 +1,4 @@
-package designpatterns.gof.structural.proxy.pattern;
+package designpatterns.gof.structural.proxy.demo;
 
 /**
  * <h1>Proxy</h1> Cung cấp một đối tượng thay thế hoặc giữ chỗ placeholder cho
@@ -10,10 +10,9 @@ package designpatterns.gof.structural.proxy.pattern;
  *      /vuquangtin/designpattern</a>
  *
  */
-public class Client {
-
-	public static void main(String[] args) {
-		Subject subject = new Proxy(new RealSubject());
-		subject.request();
+public class RealSubject extends Subject {
+	@Override
+	public void doAction() {
+		System.out.println("RealSubject - doAction()");
 	}
 }

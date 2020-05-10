@@ -1,4 +1,4 @@
-package designpatterns.gof.structural.proxy.pattern;
+package designpatterns.gof.structural.proxy.demo;
 
 /**
  * <h1>Proxy</h1> Cung cấp một đối tượng thay thế hoặc giữ chỗ placeholder cho
@@ -11,9 +11,9 @@ package designpatterns.gof.structural.proxy.pattern;
  *
  */
 public class Client {
-
 	public static void main(String[] args) {
-		Subject subject = new Proxy(new RealSubject());
-		subject.request();
+		ConcreteSubject concreteSubject = new ConcreteSubject();
+		Subject subjectProxy = SubjectProxy.newProxyInstance(concreteSubject);
+		subjectProxy.doAction();
 	}
 }

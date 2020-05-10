@@ -10,10 +10,14 @@ package designpatterns.gof.structural.proxy.pattern;
  *      /vuquangtin/designpattern</a>
  *
  */
-public class Client {
+public class RealSubject implements Subject {
+	@Override
+	public void request() {
+		System.out.println("real subject execute request");
+	}
 
-	public static void main(String[] args) {
-		Subject subject = new Proxy(new RealSubject());
-		subject.request();
+	@Override
+	public void operation() {
+		System.out.println("hello");
 	}
 }
