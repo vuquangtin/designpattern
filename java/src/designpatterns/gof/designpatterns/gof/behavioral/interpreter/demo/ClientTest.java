@@ -3,6 +3,9 @@ package designpatterns.gof.behavioral.interpreter.demo;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -85,5 +88,5 @@ public class ClientTest {
 		assertThat(result, is(8));
 		assertThat(expression7.getExpression(context), is("5+3=8"));
 	}
-
+	
 }
