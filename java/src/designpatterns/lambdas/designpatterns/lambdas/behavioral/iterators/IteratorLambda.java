@@ -1,6 +1,6 @@
-package iterators.tests;
+package designpatterns.lambdas.behavioral.iterators;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -12,26 +12,13 @@ import java.util.List;
  * @version 1.0.0
  * @see <a
  *      href="https://github.com/vuquangtin/designpattern">https://github.com
-
- *      /vuquangtin/designpattern</a>
+/vuquangtin/designpattern</a>
  *
  */
-public class AggregateImp<T> implements Aggregate<T> {
-	private List<T> mTList = new ArrayList<>();
+public class IteratorLambda {
+	static final List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6);
 
-	@Override
-	public void add(T mO) {
-
-		mTList.add(mO);
-	}
-
-	@Override
-	public void delete(T mO) {
-		mTList.remove(mO);
-	}
-
-	@Override
-	public Iterator<T> iterator() {
-		return new IteratorImp<T>(mTList);
+	public static void main(String[] args) {
+		list.forEach(System.out::println);
 	}
 }

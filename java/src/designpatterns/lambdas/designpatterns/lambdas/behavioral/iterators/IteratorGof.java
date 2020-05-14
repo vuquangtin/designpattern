@@ -1,6 +1,7 @@
-package iterators.tests;
+package designpatterns.lambdas.behavioral.iterators;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -16,22 +17,18 @@ import java.util.List;
  *      /vuquangtin/designpattern</a>
  *
  */
-public class AggregateImp<T> implements Aggregate<T> {
-	private List<T> mTList = new ArrayList<>();
+public class IteratorGof {
+	static final List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6);
 
-	@Override
-	public void add(T mO) {
+	public static void main(String[] args) {
+		Iterator<Integer> iterator = list.iterator();
 
-		mTList.add(mO);
-	}
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
 
-	@Override
-	public void delete(T mO) {
-		mTList.remove(mO);
-	}
-
-	@Override
-	public Iterator<T> iterator() {
-		return new IteratorImp<T>(mTList);
+		for (Integer i : list) {
+			System.out.println(i);
+		}
 	}
 }

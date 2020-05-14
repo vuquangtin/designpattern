@@ -33,10 +33,14 @@ Genericity, extensibility and type-safety in theVpattern
 Design Patterns and Component Framework forBuilding
 * http://etheses.whiterose.ac.uk/1469/1/MohammedAlrahmawyFinalPhdThesis_28-4-2011.pdf [http://etheses.whiterose.ac.uk/1469/]
 
-* 
-*  
-*
-* 
+Eliminating OO Patterns by Java Functional Features
+* https://research.sylviastuurman.nl/wp-content/uploads/2019/11/REPLACING_PATTERNS.pdf
+https://research.sylviastuurman.nl/publications/
+Understanding the use of lambda expressions in Java
+*  https://ameyaketkar.github.io/lambda_study.pdf
+
+* http://www.angelikalanger.com/Conferences/Slides/LambdasI-Langer.WJAX.pdf
+* https://accu.org/content/conf2013/Tobias_Darm_Effective_GoF_Patterns.pdf
 * 
 * 
 * 
@@ -80,3 +84,20 @@ Design Patterns and Component Framework forBuilding
 * http://sharif.edu/~ramsin/index_files/pselecture2.pdf
 * https://www.ifi.uzh.ch/dam/jcr:087cc35a-627e-4032-aa50-43c8d9edc741/DesignPatterns.pdf
 * http://research.cs.queensu.ca/home/ahmed/home/teaching/CISC322/F08/files/Slides_Spiros_Patterns.pdf
+* https://ecs.syr.edu/faculty/fawcett/Handouts/CSE776/presentations-fawcett/
+* 
+* 
+* 
+* 
+*  
+*
+* 
+* 
+* 
+* 
+* 
+* 
+*  
+*
+* 
+* 
