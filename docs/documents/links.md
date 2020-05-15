@@ -85,6 +85,14 @@ Understanding the use of lambda expressions in Java
 * https://www.ifi.uzh.ch/dam/jcr:087cc35a-627e-4032-aa50-43c8d9edc741/DesignPatterns.pdf
 * http://research.cs.queensu.ca/home/ahmed/home/teaching/CISC322/F08/files/Slides_Spiros_Patterns.pdf
 * https://ecs.syr.edu/faculty/fawcett/Handouts/CSE776/presentations-fawcett/
+* http://www.cs.cmu.edu/~mhilton/classes/cs361/slides/11-DesignPatterns.pdf
+* 
+* 
+* 
+*  
+*
+* 
+* 
 * 
 * 
 * 
@@ -93,11 +101,11 @@ Understanding the use of lambda expressions in Java
 *
 * 
 * 
-* 
-* 
-* 
-* 
-*  
-*
-* 
-* 
+
+## UML
+* http://4study.net/research/docs/Phan Tich Thiet Ke Huong Doi Tuong UML - PGS.TS Dang Van Duc.pdf
+* http://dulieu.tailieuhoctap.vn/books/cong-nghe-thong-tin/the-loai-khac/file_goc_769388.pdf
+[IT3120: Phân Tích Và Thiết Kế Hệ Thống]
+* https://users.soict.hust.edu.vn/quangnn/isad/isad_ay1920_s2.htm
+* https://users.soict.hust.edu.vn/trungtt/?Resource___Slides___Lập_trình_hướng_đối_tượng
+* https://voer.edu.vn/pdf/01f46fc2/1

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>160</y>
+      <w>192</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/Subscriber/
+-
+/+update(topic: string, news: string)/
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>304</y>
+      <w>192</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>ConcreteSubscriber
+-
++update(topic: string, news: string)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>192</y>
+      <w>24</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>152</x>
+      <y>304</y>
+      <w>192</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ConcretePublisher
+-
+-broker: Broker
+-
++register(broker: Broker)
++publish(topic: string news: string)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>344</y>
+      <w>24</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>272</x>
+      <y>344</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>184</x>
+      <y>408</y>
+      <w>184</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>this.broker = broker
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>152</x>
+      <y>160</y>
+      <w>192</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/Publisher/
+-
+/+register(broker: Broker)/
+/+publish(topic: string, news: string)/
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>160</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>352</x>
+      <y>152</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>broker
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>416</x>
+      <y>160</y>
+      <w>304</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>/Broker/
+-
+/+publish(topic: string, news: string)/
+/+subscribe(subscriber: Subscriber, topic: string)/
+/+unsubscribe(subscriber: Subscriber, topic: string)/
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>416</x>
+      <y>304</y>
+      <w>304</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>ConcreteBroker
+-
+-subscribersByTopic: { [topic: string]: Subsriber[] }
+-
++publish(topic: string, news: string)
++subscribe(subscriber: Subscriber, topic: string)
++unsubscribe(subscriber: Subscriber, topic: string)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>200</x>
+      <y>440</y>
+      <w>184</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>this.broker.publish(topic, news)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>352</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>352</y>
+      <w>24</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>216</y>
+      <w>24</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>712</x>
+      <y>160</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>728</x>
+      <y>152</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>subsriber
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>208</y>
+      <w>24</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>400</x>
+      <y>408</y>
+      <w>296</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>this.subscribersByTopic[topic]
+ .forEach(s =&gt; s.update(topic, news))</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>344</y>
+      <w>24</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>584</x>
+      <y>344</y>
+      <w>120</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>352</y>
+      <w>24</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>664</x>
+      <y>352</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>416</x>
+      <y>448</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>this.subscribersByTopic[topic].push(subscriber)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>432</x>
+      <y>480</y>
+      <w>304</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>this.subscribersByTopic[topic] =
+ this.subscribersByTopic[topic].filter(s =&gt; s !== subscriber)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>368</y>
+      <w>24</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>368</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+</diagram>

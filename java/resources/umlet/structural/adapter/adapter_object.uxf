@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>319</x>
+      <y>363</y>
+      <w>132</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>*Client*
+--
+--
++someMethod()
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>110</x>
+      <y>220</y>
+      <w>121</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*Target*
+--
++request()
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>99</y>
+      <w>176</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>*Adaptee*
+--
+--
++specificRequest()
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>319</x>
+      <y>231</y>
+      <w>132</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>*Adapter*
+--
+--
++request()
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>374</x>
+      <y>143</y>
+      <w>110</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+m1=a:Adaptee</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>242</y>
+      <w>121</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>374</x>
+      <y>275</y>
+      <w>99</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=t:Target
+fg=red</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>495</x>
+      <y>385</y>
+      <w>132</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>t-&gt;request()
+bg=#adadff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>396</y>
+      <w>88</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>484</x>
+      <y>253</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>a-&gt;specificRequest()
+bg=#adadff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>407</x>
+      <y>264</y>
+      <w>99</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>242</x>
+      <y>55</y>
+      <w>341</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>*Adapter / Wrapper (object)*
+style=wordwrap
+fg=light_gray
+fontsize=18
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

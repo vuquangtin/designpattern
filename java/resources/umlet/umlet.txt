@@ -1,0 +1,13 @@
+
+TOOLS:https://www.umlet.com/
+
+https://github.com/edgardma/Manuales
+https://github.com/peraleks/patterns
+https://github.com/diojin/doodles
+HAY
+https://github.com/wukn/wukn.github.io
+https://github.com/dubbha/patterns
+https://github.com/heathjay/StudyJava
+https://github.com/ben-denham/lecture_notes
+
+https://github.com/search?p=2&q=singleton.uxf++in%3Apath&type=Code

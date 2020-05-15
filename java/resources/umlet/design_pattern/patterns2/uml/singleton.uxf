@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>14</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>420</y>
+      <w>308</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>AlphaCentauriA
+-
+_-instance: AlphaCentauriA_
++name: string,
++mass: string,
++radius: string,
++distance: string,
+-
+-constructor()
+_+getInstance(): AlphaCentauriA_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>224</y>
+      <w>308</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Singleton
+-
+_-instance: Singleton_
+-
+-constructor()
+_+getInstance(): Singleton_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>672</x>
+      <y>308</y>
+      <w>490</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>if (!Singleton.instance) { Singleton.instance = { ... }; }
+return Singleton.instance;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>518</x>
+      <y>308</y>
+      <w>182</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>672</x>
+      <y>602</y>
+      <w>602</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>if (!AlphaCentauriA.instance) { AlphaCentauriA.instance = { ... }; }
+return AlphaCentauriA.instance;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>602</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+</diagram>
