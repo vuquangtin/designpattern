@@ -109,3 +109,8 @@ Understanding the use of lambda expressions in Java
 * https://users.soict.hust.edu.vn/quangnn/isad/isad_ay1920_s2.htm
 * https://users.soict.hust.edu.vn/trungtt/?Resource___Slides___Lập_trình_hướng_đối_tượng
 * https://voer.edu.vn/pdf/01f46fc2/1
+* http://mientayvn.com/Bo_suu_tap_cong_nghe_thong_tin/Bai_giang_phan_tich_thiet_ke_huong_doi_tuong_1/Bai_giang_phan_tich_thiet_ke_huong_doi_tuong_1.pdf
+* https://nguyenkimduc.files.wordpress.com/2009/10/cnpm-c4-mohinhphantich.pdf
+* https://masterwed.files.wordpress.com/2010/06/oo-chuong-5.pdf
+* https://stackoverrun.com/vi/q/4499097
+* 
