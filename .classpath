@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="java/src/designpatterns/utilities"/>
+	<classpathentry kind="src" path="java/src/designpatterns/uml"/>
 	<classpathentry kind="src" path="java/src/designpatterns/lambdas"/>
 	<classpathentry kind="src" path="java/src/designpatterns/gof"/>
 	<classpathentry kind="src" path="java/src/designpatterns/generics"/>

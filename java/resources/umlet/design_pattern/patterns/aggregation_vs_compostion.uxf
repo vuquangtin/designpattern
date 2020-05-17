@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>30</x>
+      <y>460</y>
+      <w>200</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>giống nhau: cả hai đều là 
+quan hệ kết hợp 
+( association).
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>250</x>
+      <y>20</y>
+      <w>590</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>aggregation (kết tập) là quan hệ giữa toàn thể và bộ phận, trong đó một lớp
+biểu diễn cái lớn hơn (tổng thể) còn lớp kia biểu diễn cái nhỏ hơn(bộ phận). 
+Aggregation biểu diễn quan hệ has-a, có nghĩa rằng một đối tượng của lớp tổng 
+thể có nhiều đối tượng của lớp thành phần. Ví dụ: Một môn học được mở (cái này 
+trong học tín chỉ) có nhiều sinh viên theo học, môn học được mở là class tổng 
+thể, còn sinh viên là class thành phần. Nếu không có môn học được mở thì sinh 
+viên vẫn tồn tại, hoặc khi hủy môn học được mở đi thì sinh viên vẫn không bị hủy.
+Trong class-diagram thì quan hệ aggregation được biểu diễn bằng đoạn thẳng kết 
+thúc bởi hạt kim cương trắng gần với lớp toàn thể (aggregate class).
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>250</x>
+      <y>220</y>
+      <w>590</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Ngược lại,composition(cấu thành) mạnh hơn aggregation về sự phụ thuộc lẫn nhau, 
+ví dụ cho dễ hiểu nhé: Một công ty (Company) có nhiều phòng ban( Department). 
+Như thế khi công ty bị hủy đi thì phòng ban (Department) không còn tồn tại,
+hoặc Một phòng học( Class-room) có nhiều bàn ghế (table), thực tế là tất cả 
+các phòng học đều có bàn ghế riêng cho từng phòng và bàn của phòng nào đều 
+có mã số phòng đi kèm với mã số bàn, như vậy nếu phòng học bị hủy thì bàn ghể 
+của phòng đó bị hủy theo (composition relationship). Tuy nhiên nếu ta đặt vấn 
+đề khác đi một tí là có một số bàn trong kho, có một lúc nào đó muốn mở một số 
+phòng học tăng cường thì trong trường hợp này số bàn trong kho đó không thuộc 
+về nhất định một phòng nào cả như thế khi phòng học tăng cường bị hủy thì bàn 
+trong kho này không bị hủy.
+Trong class-diagram thì quan hệ composition được biểu diễn bằng đoạn thẳng kết 
+thúc bởi hạt kim cương màu đen.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>20</x>
+      <y>220</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>250</x>
+      <y>460</y>
+      <w>590</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Java is always using references. It it always pass by value,
+because the thing that’s being passed is not the object itself,
+which is out on the heap, but a reference to that object.
+
+And that’s not the difference between aggregation and composition.
+Both describe a parent-child relationship between objects, 
+but in aggregation the children have a life outside the parent.
+Composition means that when you delete the parent the children 
+are deleted, too.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+</diagram>

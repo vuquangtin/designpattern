@@ -11,3 +11,5 @@ https://github.com/heathjay/StudyJava
 https://github.com/ben-denham/lecture_notes
 
 https://github.com/search?p=2&q=singleton.uxf++in%3Apath&type=Code
+
+http://staruml.sourceforge.net/docs/api-doc/Modeling%20Elements/UML%20Model%20Elements/Foundation/Core/package-summary.html
