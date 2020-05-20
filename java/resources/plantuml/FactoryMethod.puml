@@ -1,0 +1,23 @@
+@startuml FactoryMethod
+
+interface Product
+
+interface Creator {
+  FactoryMethod()
+  AnOperation()
+}
+class ConcreteCreator {
+  FactoryMethod()
+}
+note right of Creator::AnOperation
+  product = FactoryMethod()
+end note
+note right of ConcreteCreator::FactoryMethod
+  return new ConcreteProduct
+end note
+
+Product <|-- ConcreteProduct
+Creator <|-- ConcreteCreator
+ConcreteProduct <. ConcreteCreator
+
+@enduml

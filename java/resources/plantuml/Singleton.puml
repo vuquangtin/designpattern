@@ -1,0 +1,13 @@
+@startuml Singleton
+scale 400 height
+class Singleton {
+  static uniqueInstance
+  singletonData
+  static Instance()
+  SingletonOperation()
+  GetSingletonData()
+}
+note right of Singleton::Instance
+  return uniqueInstance
+end note
+@enduml

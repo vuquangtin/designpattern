@@ -1,0 +1,39 @@
+sudo apt-get install graphviz
+
+
+Zoom
+-----------------------------------------------
+    scale 1.5
+    scale 2/3
+    scale 200 width
+    scale 200 height
+    scale 200*100
+    scale max 300*200
+    scale max 1024 width
+    scale max 800 height
+Title
+-----------------------------------------------
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor red
+skinparam titleBackgroundColor Aqua-CadetBlue
+
+title Simple communication\nexample
+
+HTML
+
+title
+ <u>Simple</u> communication example
+ on <i>several</i> lines and using <back:cadetblue>creole tags</back>
+end title
+
+Caption
+-----------------------------------------------
+caption figure 1
+
+Legend the diagram
+-----------------------------------------------
+legend right
+  Short
+  legend
+endlegend
