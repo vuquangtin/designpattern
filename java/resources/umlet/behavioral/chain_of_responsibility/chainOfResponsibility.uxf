@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1184</x>
+      <y>544</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>HTMLBuilder
+--
+filename
+writer
+--
+makeTitle
+makeString
+makeItem
+close
+getResult</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>264</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>/Builder/
+--
+--
+/makeTitle/
+/makeString/
+/makeItem/
+/close/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>912</x>
+      <y>544</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>TextBuilder
+--
+buffer
+--
+makeTitle
+makeString
+makeItem
+close
+getResult</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>992</x>
+      <y>408</y>
+      <w>152</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;170.0;100.0;10.0;100.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>408</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;190.0;100.0;190.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>328</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;160.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>264</x>
+      <y>160</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>/Support/
+--
+-name: String
+-next: Support
+--
++support(Trouble): void
++setNext(Support): Support
+/#resolve(Trouble): boolean/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>72</x>
+      <y>240</y>
+      <w>288</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>340.0;10.0;340.0;80.0;10.0;80.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>400</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>NoSupport
+--
+
+--
++resolve(Trouble): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>400</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>LimitSupport
+--
+-limit
+--
++resolve(Trouble): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>568</x>
+      <y>400</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>SpecialSupport
+--
+-number
+--
++resolve(Trouble): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>400</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>OddSupport
+--
+
+--
++resolve(Trouble): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>248</x>
+      <y>240</y>
+      <w>112</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;120.0;80.0;10.0;80.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>240</y>
+      <w>144</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;160.0;80.0;160.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>240</y>
+      <w>328</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;390.0;80.0;390.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>112</y>
+      <w>128</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>40.0;110.0;140.0;110.0;140.0;10.0;10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>

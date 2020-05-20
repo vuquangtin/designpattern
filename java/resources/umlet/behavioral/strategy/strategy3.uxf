@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>80</y>
+      <w>270</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Hand
+--
+_+HANDVALUE_ROCK: Int = 0_
+_+HANDVALUE_SCISSOR: Int = 1_
+_+HANDVALUE_PAPER: Int = 2_
+_+hand: Array&lt;Hand&gt;_
+-handValue: Int
+_name: Array&lt;String&gt;_
+--
++Hand(Int)
++getHand(Int): Hand
++isStrongerThan(Hand): boolean
++isWeakerThan(Hand): boolean
++fight(Hand): int
++toString(): String
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>80</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Strategy/
+--
+/+nextHand(): Hand/
+/+study(boolean): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>390</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ProbStrategy
+--
+-prevHandValue: Int
+-currentHandValue: Int
+-rand: Random
+-history: Array&lt;int&gt;(3,3)
+--
+-getSum(Int): Int
++nextHand(): Hand
++study(boolean) void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>390</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>WinngingStrategy
+--
+-prevHand: Hand
+-rand: Random
+-won: boolean
+--
++nextHand(): Hand
++study(boolean) void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>260</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>130.0;10.0;130.0;100.0;10.0;100.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>260</y>
+      <w>160</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;140.0;100.0;140.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>80</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+-strategy
+-winCount
+-loseCount
+-evenCount
+-gameCount
+-name
+--
++nextHand(): Hand
++win()
++lose()
++even()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>160</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

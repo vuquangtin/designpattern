@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <help_text/>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>600</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Child
+--
+-id: 			String{id}
+-name: 		FullName
+-surname: 	Surname
+-gender:  	Gender
+-birthdate:	Date
+-age:			Age
+-address:	String
+-accepted:	Date
+-parentName:Name
+-specialReq:String[*]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>210</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Admin
+--
+-id: String{id}
+-username: String
+-password: Integer
+--
+controlAllModules(): int
+prepareMenu()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>570</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Finance
+--
+-id: String{id}
+-username: String
+-password: Integer
+--
+-addCosts()
+-manageCosts()
+deleteCosts()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>30</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Human Resources
+--
+-id: String{id}
+-username: String
+-password: Integer
+--
+-addEmployee()
+-editEmployee()
+-deleteEmployee()
+-jobDescription()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>600</y>
+      <w>210</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Parent
+--
+-id: String{id}
+-username: String
+-password: Integer
+-name: String
+-surname: String
+-childName: String
+--
+-viewChild()
+-viewPerformance()
+-editInformation()
+-makeChanges()
+-contactPhone()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>340</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Admission Office
+--
+-id: String{id}
+-username: String
+-password: Integer
+--
+Registration_ID
+Child_Name
+Child_Gender
+Child_Birthdate
+Child_Contact</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>260</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Teachers
+--
+-id: String{id}
+-username: String
+-password: Integer
+-joinedDate: Date
+-age: Integer
+--
+-teacherName()
+-teacherEmail()
+-preparePlan()
+-makeEvaluation()
+-getSalary()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>0</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Kindergarten
+--
+-id:String{id}
+-name: String
+-address: String
+--
+-childNumber()
+-staffNumber()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>120</y>
+      <w>170</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+1
+to
+1</panel_attributes>
+    <additional_attributes>150.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>410</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Payment
+--
+-paymentId()
+-parentID()
+-paymentDetails()
+-paymentStatus()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>270</y>
+      <w>200</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>90</y>
+      <w>120</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>170</y>
+      <w>40</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+1
+to
+m</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>500</y>
+      <w>40</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+1 
+to 
+n
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>590</y>
+      <w>110</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>500</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>480</y>
+      <w>150</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>450</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

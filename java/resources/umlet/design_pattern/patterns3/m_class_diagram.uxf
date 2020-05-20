@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>390</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>UIController
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>200</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Sheet
+--
+- staffList&lt;Staff&gt; : List
+- title : String
+- author : String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>450</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Measure
+--
+- timeSignature : TimeSignature
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>330</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Staff
+--
+- measureList&lt;Measure&gt; : List
+- 
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>700</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Note</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>640</y>
+      <w>210</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+NoteOptions</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>630</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>LogicController</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>580</y>
+      <w>210</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Cleffs</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

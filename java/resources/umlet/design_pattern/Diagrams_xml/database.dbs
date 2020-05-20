@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="foleza.sql" id="Project_23a7064" template="Default" database="MySql" >
+	<schema name="Default" schemaname="Default" >
+		<table name="`femijet`" >
+			<column name="`Amza`" type="varchar" length="10" jt="12" mandatory="y" />
+			<column name="`Emri`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Mbiemri`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Datelindja`" type="date" jt="91" mandatory="y" />
+			<column name="`Atesia`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Puna e Babait`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Memesia`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Puna e Neses`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Numri i Kontaktit 1`" type="varchar" length="13" jt="12" mandatory="y" />
+			<column name="`Numri i Kontaktit 2`" type="varchar" length="13" jt="12" mandatory="y" />
+			<column name="`E-mail`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Qyteti`" type="varchar" length="30" jt="12" mandatory="y" />
+			<column name="`Rruga`" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="`Zona / Lagjja`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`No.`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Kodi Postar`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Vaksinimi`" type="text" jt="-1" mandatory="y" />
+			<column name="`Alergji`" type="text" jt="-1" mandatory="y" />
+			<column name="`Te tjera`" type="text" jt="-1" mandatory="y" />
+			<column name="`Grupi`" type="varchar" length="30" jt="12" mandatory="y" />
+			<column name="`Emri i Perdoruesit`" type="varchar" length="20" jt="12" mandatory="y" />
+			<column name="`Fjalekalimi`" type="varchar" length="20" jt="12" mandatory="y" />
+			<column name="`Foto`" type="longblob" jt="-4" mandatory="y" />
+			<column name="`Lloji i Pageses`" type="varchar" length="30" jt="12" mandatory="y" />
+			<column name="`Satusi`" type="varchar" length="30" jt="12" mandatory="y" />
+			<column name="`Sasia per tu paguar`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Ecuria`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Mungesa`" type="int" length="11" jt="4" mandatory="y" />
+			<index name="pk_`femijet`" unique="UNIQUE" >
+				<column name="`Amza`" />
+			</index>
+			<fk name="fk_`femijet`" to_schema="Default" to_table="`klasat`" >
+				<fk_column name="`Amza`" pk="`ID e Grupit`" />
+			</fk>
+			<fk name="fk_`femijet`_0" to_schema="Default" to_table="`programi ditor`" />
+			<fk name="fk_`femijet`_1" to_schema="Default" to_table="`menuja ditore`" />
+		</table>
+		<table name="`institucioni`" >
+			<column name="`Emri`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Sheteti`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Qyteti`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Rruga`" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="`No`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Kodi Postar`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Email`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Fb`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Kontakti`" type="varchar" length="13" jt="12" mandatory="y" />
+			<column name="`Aministratori / CEO`" type="varchar" length="60" jt="12" mandatory="y" />
+			<index name="idx_`institucioni`" unique="NORMAL" >
+				<column name="`Emri`" />
+			</index>
+			<fk name="fk_`institucioni`" to_schema="Default" to_table="`femijet`" >
+				<fk_column name="`Emri`" pk="`Amza`" />
+			</fk>
+		</table>
+		<table name="`klasat`" >
+			<column name="`ID e Grupit`" type="varchar" length="11" jt="12" mandatory="y" />
+			<column name="`Emri i Grupit`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Edukatorja Kujdestare`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Asistentja`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Programi Vjetor`" type="longblob" jt="-4" mandatory="y" />
+			<index name="pk_`klasat`" unique="UNIQUE" >
+				<column name="`ID e Grupit`" />
+			</index>
+		</table>
+		<table name="`menuja ditore`" >
+			<column name="`Date`" type="date" jt="91" mandatory="y" />
+			<column name="menu" type="longblob" jt="-4" mandatory="y" />
+			<index name="pk_`menuja ditore`" unique="PRIMARY_KEY" >
+				<column name="menu" />
+			</index>
+			<fk name="fk_`menuja ditore`_`stafi`" to_schema="Default" to_table="`stafi`" />
+		</table>
+		<table name="`metodologji te reja`" >
+			<column name="`Tema`" type="varchar" length="60" jt="12" mandatory="y" />
+			<column name="`Date`" type="date" jt="91" mandatory="y" />
+			<column name="`File`" type="longblob" jt="-4" mandatory="y" />
+			<column name="autor id" type="int" jt="4" mandatory="y" />
+			<index name="pk_`metodologji te reja`" unique="PRIMARY_KEY" >
+				<column name="autor id" />
+			</index>
+		</table>
+		<table name="`programi ditor`" >
+			<column name="`Date`" type="date" jt="91" mandatory="y" />
+			<column name="`Programi`" type="longblob" jt="-4" mandatory="y" />
+			<column name="id group" type="int" jt="4" mandatory="y" />
+			<index name="pk_`programi ditor`" unique="PRIMARY_KEY" >
+				<column name="id group" />
+			</index>
+		</table>
+		<table name="`stafi`" >
+			<column name="`SSN`" type="varchar" length="10" jt="12" mandatory="y" />
+			<column name="`Emri`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Mbiemri`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Numri i Kontaktit`" type="varchar" length="13" jt="12" mandatory="y" />
+			<column name="`E-mail`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`Qyteti`" type="varchar" length="30" jt="12" mandatory="y" />
+			<column name="`Rruga`" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="`Lagjia`" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="`No.`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Kodi Postar`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Pozicioni`" type="varchar" length="30" jt="12" mandatory="y" />
+			<column name="`Data e fillimit`" type="date" jt="91" mandatory="y" />
+			<column name="`Orari i punes`" type="int" length="11" jt="4" mandatory="y" />
+			<column name="`Diploma`" type="longblob" jt="-4" mandatory="y" />
+			<column name="`CV`" type="longblob" jt="-4" mandatory="y" />
+			<column name="`Deshmi Penaliteti`" type="longblob" jt="-4" mandatory="y" />
+			<column name="`Vertetim Shendetesor`" type="longblob" jt="-4" mandatory="y" />
+			<column name="`Foto`" type="longblob" jt="-4" mandatory="y" />
+			<column name="`Emri i Perdoruesit`" type="varchar" length="20" jt="12" mandatory="y" />
+			<column name="`Fjalekalimi`" type="varchar" length="20" jt="12" mandatory="y" />
+			<index name="pk_`stafi`" unique="UNIQUE" >
+				<column name="`SSN`" />
+			</index>
+			<fk name="fk_`stafi`" to_schema="Default" to_table="`klasat`" >
+				<fk_column name="`SSN`" pk="`ID e Grupit`" />
+			</fk>
+			<fk name="fk_`stafi`_0" to_schema="Default" to_table="`femijet`" >
+				<fk_column name="`SSN`" pk="`Amza`" />
+			</fk>
+			<fk name="fk_`stafi`_1" to_schema="Default" to_table="`metodologji te reja`" />
+			<fk name="fk_`stafi`_5" to_schema="Default" to_table="`programi ditor`" />
+			<fk name="fk_`stafi`_2" to_schema="Default" to_table="`menuja ditore`" />
+			<fk name="fk_`stafi`_3" to_schema="Default" to_table="`menuja ditore`" />
+			<fk name="fk_`stafi`_4" to_schema="Default" to_table="`menuja ditore`" />
+			<fk name="fk_`stafi`_6" to_schema="Default" to_table="`menuja ditore`" />
+			<fk name="fk_`stafi`_7" to_schema="Default" to_table="`menuja ditore`" >
+				<fk_column name="`SSN`" pk="menu" />
+			</fk>
+		</table>
+	</schema>
+	<connector name="" database="MySql" host="localhost" port="3306" user="root" />
+	<connector name="" database="MySql" host="localhost" port="3306" user="root" />
+	<layout name="Layout" id="Layout_4748b67" joined_routing="y" show_column_type="y" show_relation="columns" >
+		<entity schema="Default" name="`klasat`" color="bfd4f5" x="900" y="60" />
+		<entity schema="Default" name="`institucioni`" color="bfd4f5" x="45" y="45" />
+		<entity schema="Default" name="`programi ditor`" color="c8f5bf" x="180" y="540" />
+		<entity schema="Default" name="`stafi`" color="c8f5bf" x="120" y="735" />
+		<entity schema="Default" name="`femijet`" color="bfd4f5" x="450" y="45" />
+		<entity schema="Default" name="`menuja ditore`" color="bfd4f5" x="870" y="705" />
+		<entity schema="Default" name="`metodologji te reja`" color="c8f5bf" x="540" y="855" />
+		<script name="`femijet`" id="Query_40508db" language="SQL" >
+			<string><![CDATA[SELECT * 
+FROM
+	`Default`.`femijet` t;]]></string>
+		</script>
+		<script name="fk_`institucioni`" id="Query_1ff5ecc" language="SQL" >
+			<string><![CDATA[ALTER TABLE `Default`.`institucioni` ADD CONSTRAINT fk_`institucioni` FOREIGN KEY ( ``Emri`` ) REFERENCES `Default`.`femijet`( ``Amza`` ) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `Default`.`institucioni` ADD CONSTRAINT fk_`institucioni` FOREIGN KEY ( ``Administratori/CEO`` ) REFERENCES `Default`.`stafi`( ``SSS`` ) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `Default`.`stafi` ADD CONSTRAINT fk_`stafi` FOREIGN KEY ( ``SSS`` ) REFERENCES `Default`.`klasat`( ``ID e Grupit`` ) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `Default`.`stafi` ADD CONSTRAINT fk_`stafi` FOREIGN KEY ( ``SSS`` ) REFERENCES `Default`.`femijet`( ``Azma`` ) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `Default`.`stafi` ADD CONSTRAINT fk_`stafi` FOREIGN KEY ( ``SSS`` ) REFERENCES `Default`.`metodologji te reja`( ``Autori ID`` ) ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE `Default`.`stafi` ADD CONSTRAINT fk_`stafi` FOREIGN KEY ( ``SSS`` ) REFERENCES `Default`.`programi ditor`( ``ID e Grupit`` ) ON DELETE NO ACTION ON UPDATE NO ACTION;]]></string>
+		</script>
+		<script name="fk_`institucioni`_001" id="Query_4e5085c" language="SQL" >
+			<string><![CDATA[
+ALTER TABLE `Default`.`institucioni` ADD CONSTRAINT fk_`institucioni` FOREIGN KEY ( ``Emri`` ) REFERENCES `Default`.`femijet`( ``Amza`` ) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+]]></string>
+		</script>
+		<browser id="Browse_4976b57" name="`SSN`" confirm_updates="y" >
+			<browse_table schema="Default" entity="`stafi`" x="10" y="10" width="400" height="300" />
+		</browser>
+		<query id="Query_5f1f30b" name="`ID e Grupit`" >
+			<query_table schema="Default" name="`klasat`" alias="`" x="45" y="45" >
+				<column name="`ID e Grupit`" />
+				<column name="`Emri i Grupit`" />
+				<column name="`Edukatorja Kujdestare`" />
+				<column name="`Asistentja`" />
+				<column name="`Programi Vjetor`" />
+			</query_table>
+		</query>
+		<query id="Query_5a19e6a" name="`institucioni`" >
+			<query_table schema="Default" name="`institucioni`" alias="`" x="45" y="45" >
+				<column name="`Emri`" />
+				<column name="`Sheteti`" />
+				<column name="`Qyteti`" />
+				<column name="`Rruga`" />
+				<column name="`No`" />
+				<column name="`Kodi Postar`" />
+				<column name="`Email`" />
+				<column name="`Fb`" />
+				<column name="`Kontakti`" />
+				<column name="`Aministratori / CEO`" />
+			</query_table>
+		</query>
+		<form name="Form" id="Form_2131ad3" template="Centered Page" view="frame" >
+			<header name="Header" template="Navbar" place="0, 0, 0, 0, full, full" layout="{{-2.0,-2.0},{-2.0,-2.0}}" columnar="y" scroll="n" html="n" />
+			<body name="Body" template="Grid" place="0, 0, 0, 0, full, full" layout="{{-2.0,-2.0},{-2.0,-2.0}}" columnar="y" scroll="n" html="n" />
+		</form>
+		<form name="Form_001" id="Form_22434ee" template="Centered Page" view="frame" >
+			<header name="Header" template="Navbar" place="0, 0, 0, 0, full, full" layout="{{-2.0,-2.0},{-2.0,-2.0}}" columnar="y" scroll="n" html="n" />
+			<body name="Body" template="Grid" place="0, 0, 0, 0, full, full" layout="{{-2.0,-2.0},{-2.0,-2.0}}" columnar="y" scroll="n" html="n" />
+		</form>
+	</layout>
+</project>
