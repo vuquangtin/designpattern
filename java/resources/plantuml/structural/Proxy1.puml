@@ -1,0 +1,13 @@
+@startuml Proxy1
+scale 1024 height
+interface Subject {
+  Request()
+}
+class RealSubject {
+  Request()
+}
+class Proxy {
+  Request()
+}
+
+@enduml

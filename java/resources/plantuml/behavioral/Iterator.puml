@@ -1,0 +1,12 @@
+@startuml
+scale 1024 height
+class Product
+
+interface Iterator
+class ConcreteIterator
+
+Product *--> Iterator
+Iterator <|-- ConcreteIterator
+
+
+@enduml

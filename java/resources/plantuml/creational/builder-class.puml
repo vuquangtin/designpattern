@@ -1,0 +1,22 @@
+@startuml
+scale 1024 height
+title Builder pattern class diagram
+
+interface Builder {
+    + void buildPartA()
+    + void buildPartB()
+    + void buildPartC()
+    + Product getResult()
+}
+class ConBuilder
+class Director {
+    - Builder builder
+    + Product build()
+    + void setBuilder(Builder)
+}
+class Product
+
+Builder <|.. ConBuilder
+Director o- Builder
+ConBuilder -> Product: <<create>>
+@enduml

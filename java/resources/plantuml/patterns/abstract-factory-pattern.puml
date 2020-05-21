@@ -1,0 +1,44 @@
+@startuml
+Interface AbstractFactory {
++ createProductA() : AbstractProductA
++ createProductB() : AbstractProductB
+}
+
+Interface AbstractProductA {}
+
+Interface AbstractProductB {}
+
+Class ConcreteFactor1 {
++ createProductA() : AbstractProductA
++ createProductB() : AbstractProductB
+}
+
+Class ConcreteFactor2 {
++ createProductA() : AbstractProductA
++ createProductB() : AbstractProductB
+}
+
+Class ProductA1
+
+Class ProductA2
+
+Class ProductB1
+
+Class ProductB2
+
+AbstractFactory <|.. ConcreteFactor1
+AbstractFactory <|.. ConcreteFactor2
+
+AbstractProductA <|.. ProductA1
+AbstractProductA <|.. ProductA2
+
+AbstractProductB <|.. ProductB1
+AbstractProductB <|.. ProductB2
+
+ProductA1 <.. ConcreteFactor1
+ProductB1 <.. ConcreteFactor1
+
+ProductA2 <.. ConcreteFactor2
+ProductB2 <.. ConcreteFactor2
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+scale 1024 height
+title Command pattern class diagram
+
+class Invoker {
+    + setCommand(Command)
+    + call()
+}
+class Receiver {
+    + action()
+}
+interface Command {
+    + execute()
+}
+class ConCommand
+
+Invoker o- Command
+Command <|.. ConCommand
+Receiver <- ConCommand
+
+note "execute() {\n receiver.action()\n}" as N1
+N1 .. ConCommand
+@enduml

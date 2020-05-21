@@ -1,0 +1,17 @@
+@startuml
+scale 1024 height
+title Simple Factory
+
+interface Product
+class AProduct
+class BProduct
+object Factory {
+    Product createProduct(string)
+}
+
+Product <|.. AProduct
+Product <|.. BProduct
+Factory -> Product: create
+Factory ..> AProduct
+Factory ..> BProduct
+@enduml

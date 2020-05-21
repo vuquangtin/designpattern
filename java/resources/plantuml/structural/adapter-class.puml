@@ -1,0 +1,18 @@
+@startuml
+scale 1024 height
+title Adapter pattern class diagram
+
+interface Target {
+    + targetMethod()
+}
+class Adaptee {
+    + srcMethod()
+}
+class Adapter
+Target <|.. Adapter
+Adaptee <- Adapter
+
+note "targetMethod() { \n    adaptee.srcMethod() \n}" as N1
+Adapter .right. N1
+
+@enduml

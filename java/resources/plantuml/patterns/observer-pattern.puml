@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Subject {
++addObserver()
++deleteObserver()
++notifyObserver()
+}
+
+interface Observer {
++notify()
+}
+
+class SubjectA {
++addObserver()
++deleteObserver()
++notifyObserver()
+}
+
+class ObserverA {
++notify()
+}
+
+class ObserverB {
++notify()
+}
+
+'接口关系
+Subject o-- "*" Observer
+
+'实现关系
+Subject <|.. SubjectA
+
+Observer <|.. ObserverA
+Observer <|.. ObserverB
+@enduml

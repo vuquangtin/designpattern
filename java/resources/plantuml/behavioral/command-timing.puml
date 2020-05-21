@@ -1,0 +1,21 @@
+@startuml
+scale 1024 height
+title Command mode timing diagram
+
+actor Client
+participant Invoker
+participant ConComand
+participant Receiver
+
+activate Client
+Client -> Receiver: 1.1 <<create>>
+activate Receiver
+Client -> ConComand: 1.2 <<create with Receiver>>
+activate ConComand
+Client -> Invoker: 1.3 <<create>>
+activate Invoker
+Client -> Invoker: 1.4 setCommand(conComand)
+Client -> Invoker: 2.1 call()
+Invoker -> ConComand: 2.2 execute()
+ConComand -> Receiver: 2.3 action()
+@enduml

@@ -1,4 +1,5 @@
 @startuml FactoryMethod
+scale 1024 height
 interface Product
 
 interface Creator {

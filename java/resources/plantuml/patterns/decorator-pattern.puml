@@ -1,0 +1,26 @@
+```plantuml
+@startuml
+interface Component {
++ peration()
+}
+
+class ConcreteComponent {
++ opration()
+}
+
+class Decorator {
+- Component component
++ opration()
+}
+
+class ConcreteDecorator {
++ opration()
+}
+
+Component <|.. ConcreteComponent
+Component <|.. Decorator
+
+Decorator <|-- ConcreteDecorator
+
+Decorator *-- Component
+@enduml

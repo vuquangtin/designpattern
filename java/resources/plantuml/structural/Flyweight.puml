@@ -1,0 +1,20 @@
+@startuml
+scale 1024 height
+Flyweight <|-- FlyweightImpl
+Flyweight  <-- FlyweightFactory
+
+abstract class Flyweight{
+    opreate()
+}
+
+class FlyweightImpl{
+    operate()
+}
+
+class FlyweightFactory {
+    HashMap pool;
+    getFlyweight(String key)
+}
+
+
+@enduml

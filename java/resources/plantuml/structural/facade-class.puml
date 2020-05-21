@@ -1,0 +1,17 @@
+@startuml
+scale 1024 height
+title Facade Pattern
+
+class Facade {
+    + wrapOpration()
+}
+class SystemA {
+    + operationA()
+}
+class SystemB {
+    + operationB()
+}
+
+Facade --> SystemA
+Facade --> SystemB
+@enduml

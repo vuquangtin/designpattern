@@ -1,0 +1,20 @@
+@startuml
+title Factory Method pattern class diagram
+
+interface Product
+class AProduct
+class BProduct
+interface Factory {
+    + Product createInstance()
+}
+class AFactory
+class BFactory
+
+Product <|.. AProduct
+Product <|.. BProduct
+Factory <|.. AFactory
+Factory <|.. BFactory
+Factory -> Product: create
+AFactory --> AProduct: create
+BFactory --> BProduct: create
+@enduml

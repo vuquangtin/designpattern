@@ -1,0 +1,24 @@
+@startuml Flyweight1
+scale 1024 height
+interface Flyweight {
+  Operation(extrinsicState)
+}
+class ConcreteFlyweight {
+  Operation(extrinsicState)
+  intrinsicState
+}
+class FlyweightFactory {
+  GetFlyweight(key)
+}
+class UnsharedConcreteFlyweight {
+  Operation(extrinsicState)
+  allState
+}
+
+FlyweightFactory <-- Client
+FlyweightFactory o- Flyweight
+Flyweight <|-- ConcreteFlyweight
+Flyweight <|-- UnsharedConcreteFlyweight
+ConcreteFlyweight <-- Client
+UnsharedConcreteFlyweight <-- Client
+@enduml

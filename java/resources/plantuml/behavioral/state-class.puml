@@ -1,0 +1,22 @@
+@startuml
+scale 1024 height
+title State pattern class diagram
+
+class Context {
+    - State state
+    + setState(State)
+    + request()
+}
+interface State {
+    + handle(Context)
+}
+class ConStateA
+class ConStateB
+
+Context o- State
+State <|.. ConStateA
+State <|.. ConStateB
+
+note "handle()将会将会改变Context的状态" as N1
+N1 .left. State
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+scale 1024 height
+title Proxy Pattern
+
+interface Subject {
+    + request()
+}
+class RealSubject
+class Proxy {
+    - preRequest()
+    - afterRequest()
+}
+
+Subject <|.. RealSubject
+Subject <|.. Proxy
+RealSubject <- Proxy
+
+note "request() {\npreRequest()\nrealSubject.request()\nafterRequest()\n}" as N1
+N1 .. Proxy
+@enduml

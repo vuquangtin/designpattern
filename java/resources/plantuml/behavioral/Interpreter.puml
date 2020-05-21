@@ -1,0 +1,13 @@
+@startuml
+scale 1024 height
+class Context{
+S/GetInput()
+S/GetOutput()
+}
+abstract AbstractExpression{
+Interpret(Context)
+}
+AbstractExpression..>Context
+NonterminalExpression-up-|>AbstractExpression
+TerminalExpression-up-|>AbstractExpression
+@enduml

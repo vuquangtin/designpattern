@@ -1,0 +1,22 @@
+@startuml
+scale 1024 height
+title Bridge Factory
+
+abstract class Abstraction {
+    - Implementor
+    + operation()
+}
+class RefinedAbstraction {
+    + otherOperation()
+}
+interface Implementor {
+    + operationImpl()
+}
+class ConImplementorA
+class ConImplementorB
+
+Abstraction <|-- RefinedAbstraction
+Abstraction o- Implementor
+Implementor <|.. ConImplementorA
+Implementor <|.. ConImplementorB
+@enduml

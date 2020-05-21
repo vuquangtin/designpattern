@@ -1,0 +1,28 @@
+@startuml
+scale 1024 height
+
+interface Subject{
+    +attach(Observer obs)
+    +detach(Observer obs)
+    +notifyObs()
+}
+
+class ConcreteSubject{
+    -subjectState
+}
+
+interface Observer{
+    +update()
+}
+
+class ConcreteObserver{
+    -observerState
+    +update()
+}
+
+Subject <|-- ConcreteSubject
+Subject --> Observer : Оповещает
+Observer <|-- ConcreteObserver
+ConcreteSubject <-- ConcreteObserver : Наблюдает
+
+@enduml

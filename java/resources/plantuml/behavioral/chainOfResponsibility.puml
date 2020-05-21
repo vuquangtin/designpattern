@@ -1,0 +1,20 @@
+@startuml
+scale 1024 height
+Handler <|-- HeartBeatHandler
+Handler <|-- ServerHandler
+
+abstract class Handler{
+    -Handler handler
+    +handlerRequest()
+    +getHandler()
+    +addLast(Handler handler)
+}
+class HeartBeatHandler {
+    +handlerRequest()
+}
+class ServerHandler {
+    +handlerRequest()
+}
+
+
+@enduml

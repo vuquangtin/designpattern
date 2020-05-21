@@ -1,0 +1,23 @@
+@startuml
+scale 1024 height
+class Client{
+}
+class Invoker{
+}
+interface Command{
++execute()
+}
+class ConcreteCommand{
++execute()
+}
+class Receiver{
++action()
+}
+
+Client --> Invoker
+Client ..> ConcreteCommand
+Client --> Receiver
+Command --* Invoker
+ConcreteCommand --|> Command
+ConcreteCommand --> Receiver
+@enduml

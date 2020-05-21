@@ -1,0 +1,20 @@
+@startuml
+scale 1024 height
+interface Strategy{
++execute()
+}
+
+class Context
+
+class ConcreteStrategy1{
++execute()
+}
+class ConcreteStrategy2{
++execute()
+}
+
+Context *-- Strategy
+ConcreteStrategy1 --|> Strategy
+ConcreteStrategy2 --|> Strategy
+
+@enduml

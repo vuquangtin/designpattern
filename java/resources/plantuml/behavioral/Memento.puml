@@ -1,0 +1,21 @@
+@startuml
+scale 1024 height
+class Caretaker{
+}
+class Memento{
+-state
++getState()
+}
+class Originator{
+-state
++setMemento()
++createMemento()
+}
+
+Caretaker o-- Memento
+Memento <|.. Originator
+
+note right of Caretaker : Watchman Stores state
+note right of Memento : The keeper. The state itself is preserved in it.
+note right of Originator : Creator. The object whose state we want to save
+@enduml

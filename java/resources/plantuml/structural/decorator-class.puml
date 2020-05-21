@@ -1,0 +1,18 @@
+@startuml
+scale 1024 height
+title Decorator Pattern
+
+interface Component {
+    + operation()
+}
+class ConComponent
+interface Decorator {
+    + addedOperation()
+}
+class ConDecorator
+
+Component <|.. ConComponent
+Component <|.. Decorator
+Decorator <|.. ConDecorator
+ConComponent -o ConDecorator
+@enduml

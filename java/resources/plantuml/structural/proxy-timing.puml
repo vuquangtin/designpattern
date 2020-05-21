@@ -1,0 +1,16 @@
+@startuml
+scale 1024 height
+title Proxy mode timing diagram
+
+actor Client
+participant Proxy
+participant RealSubject
+
+activate Client
+Client -> Proxy: request()
+activate Proxy
+Proxy -> Proxy: preRequest()
+Proxy -> RealSubject: request()
+activate RealSubject
+Proxy -> Proxy: afterRequest()
+@enduml

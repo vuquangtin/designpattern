@@ -1,0 +1,22 @@
+@startuml
+scale 1024 height
+abstract class State{
++handle()
+}
+
+class Context{
++request()
+}
+
+class ConcreteState1{
++handle()
+}
+
+class ConcreteState2{
++handle()
+}
+
+Context *-- State
+ConcreteState1 --|> State
+ConcreteState2 --|> State
+@enduml

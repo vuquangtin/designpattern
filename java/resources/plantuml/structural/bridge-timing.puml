@@ -1,0 +1,16 @@
+@startuml
+scale 1024 height
+title Bridge mode timing diagram
+
+actor Client
+participant RefinedAbstraction
+participant ConImplementor
+
+activate Client
+Client -> ConImplementor: <<create>>
+activate ConImplementor
+Client -> RefinedAbstraction: <<create with ConImplementor>>
+activate RefinedAbstraction
+Client -> RefinedAbstraction: operation()
+RefinedAbstraction -> ConImplementor: operationImpl()
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+scale 1024 height
+Target <|-- ConcreteTarget
+Target <|-- Adapter
+Adaptee <|-- Adapter
+Adapter <|-- OjectAdapter
+
+
+interface Target{
+request():void
+}
+
+class Adaptee{
+adpaterRequest():void
+}
+
+
+class ConcreteTarget{
+request():void
+}
+
+class Adapter{
+request():void
+super.adpaterRequest()
+}
+
+class OjectAdapter{
+request():void
+}
+@enduml

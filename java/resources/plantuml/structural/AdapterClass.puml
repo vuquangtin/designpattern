@@ -1,0 +1,21 @@
+@startuml AdapterClass
+scale 1024 height
+interface Target {
+  Request()
+}
+interface Adaptee {
+  SpecificRequest()
+}
+class Adapter {
+  Request()
+}
+
+note right of Adapter::Request
+  SpecificRequest()
+end note
+
+Client -> Target
+Target <|-- Adapter
+Adaptee <|-- Adapter : implement
+
+@enduml

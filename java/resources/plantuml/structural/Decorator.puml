@@ -1,0 +1,36 @@
+@startuml Decorator
+scale 1024 height
+interface Component {
+  Operation()
+}
+class ConcreteComponent {
+  Operation()
+}
+class Decorator {
+  Operation()
+}
+class ConcreteDecoratorA {
+  Operation()
+  addedState
+}
+class ConcreteDecoratorB {
+  Operation()
+  AddedBehavior()
+}
+
+note left of Decorator::Operation
+  component->Operation()
+end note
+
+note left of ConcreteDecoratorB::Operation
+  Decorator::Operation();
+  AddedBehavior();
+end note
+
+Component <|-- ConcreteComponent
+Component <|-- Decorator
+Component --o Decorator : component
+Decorator <|-- ConcreteDecoratorA
+Decorator <|-- ConcreteDecoratorB
+
+@enduml

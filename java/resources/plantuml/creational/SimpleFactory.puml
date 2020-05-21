@@ -1,0 +1,29 @@
+@startuml
+scale 1024 height
+
+interface AccessMode
+
+AccessMode <|.. IEC104Mode
+AccessMode <|.. MqttMode
+
+
+class SimpleFactory{
+ +AccessMode getMode(String type)
+}
+SimpleFactory --> AccessMode
+
+interface AccessMode {
++start():boolean
++end():boolean
+}
+
+class IEC104Mode{
++start():boolean
++end():boolean
+}
+
+class MqttMode{
++start():boolean
++end():boolean
+}
+@enduml

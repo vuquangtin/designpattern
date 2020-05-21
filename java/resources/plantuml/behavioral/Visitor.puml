@@ -1,0 +1,78 @@
+@startuml
+scale 1024 height
+skinparam note {
+    borderColor grey
+    backgroundColor white
+}
+
+skinparam legend {
+    borderColor white
+    fontSize 20
+    fontColor grey
+}
+
+package com.deloitte.training.oodesignpatterns.behavioral.visitor {
+    ' Classes and interfaces
+    interface Item {
+        + accept(visitor) : int
+    }
+    class Book {
+        - price : int
+        - isbnNumber : String
+        - name : String
+        + getPrice() : int
+        + accept(visitor) : int
+    }
+    class Fruit {
+        - pricePerKg : int
+        - weight : int
+        - name : String
+        + getPricePerKg() : int
+        + getWeight() : int
+        + accept(visitor) : int
+    }
+    interface Visitor {
+        + visit(book) : int
+        + visit(fruit) : int
+    }
+    class ShoppingCartVisitor {
+        + visit(book) : int
+        + visit(fruit) : int
+    }
+    class ShoppingCartTest
+
+    ' relationships
+    Visitor <-- ShoppingCartVisitor : implements
+    Item <-- Book : implements
+    Item <-- Fruit : implements
+    Item o.o Visitor : bidirectional use
+
+    Item -o ShoppingCartTest : use
+    Visitor -o ShoppingCartTest : use
+    
+    ' hide garbage
+    hide empty fields
+    hide empty methods
+    
+    ' notes
+    note bottom of ShoppingCartTest
+        <i><size:10><color:grey>Build items and visitor:
+        items = {new Book(), new Fruit(), ...}
+        visitor = new ShoppingCartVisitor()
+        
+        <i><size:10><color:grey>Visit items one by one:
+        foreach(item : items) {
+            item.accept(visitor)
+        }
+        
+        <i><size:10><color:grey>Output:
+        <i><size:10><color:grey><b>Book{price=100, isbnNumber=5678, name=Le Rouge et le Noir, Stendhal} cost is 95
+    end note
+}
+
+'legend
+legend bottom left
+VISITOR [design pattern]
+end legend
+
+@enduml

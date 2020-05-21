@@ -1,0 +1,35 @@
+@startuml Prototype
+scale 1024 height
+interface Prototype {
+  Clone()
+}
+class Client {
+  Operation()
+}
+
+class ConcretePrototype1 {
+  Clone()
+}
+class ConcretePrototype2 {
+  Clone()
+}
+
+note as N1
+  return copy of self
+end note
+
+note as N2
+  return copy of self
+end note
+
+
+note left of Client::Operation
+  p = prototype->Clone()
+end note
+
+Prototype <|-- ConcretePrototype1
+Prototype <|-- ConcretePrototype2
+ConcretePrototype1::Clone --> N1
+ConcretePrototype2::Clone --> N2
+Client -> Prototype : prototype
+@enduml
