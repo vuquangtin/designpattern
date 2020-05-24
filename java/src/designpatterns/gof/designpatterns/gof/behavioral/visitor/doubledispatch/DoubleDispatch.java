@@ -2,14 +2,15 @@ package designpatterns.gof.behavioral.visitor.doubledispatch;
 
 public class DoubleDispatch {
 	public static void main(String[] args) {
-		MyPrinter p = new MyPrinter();
+		Printer p = new MyPrinter();
 		Document docA = new PDFDoc();
 		Document docB = new DOCDoc();
 		p.print(docA);
 		p.print(docB);
 		System.out.println("using bad print");
-		p.badPrint(docA);
-		p.badPrint(docB);
+		MyPrinter pm = new MyPrinter();
+		pm.badPrint(docA);
+		pm.badPrint(docB);
 	}
 
 	public static abstract class Document {

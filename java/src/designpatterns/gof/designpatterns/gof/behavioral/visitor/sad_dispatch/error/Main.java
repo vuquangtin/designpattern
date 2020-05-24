@@ -7,6 +7,7 @@ abstract class ComposantOrdi {
 }
 
 class Montage extends ComposantOrdi {
+	
 	protected void equiv(Montage montage) {
 		Equivalence.equiv(this, montage);
 	}
@@ -28,15 +29,24 @@ class Equivalence {
 
 public class Main {
 	public static void main(String[] args) {
+		// o day m2 luon luon nho co 2 phuong thuc override la:
+		// 1.cua chinh no protected void equiv(Montage montage)
+		// 2.cua super protected void equiv(ComposantOrdi c)
 		Montage m2 = new Montage();
+		// m3 la ComposantOrdi se hidden cac phuong thuc cua Montage
 		ComposantOrdi m3 = new Montage();
-
+		// call in ComposantOrdi (tu dong ep kieu Montage thanh ComposantOrdi)
 		m3.equiv(m2);
+		// call in ComposantOrdi
 		m3.equiv(m3);
+		// call in ComposantOrdi
 		m3.equiv((Montage) m3);
 
+		// call in super is ComposantOrdi
 		m2.equiv(m3);
+		// call in Montage
 		m2.equiv(m2);
+		// call in super is ComposantOrdi
 		m2.equiv((ComposantOrdi) m3);
 
 		Equivalence.equiv(m2, m3);
