@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umlet_diagram><element><type>com.umlet.element.base.Package</type><coordinates><x>40</x><y>280</y><w>300</w><h>270</h></coordinates><panel_attributes>com.umlet.element
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Package</type><coordinates><x>70</x><y>390</y><w>130</w><h>150</h></coordinates><panel_attributes>custom
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>80</x><y>470</y><w>100</w><h>50</h></coordinates><panel_attributes>CustomClass
+--
+attributes</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>80</x><y>430</y><w>100</w><h>30</h></coordinates><panel_attributes>TemplateClass</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>160</x><y>460</y><w>240</w><h>60</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;20;220;40</additional_attributes></element><element><type>com.umlet.element.base.Note</type><coordinates><x>380</x><y>480</y><w>190</w><h>50</h></coordinates><panel_attributes>Graphical representation 
+of classes in a package.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>220</x><y>340</y><w>180</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;20;160;60</additional_attributes></element><element><type>com.umlet.element.base.Package</type><coordinates><x>180</x><y>310</y><w>110</w><h>80</h></coordinates><panel_attributes>base
+--
+Actor
+Class
+Entity
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Note</type><coordinates><x>380</x><y>380</y><w>190</w><h>50</h></coordinates><panel_attributes>Classes may be qualified 
+by their names.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Note</type><coordinates><x>410</x><y>300</y><w>190</w><h>40</h></coordinates><panel_attributes>com.umlet.element.base
+depends on "java.util"</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>320</x><y>240</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;20;90;80</additional_attributes></element><element><type>com.umlet.element.base.Note</type><coordinates><x>20</x><y>20</y><w>240</w><h>70</h></coordinates><panel_attributes>Package Diagram:
+Shows the dependencies between 
+packages of a system.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Package</type><coordinates><x>90</x><y>120</y><w>140</w><h>80</h></coordinates><panel_attributes>com.umlet.control
+--
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Package</type><coordinates><x>320</x><y>150</y><w>140</w><h>70</h></coordinates><panel_attributes>java.util
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>200</x><y>200</y><w>210</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>190;20;20;110</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>120</x><y>180</y><w>70</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>20;100;50;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>210</x><y>150</y><w>130</w><h>60</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;40;20;20</additional_attributes></element></umlet_diagram>

@@ -1,0 +1,26 @@
+@startuml
+
+skinparam handwritten true
+skinparam titleBorderThickness 2
+skinparam titleBackgroundColor AliceBlue
+
+title
+    Template Method
+end title
+
+abstract class AbstractClass{
+    # method1()
+    # method2()
+    # method3()
+    + templateMethod()
+}
+
+class ConcreteClass extends AbstractClass {
+
+    # method1()
+    # method2()
+    # method3()
+
+}
+
+@enduml

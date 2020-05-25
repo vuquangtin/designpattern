@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umlet_diagram><element><type>com.umlet.element.base.Class</type><coordinates><x>30</x><y>290</y><w>120</w><h>80</h></coordinates><panel_attributes>Circle
+--
+radius
+--
+
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>30</x><y>130</y><w>120</w><h>100</h></coordinates><panel_attributes>/Figure/
+--
+posX
+posY
+--
+getPos() : point
+draw()
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Note</type><coordinates><x>250</x><y>20</y><w>240</w><h>70</h></coordinates><panel_attributes>Multiple inheritance:
+Subclasses inherit attributes and 
+operations from all parents.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>250</x><y>130</y><w>120</w><h>100</h></coordinates><panel_attributes>/Figure/
+--
+posX
+posY
+--
+getPos() : point
+draw()
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Note</type><coordinates><x>20</x><y>20</y><w>170</w><h>70</h></coordinates><panel_attributes>Inheritance:
+Subclasses inherit 
+attributes and operations.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>310</x><y>460</y><w>120</w><h>70</h></coordinates><panel_attributes>CircleButton
+--
+ 
+--
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>70</x><y>210</y><w>40</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;20;20;80</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>290</x><y>210</y><w>40</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;20;20;80</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>250</x><y>290</y><w>120</w><h>80</h></coordinates><panel_attributes>Circle
+--
+radius
+--
+
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>290</x><y>350</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;20;50;110</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>400</x><y>290</y><w>120</w><h>80</h></coordinates><panel_attributes>Button
+--
+label
+--
+notify()</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>380</x><y>350</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;20;20;110</additional_attributes></element></umlet_diagram>

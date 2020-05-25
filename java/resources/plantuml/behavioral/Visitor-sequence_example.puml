@@ -1,0 +1,38 @@
+@startuml
+
+Main ->ListVisitor:new
+Main ->Directory:accept
+activate Directory
+Directory ->ListVisitor:visitor
+activate ListVisitor
+
+ListVisitor ->File:accept
+activate File
+File ->ListVisitor:visitor
+activate ListVisitor
+ListVisitor -->File
+deactivate ListVisitor
+File -->ListVisitor
+deactivate File
+
+ListVisitor ->File1:accept
+activate File1
+File1 ->ListVisitor:visitor
+activate ListVisitor
+ListVisitor -->File1
+deactivate ListVisitor
+File1 -->ListVisitor
+deactivate File1
+
+ListVisitor-->Directory
+deactivate ListVisitor
+Directory -->Main
+deactivate Directory
+
+
+'Alice -> Bob: Authentication Request
+'Bob --> Alice: Authentication Response
+'
+'Alice -> Bob: Another authentication Request
+'Alice <-- Bob: another authentication Response
+@enduml

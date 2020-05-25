@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umlet_diagram>
+  <element>
+    <type>com.umlet.element.base.Class</type>
+    <coordinates><x>180</x><y>190</y><w>100</w><h>30</h></coordinates>
+    <panel_attributes>/Thread/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Relation</type>
+    <coordinates><x>220</x><y>276</y><w>140</w><h>54</h></coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+handles&gt;</panel_attributes>
+    <additional_attributes>20;34;120;34</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Class</type>
+    <coordinates><x>340</x><y>300</y><w>100</w><h>30</h></coordinates>
+    <panel_attributes>Printer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Relation</type>
+    <coordinates><x>180</x><y>200</y><w>60</w><h>110</h></coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>40;20;20;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.ActiveClass</type>
+    <coordinates><x>80</x><y>290</y><w>160</w><h>60</h></coordinates>
+    <panel_attributes>PrinterQueue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Class</type>
+    <coordinates><x>30</x><y>190</y><w>100</w><h>40</h></coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Queue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Class</type>
+    <coordinates><x>30</x><y>110</y><w>100</w><h>40</h></coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+List</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Relation</type>
+    <coordinates><x>60</x><y>130</y><w>40</w><h>80</h></coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>20;20;20;60</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Relation</type>
+    <coordinates><x>70</x><y>210</y><w>70</w><h>100</h></coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>20;20;50;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.base.Note</type>
+    <coordinates><x>20</x><y>20</y><w>140</w><h>70</h></coordinates>
+    <panel_attributes>Active Class:
+Its instances own a 
+thread of control.</panel_attributes>
+    <additional_attributes/>
+  </element>
+</umlet_diagram>

@@ -1,0 +1,53 @@
+@startuml
+
+class Visitor{
+visit(File)
+visit(Directory)
+}
+
+class ListVisitor{
+private currentdir
+visit(File)
+visit(Directory)
+}
+
+interface Element{
+accept()
+}
+
+class Entry{
+getName()
+getSize()
+add()
+iterator()
+}
+
+class File{
+private name
+private size
+accept()
+getName()
+getSize()
+}
+
+class Directory{
+private name
+private dir
+accept()
+getName()
+getSize()
+add()
+iterator()
+}
+
+class Main{
+}
+
+Visitor --|>ListVisitor
+Main ->ListVisitor:Uses >
+Entry ..|>Element
+File --|>Entry
+Directory --|>Entry
+Main ->File:Uses >
+Main ->Directory:Uses >
+@enduml

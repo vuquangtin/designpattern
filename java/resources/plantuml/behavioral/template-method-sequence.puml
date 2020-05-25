@@ -1,0 +1,27 @@
+@startuml
+
+skinparam handwritten true
+skinparam titleBorderThickness 2
+skinparam titleBackgroundColor AliceBlue
+
+title
+    Template mode timing diagram
+end title
+
+Client -> AbstractClass : templateMethod()
+activate AbstractClass
+AbstractClass -> ConcreteClass : method1()
+activate ConcreteClass
+ConcreteClass --> AbstractClass
+deactivate ConcreteClass
+AbstractClass -> ConcreteClass : method2()
+activate ConcreteClass
+ConcreteClass --> AbstractClass
+deactivate ConcreteClass
+AbstractClass -> ConcreteClass : method3()
+activate ConcreteClass
+ConcreteClass --> AbstractClass
+deactivate ConcreteClass
+AbstractClass --> Client : templateMethod()
+deactivate AbstractClass
+@enduml

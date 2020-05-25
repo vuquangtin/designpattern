@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umlet_diagram><element><type>com.umlet.element.base.Actor</type><coordinates><x>50</x><y>120</y><w>65</w><h>120</h></coordinates><panel_attributes>_:Actor_</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>370</x><y>210</y><w>130</w><h>40</h></coordinates><panel_attributes>_:AccountingBilling_</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>450</x><y>140</y><w>100</w><h>40</h></coordinates><panel_attributes>_:Timer_</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>230</x><y>140</y><w>100</w><h>40</h></coordinates><panel_attributes>_:CallCenter_</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Note</type><coordinates><x>20</x><y>20</y><w>170</w><h>70</h></coordinates><panel_attributes>Collaboration:
+Describes configuration
+and interaction of objects.</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>190</x><y>160</y><w>200</w><h>107</h></coordinates><panel_attributes>lt=-
+1: authorise customer&gt;
+3: debit customer&gt;
+</panel_attributes><additional_attributes>90;20;90;70;180;70</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>90</x><y>126</y><w>160</w><h>54</h></coordinates><panel_attributes>lt=-
+do phone call&gt;</panel_attributes><additional_attributes>20;34;140;34</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>310</x><y>126</y><w>160</w><h>54</h></coordinates><panel_attributes>lt=-
+2: log time&gt;</panel_attributes><additional_attributes>20;34;140;34</additional_attributes></element></umlet_diagram>

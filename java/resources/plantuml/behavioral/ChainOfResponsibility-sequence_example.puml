@@ -1,0 +1,34 @@
+@startuml
+activate Main
+Main ->alice:support
+activate alice
+alice ->bob:support
+activate bob
+bob ->charlie:support
+activate charlie
+charlie ->diana
+activate diana
+diana ->elmo:support
+activate elmo
+elmo -->diana
+deactivate elmo
+diana -->charlie
+deactivate diana
+charlie -->bob
+deactivate charlie
+bob -->alice
+deactivate bob
+alice -->Main
+deactivate alice
+deactivate Main
+
+
+
+
+
+'Alice -> Bob: Authentication Request
+'Bob --> Alice: Authentication Response
+'
+'Alice -> Bob: Another authentication Request
+'Alice <-- Bob: another authentication Response
+@enduml
