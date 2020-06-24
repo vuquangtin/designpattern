@@ -1,0 +1,7 @@
+@startuml
+Class01 <|-- Class02:Extension
+Class03 *-- Class04:Composition
+Class05 o-- Class06:Aggregation
+Class07 .. Class08
+Class09 -- Class10
+@enduml
