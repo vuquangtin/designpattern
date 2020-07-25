@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>64</x>
+      <y>88</y>
+      <w>96</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ClassName
+--
+Attributes
+--
+Operations</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>184</x>
+      <y>88</y>
+      <w>224</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+-name:String
+-userID:String
+-password:String
+--
++getName():String
++setName(newName:String)
++getUserID():String
++setUserID(newUserID:String)
++getPassword():String
++setPassword(newPassword:String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>184</x>
+      <y>256</y>
+      <w>144</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>An Example Class 
+Representation
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>64</x>
+      <y>168</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Generic Class 
+Representation
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>424</x>
+      <y>88</y>
+      <w>208</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>*DataConverter*
+--
+ID:long
+--
+createMemento():Memento
+setMemento(memento:Memento)
+getLastProcessedID():long
+process():boolean
+
+{innerclass
+Memento
+--
+lastProcessedID:long
+getID():long
+--
+
+innerclass}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>424</x>
+      <y>280</y>
+      <w>240</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>An Example Inner Class Representation
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>88</y>
+      <w>184</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>FileLogger
+--
+_+getInstance():FileLogger_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>656</x>
+      <y>144</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Static Method Representation
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>64</x>
+      <y>344</y>
+      <w>184</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>/Creator/
+--
+factoryMethod():ParentClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>64</x>
+      <y>400</y>
+      <w>232</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Abstract Class/Method Representation
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>344</y>
+      <w>112</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>RemoteAddress
+--
+--
+isValid():boolean
+save():boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>344</y>
+      <w>200</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>java.rmi.RemoteException</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>360</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;throws&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>376</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;throws&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>472</x>
+      <y>424</y>
+      <w>296</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Representation of Methods Throwing Exceptions
+&amp;
+A Note to Provide Additional Information
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>384</y>
+      <w>24</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>336</x>
+      <y>480</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>save data to DB
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>896</x>
+      <y>88</y>
+      <w>192</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+VisitorInterface
+--
+--
+visit()
+getOrderTotal():double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
