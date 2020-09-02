@@ -22,7 +22,7 @@ Design Patterns Implemented (vi)
 — _Các đối tượng cấu thành các cấu trúc cây để mô tả bán toàn bộ hệ thống phần cấp. Composite để cho các client tác động các đối tượng riêng biệt và các thành phần của đối tượng một cách thống nhất._
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-decorator.png) –
 [Decorator](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/structural/decorator)
-— _Gán bổ sung các “trách nhiệm” (responsibility) cho một đối tượng một cách linh hoạt. Các decorator cung cấp một sự lựa chọn linh động cho lớp con để mở rộng tính năng_
+— _Gán bổ sung các “trách nhiệm” (responsibility) cho một đối tượng một cách linh hoạt. Các decorator cung cấp một sự lựa chọn linh động cho lớp con để mở rộng tính năng của các lớp cha_
 * [UML](https://github.com/vuquangtin/designpattern/tree/master/src/main/resources/img/uml-proxy.png) –
 [Proxy](https://github.com/vuquangtin/designpattern/tree/master/src/main/java/design_patterns/structural/proxy)
 — _Cung cấp một đối tượng thay thế hoặc giữ chỗ placeholder cho một đối tượng khác để truy xuất đến nó._
